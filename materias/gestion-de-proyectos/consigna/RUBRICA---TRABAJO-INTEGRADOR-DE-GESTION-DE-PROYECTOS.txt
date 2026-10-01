@@ -1,0 +1,243 @@
+RÚBRICA DE EVALUACIÓN DEL TRABAJO INTEGRADOR DE GESTIÓN DE
+PROYECTOS
+
+Materia: Gestión de Proyectos
+Tecnicatura: Desarrollo de Software
+Modalidad: Trabajo colaborativo basado en proyecto
+
+Consideraciones Generales para la Evaluación:
+
+    • La evaluación será formativa y procesual.
+
+    • Se valorará la aplicación de los conceptos de gestión de proyectos al caso
+         real/simulado del Proyecto Integrador.
+
+    • Se evaluará la claridad y completitud de la documentación entregada en
+         relación con lo solicitado en cada eje temático.
+
+    • Se analizará la coherencia entre el diagnóstico, la planiﬁcación, las
+         herramientas propuestas y los resultados documentados.
+
+    • Se ponderará la capacidad crítica del equipo para analizar el caso,
+         identiﬁcar desafíos, proponer soluciones viables y reﬂexionar sobre la
+         aplicación de las metodologías y herramientas.
+
+    • Se valorará el poder de síntesis y recursos utilizados para la presentación
+         de los puntos. La extensión de cada entrega no deberá superar las 10
+         páginas.
+ENTREGABLE PARTE 1
+
+Criterio de  Excelente (9-10 pts)           Muy bueno (7-8 pts)                                                                  Ponderació
+Evaluación                                                         Satisfactorio (4-6 pts) Insuﬁciente (0-3 pts)
+
+                                                                                                                                 n
+
+             Presentación general
+
+             completa y coherente.
+
+             Justiﬁcación y contexto del Presentación general      Presentación general Presentación confusa
+
+             proyecto profundamente         clara. Justiﬁcación y  básica. Justiﬁcación y o ausente.
+
+             analizados. Problemática contexto bien explicados. contexto superﬁciales. Justiﬁcación y
+
+1. Visión    claramente deﬁnida y           Problemática           Problemática deﬁnida contexto escasos o
+
+General del relevante. Objetivos SMART y identiﬁcada. Objetivos de forma general.     inexistentes.
+
+Proyecto,    fases del proyecto lógicas, mayormente SMART y Objetivos presentes, Problemática mal
+
+Problemática y detalladas y coherentes.     fases coherentes.      pero no siempre SMART deﬁnida. Objetivos y    15%
+
+propuesta de Propuesta de valor             Propuesta de valor clara. o fases poco    fases ausentes o
+
+valor        convincente y diferenciada. Recursos clave y          detalladas. Propuesta incoherentes. Falta de
+
+             Recursos clave y actividades actividades principales de valor genérica.  propuesta de valor o
+
+             principales exhaustivamente bien identiﬁcados.        Recursos e indicadores recursos, e
+
+             identiﬁcados.                  Indicadores de éxito   mencionados de forma indicadores no
+
+                                            adecuados.             básica.            identiﬁcados.
+
+             Indicadores de éxito medibles
+
+             y pertinentes.
+                Análisis detallado del entorno
+
+                cultural (tipo de empresa,                                                       Análisis ausente, muy
+
+                nivel de decisión, tipo de      Buen análisis del entorno    Descripción general del vago o irrelevante. No
+
+2. Descripción  cultura, estructura). Identiﬁca cultural, identiﬁcando sus   tipo de empresa y   se identiﬁcan las
+
+de la Cultura   con profundidad las posibles componentes clave.              cultura, con mención características            10%
+
+Organizacional  diﬁcultades y ventajas de Menciona las principales           superﬁcial de posibles culturales y/o su
+
+                dicha cultura para la           diﬁcultades y ventajas       diﬁcultades o ventajas. impacto en el
+
+                adopción de la propuesta del para el proyecto.                                   proyecto.
+
+                Proyecto. Capacidad crítica al
+
+                evaluar el impacto cultural.
+
+                Enumeración detallada y
+
+                exhaustiva de los Objetivos     Enumeración de los           Enumeración de
+
+                del proyecto y su               objetivos general y          objetivos, con un   Enumeración ausente
+
+                alineamiento con los            especíﬁcos y su              análisis superﬁcial de o sólo genérica, sin
+
+3. Deﬁnición objetivos del negocio,             alineamiento con los         su implicancia en los alineamiento con los
+
+del proyecto y descripción precisa del          objetivos del negocio.       objetivos del negocio. objetivos del negocio.   10%
+
+Fases           aporte de valor de la                                        Plan de seguimiento Plan de seguimiento
+
+                propuesta.                      Plan de seguimiento y        general con         inexistente o
+
+                Plan de trabajo y fases, con    control claro con criterios  criterios/métricas  inadecuado.
+
+                métricas bien deﬁnidas y        y métricas pertinentes.      vagas.
+
+                aplicables.
+                Justiﬁcación exhaustiva, Buena justiﬁcación para la                                      Elección de
+
+                comparativa y críticamente metodología y                                                 metodología y/o
+
+                analizada para la elección de herramientas elegidas. Justiﬁcación superﬁcial herramientas no
+                                                                                  de la metodología y/o
+4. Metodologías la metodología (Scrum,         Descripción adecuada de                                   justiﬁcada,
+
+                Kanban, etc.). Elección de     cómo resultó la               herramientas.               inadecuada o
+
+Ágiles y                                                                     Descripción limitada de ausente.                   5%
+
+Herramientas herramientas                      implementación.               cómo resultó.
+
+Elegidas        profundamente justiﬁcada. Descripción poco                                               No se describe cómo
+
+                Descripción detallada y        detallada de Roles y          Listado de Roles y          resultó.
+
+                justiﬁcada de Roles y tareas tareas o con poca o             tareas sin justiﬁcación
+
+                                                                                                         Roles y tareas
+
+                asignadas en el equipo.        ninguna justiﬁcación.                                     inexistentes.
+
+                Listado exhaustivo de todos                                  Listado básico de           Listado muy
+
+                los stakeholders,              Buen listado de               stakeholders, algunos       incompleto o ausente.
+
+                clasiﬁcados por su             stakeholders. Estimación      pueden faltar.              No se estima la
+
+                participación en el proyecto.  de importancia adecuada.      Estimación de               importancia ni se
+
+5. Mapa de      Estimación de la importancia   Identiﬁcación de usuarios     importancia general.        identiﬁcan
+
+Stakeholders y  de cada uno para el proyecto                                 Identiﬁcación               usuarios/clientes.     10%
+                                                       y clientes correcta.
+Requerimientos bien justiﬁcada.                                              superﬁcial de
+
+                Listado completo y             Listado de requerimientos usuarios/clientes.              Listado de
+                clasiﬁcación de los            completa clasiﬁcados por                                  Requerimientos
+                requerimientos por tipo y                                                                faltante o poco
+                origen.                                                           Listado de             desarrollada.
+                                               Funcionales o NF.
+
+                                                                                  Requerimientos sin
+                                                                                  clasiﬁcación.
+ENTREGABLE PARTE 2
+
+                 Evidencia clara de uso                                  Uso básico de alguna
+
+                 (capturas, enlaces,          Buen uso y evidencia de herramienta de gestión,
+
+                 descripciones detalladas) de herramientas de gestión. evidencia limitada.        Uso mínimo o nulo de
+
+                 las herramientas de gestión Registros de reuniones y Registros de                herramientas de
+
+6. Planiﬁcación                               decisiones adecuados y reuniones/decisiones
+                                                                                                         gestión, sin evidencia. 5%
+y Seguimiento Registros de reuniones          útiles. Plan de            incompletos o poco
+                                                                                                  Registros ausentes o
+                 internas (actas/resúmenes) y seguimiento y control      claros. Plan de
+                                                                                                         inútiles.
+                 de decisiones relevantes claro con criterios y          seguimiento general
+
+                 completos, claros y          métricas pertinentes.      con criterios/métricas
+
+                 consistentes.                                           vagas.
+
+                 Estructura del proyecto      Estructura del proyecto    Estructura del proyecto
+
+7. Estructura    clara, lógica y detallada.   clara y con buen nivel de  básica, algunas fases o  Estructura del
+
+del Proyecto y   Cronograma (Gantt/Kanban)    detalle. Cronograma        tareas pueden faltar o   proyecto confusa,
+
+Cronograma       realista, preciso, bien      adecuado, con              ser poco claras.         incompleta o ausente.
+
+(Diagramas de    presentado, con              responsables y             Cronograma general,      Cronograma             10%
+
+Gantt, CPM o     responsables, duraciones y   duraciones estimadas       con algunas              inexistente o muy
+
+PERT)            dependencias claras,         razonables, alineado con   imprecisiones en         vago.
+
+                 alineado con la metodología  la metodología.            duraciones o
+
+                 y herramientas elegidas.                                responsables.
+
+8. Informe de Identiﬁcación exhaustiva de Buena identiﬁcación de Identiﬁcación básica de Identiﬁcación de                15%
+
+Riesgos y        riesgos (técnicos, humanos, los principales riesgos. algunos riesgos obvios. riesgos mínima o
+Estrategias de  económicos, etc.).            Evaluación adecuada de    Evaluación superﬁcial  ausente. No se evalúa
+Mitigación      Evaluación justiﬁcada del     impacto y probabilidad.   de                     impacto/probabilidad.
+                nivel de impacto y            Planes de mitigación y    impacto/probabilidad.  Planes de mitigación
+                probabilidad. Planes de       contingencia claros y     Planes de mitigación   inexistentes o
+                mitigación y contingencia     viables para los riesgos  genéricos o poco       inviables.
+                detallados, proactivos,       más importantes.          desarrollados.
+                creativos y para cada riesgo
+                signiﬁcativo.
+
+                Propuesta de estrategia de
+
+                ﬁnanciamiento o                                         Propuesta básica de Estrategia de
+
+                sostenimiento del proyecto Propuesta clara y viable de  ﬁnanciamiento/sosteni ﬁnanciamiento/sosten
+
+                innovadora, realista y        estrategia de             miento. Modelo de      imiento ausente o
+
+9.              argumentada. Modelo de ﬁnanciamiento/sostenimi          licenciamiento         inviable. Modelo de
+
+Consideracione licenciamiento del software ento. Modelo de              mencionado, pero con licenciamiento no
+
+s de            (GPL, propietario, freemium, licenciamiento adecuado    justiﬁcación           deﬁnido o mal          5%
+
+Sostenibilidad etc.) elegido justiﬁcado para y bien justiﬁcado.         superﬁcial. Mención elegido. No se
+
+del Proyecto el contexto. Incorporación de Consideración de             general de             consideran aspectos
+
+                prácticas sostenibles         prácticas sostenibles y   sostenibilidad y       de sostenibilidad ni
+
+                (sociales, ambientales,       control de calidad.       calidad.               calidad.
+
+                económicas) y control de
+
+                calidad en el proyecto.
+
+10.             Estimación de costos ﬁjos y Buena estimación de         Estimación general de Estimación de costos    15%
+
+Presupuesto variables detallada y precisa costos ﬁjos y variables. costos, algunos ítems ausente, muy
+Estimado y   para desarrollo, licencias,   Tabla de costos          pueden faltar o no estar imprecisa o sin
+Análisis de  servidores, etc. Tabla        adecuada.
+Costos       detallada de costos por fase  Consideraciones básicas  bien justiﬁcados. Tabla justiﬁcación. No se
+             o entregable completa.        sobre factibilidad
+             Análisis de factibilidad      económica.               de costos incompleta o presenta tabla de
+             económica bien
+             argumentado.                                           poco clara.  costos.
+

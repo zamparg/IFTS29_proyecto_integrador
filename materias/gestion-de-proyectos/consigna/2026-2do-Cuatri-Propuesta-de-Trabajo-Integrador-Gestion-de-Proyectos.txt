@@ -1,0 +1,279 @@
+Propuesta de Trabajo
+Integrador: Gestión de
+Proyectos
+
+Materia: Gestión de Proyectos
+
+Modalidad: Trabajo colaborativo basado en proyecto
+Propósito General
+
+Diseñar y aplicar los conocimientos de gestión de proyectos en el marco del
+Proyecto Integrador de la carrera, actuando como soporte metodológico y
+estratégico para asegurar el éxito del desarrollo del sistema de software propuesto
+por cada equipo.
+
+Articulación con PPIV
+
+El Trabajo Integrador de Gestión de Proyectos tendrá como objetivo
+complementar y enriquecer las fases del proyecto de software desarrollado en la
+materia Práctica Profesionalizante IV, mediante la incorporación de herramientas,
+técnicas y buenas prácticas de la gestión de proyectos, que serán tratadas a lo
+largo del cuatrimestre.
+
+   Aquellos estudiantes que NO estén cursando ambas materias, podrán realizar
+   el trabajo sobre un proyecto propio o uno sugerido por la cátedra.
+Beneficios para los estudiantes
+
+Esto permitirá a los estudiantes desarrollar competencias esenciales para su futuro profesional en el ámbito de la gestión de proyectos de
+software.
+
+Desarrollar una visión integral     Entender las influencias sobre el      Gestionar eficientemente recursos
+                                    proyecto
+Del ciclo de vida del proyecto                                             Dinero, tiempos y riesgos
+                                    Stakeholders y cultura organizacional
+
+Aplicar metodologías ágiles y       Fomentar la colaboración               Documentar procesos
+tradicionales                       interdisciplinaria
+                                                                           Para la evaluación y toma de decisiones
+Según las necesidades del contexto  Y el trabajo en equipo
+Ejes temáticos integrados
+
+A continuación se detallan los temas del programa de Gestión de Proyectos que se
+incorporarán como líneas de trabajo complementarias al desarrollo del Proyecto
+Integrador.
+
+Unidad de Gestión de Proyectos          Aplicación en Proyecto Integrador
+
+1. Introducción y concepto de proyecto  Justificación y contexto del proyecto
+                                        de software propuesto.
+
+2. Definición de objetivos y fases      Estructuración del alcance, objetivos
+                                        SMART y fases del proyecto.
+
+3. Stakeholders y cultura               Análisis de la empresa simulada y
+organizacional                          actores implicados.
+
+4. Metodologías ágiles y tradicionales  Selección e implementación de
+(Scrum, Kanban, Cascada)                metodología de trabajo.
+
+5. Relevamiento de requerimientos       Aplicación de técnicas de elicitación,
+                                        análisis y especificación.
+Ejes temáticos integrados
+
+Unidad de Gestión de Proyectos          Aplicación en Proyecto Integrador
+6. Planificación de Gantt, PERT/CPM,
+marco Agile, con herramientas           Planificación del proyecto con Asana,
+digitales.                              Trello, Notion, etc..
+7. Gestión de calidad y sostenibilidad
+                                        Incorporación de prácticas sostenibles
+8. Gestión de riesgos                   y control de calidad.
+
+9. Presupuesto y análisis de costos     Identificación de riesgos del proyecto y
+                                        plan de mitigación.
+10. Gestión de RRHH
+                                        Estimación de costos de desarrollo,
+                                        modelo de financiamiento y soporte.
+
+                                        Asignación de roles reales, manejo de
+                                        conflictos y habilidades transversales
+Modalidad de Trabajo
+
+  Grupal
+
+   El trabajo se divide en 2 entregas grupales que abarcarán los ítems del
+   desarrollo específico del proyecto. A continuación se especifican los
+   puntos de la materia a considerar.
+Entrega
+
+Cada una de las entregas deberá realizarse en un documento digital (en formato .pdf) cuyo nombre tendrá el formato:
+    GDP_Comisión X_Equipo ZZZ_TPI - Parte y.pdf (en el caso de ser una de las entregas grupales)
+
+Si es necesario, podrán incorporarse a estos documentos enlaces a otros (planillas, diagramas, etc.) cuidando de que éstos estén compartidos de forma pública.
+Se valorará un tratamiento conciso y el poder de síntesis para detallar cada ítem. Se sugiere el uso de tablas, mapas mentales, gráficos y otros recursos que
+ayuden a la visualización y comprensión. "Lo bueno si breve, dos veces bueno"
+
+   IMPORTANTE:
+   Cada entrega debe tener una extensión máxima de 10 páginas. Se indica con subrayado, aquellos ítems a los que hay que dar mayor relevancia.
+
+Las entregas se realizarán en las fechas estipuladas en el cronograma a través del campus, en la sección "Trabajos Prácticos"
+Evaluación
+
+La evaluación será formativa y procesual, en línea con el enfoque de ambas materias.
+
+  Aplicación de conceptos          Coherencia
+
+De gestión al caso real/simulado.  Entre planificación, ejecución y
+                                   resultados.
+
+       Capacidad crítica            Claridad
+
+Para analizar desviaciones y        De la documentación entregada.
+         proponer soluciones.
+                                   Análisis profundo
+
+                                   De los ítems subrayados.
+
+Descarga la Rúbrica
+ENTREGABLE Parte 1
+1. Visión general del Proyecto
+
+  Objetivo
+
+   Tener una visión macro y sintética del proyecto de software que se va a
+   desarrollar, identificando elementos clave desde el inicio.
+
+  Vinculación temática
+
+        Introducción a la gestión de proyectos.
+        Estructuración del alcance, objetivos SMART y fases del proyecto.
+
+Contenidos esperados:
+    Nombre y breve descripción del proyecto.
+    Recursos clave y actividades principales.
+    Problema que se quiere resolver y Propuesta de valor.
+    Indicadores de éxito.
+2. Cultura organizacional
+
+  Objetivo
+
+   Entender el entorno cultural del cliente y las posibles dificultades o
+   ventajas para la adopción de la propuesta.
+
+  Vinculación temática
+
+        Análisis de la cultura organizacional.
+
+Contenidos esperados:
+    Tipo de empresa (grande, mediana, familiar, etc.).
+    Nivel de decisión sobre el proyecto.
+    Tipo de cultura: fuerte o débil, concentrada o fragmentada.
+    Estructura empresaria.
+3. Definición del proyecto y Fases
+
+  Objetivo
+
+   Realizar una propuesta de Planificación y las fases en las que se desarrollará el
+   proyecto .
+
+  Vinculación temática
+
+        Cómo definir y especificar un proyecto, alienamiento a los objetivos de
+        negocio.
+        Fases de un proyecto
+
+Contenidos esperados:
+    Propuesta de trabajo y sus fases principales
+    Declaración de Objetivos generales y específicos.
+    Alineamiento a los objetivos del negocio.
+4. Planificación y Metodologías
+
+  Objetivo
+
+   Realizar una propuesta de Planificación y metodología de trabajo y definir
+   roles y tareas dentro del grupo.
+
+  Vinculación temática
+
+        Selección e implementación de metodología de trabajo.
+
+Contenidos esperados:
+    Propuesta de Planificación y metodología.
+    Justificación de la elección de la metodología.
+5. Stakeholders y Requerimientos
+
+  Objetivo
+
+   Realizar un mapa de los Stakeholders involucrados en el proyecto. Proponer y llevar adelante
+   un proceso de Ingeniería de Requerimientos.
+
+  Vinculación temática
+
+        Caracterización de los Stakeholders. Importancia de cada uno para el proyecto
+        Ingeniería de requerimientos.
+
+Contenidos esperados:
+    Mapa de todos los Stakeholders. Estimación de la importancia de cada uno para el proyecto.
+    Listado de Requerimientos relevados. Clasificación por tipo y por origen de
+    Requerimientos.
+ENTREGABLES Parte 2
+6. Planificación y Seguimiento
+
+  Objetivo
+
+   Registrar el proceso de gestión aplicado a lo largo del proyecto, para
+   facilitar el seguimiento y la evaluación.
+
+  Vinculación temática
+
+        Técnicas de documentación.
+        Seguimiento y control del avance.
+
+Contenidos esperados:
+    Herramientas utilizadas para la gestión (Trello, Gantt, Actas, etc.).
+    Justificación de la elección.
+    Registro de decisiones relevantes.
+7. Estructura del proyecto y
+cronograma
+
+  Objetivo
+
+   Representar gráficamente la planificación temporal del proyecto, dividiéndolo en fases y
+   tareas claras.
+
+  Vinculación temática
+
+        Planificación y trabajo colaborativo.
+        Métodos de planificación.
+        Gestión del tiempo y recursos.
+
+Contenidos esperados:
+    Fases del proyecto (Análisis, Diseño, Desarrollo, Pruebas, etc.).
+    Duración estimada y responsables de cada tarea.
+    Diagrama de Gantt y cálculo de CPM o PERT.
+8. Informe de riesgos y mitigación
+
+  Objetivo
+
+   Anticipar posibles problemas que podrían afectar el desarrollo del proyecto y
+   prever soluciones o acciones preventivas.
+
+  Vinculación temática
+
+        Gestión de riesgos.
+        Prevención y calidad.
+        Sostenibilidad del proyecto.
+
+Contenidos esperados:
+    Identificación de riesgos (técnicos, humanos, económicos, etc.).
+    Nivel de impacto y probabilidad (baja, media, alta).
+    Plan de mitigación o contingencia para cada riesgo.
+9. Sostenibilidad del proyecto
+
+  Objetivo
+
+   Plantear la viabilidad del proyecto a futuro.
+
+  Vinculación temática
+
+        Sostenibilidad del producto.
+
+Contenidos esperados:
+    Estrategia de financiamiento o sostenimiento.
+    Modelo de licenciamiento del software (GPL, propietario, freemium, etc.)
+10. Presupuesto y Costos
+
+  Objetivo
+
+   Estimar el costo total del proyecto, analizando recursos necesarios.
+
+  Vinculación temática
+
+        Análisis de costos y presupuestos.
+        Factibilidad económica.
+
+Contenidos esperados:
+    Costos directos e indirectos: desarrollo, mantenimiento, licencias,
+    servidores, etc.
+    Punto de equilibrio de la empresa considerando ejecución de proyectos
+    similares.
+

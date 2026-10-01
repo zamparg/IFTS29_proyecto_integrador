@@ -1,0 +1,232 @@
+                                                   Segunda Etapa
+                                       Análisis y Modelado del Diseño
+Tema: Análisis y Creación de Diagramas, Modelado del Sistema y Análisis del
+Diseño
+
+Orientaciones
+Se sugiere comenzar con un documento compartido (Google Docs o similar) para organizar
+la información.
+El documento debe seguir Normas APA e ir acompañado de un Canva o presentación para
+exponer la propuesta de forma clara y visual.
+Objetivo de las Semanas: Durante estas semanas, los estudiantes deberán enfocarse en
+la creación de diagramas y modelos que representen la estructura y funcionalidad del
+sistema que desarrollarán. Además, se analizarán los requerimientos, el diseño y la
+arquitectura del software. Estos diagramas ayudarán a visualizar la arquitectura,
+interacciones y comportamiento del software, facilitando su diseño y desarrollo. Los
+diagramas que dejamos a continuación son a modo de ejemplo, siéntanse libres de
+consultar cualquier inquietud.
+
+Introducción del Proyecto elegido
+En esta sección, los estudiantes deberán explicar el propósito del desarrollo del software
+solicitado por el cliente. Aquí se deben presentar de manera general los aspectos
+técnicos y la propuesta de venta, solo explicada, que aseguran que el proyecto será
+viable.
+
+Alcance del Proyecto
+
+     1. Objetivo del Software: Explicar brevemente qué tipo de software se va a desarrollar
+          y cuál es su propósito. Ejemplo: "Desarrollar un sistema de gestión para pequeñas y
+          medianas empresas que permita administrar inventarios, ventas, y clientes de forma
+          eficiente."
+
+     2. Características Principales: Explicar las funciones principales del software. Sus
+          posibles módulos y/o áreas.Ejemplo: "Gestión de inventarios, informes de ventas,
+          control de usuarios, integración con sistemas de pago." y desarrollar cada área
+
+     3. Plataformas y Tecnologías: Mencionar en qué plataformas estará disponible el
+          software (Web, móvil, escritorio) y las tecnologías que se utilizarán para su
+          desarrollo. Ejemplo: "El sistema estará disponible como una aplicación web
+          responsiva y como aplicación móvil para Android e iOS. Se utilizará JavaScript,
+          Node.js, y React.". Medibles y posibles
+
+     4. Usuarios Objetivo: Describir el perfil de las personas que usarán el sistema.
+          Ejemplo: "Empresarios de pequeñas empresas, administradores de tiendas
+          online, gerentes de inventario.
+
+Organización Interna / Gestión de Talentos Humanos
+
+Asignar roles a cada miembro del equipo, detallando sus responsabilidades y la justificación
+de su asignación. Por ejemplo, si alguien tiene experiencia en desarrollo frontend, su rol
+será Desarrollador Frontend.
+
+Además, los estudiantes deben crear un currículum vitae de cada integrante y perfil de
+LinkedIn (pueden usar datos ficticios si lo prefieren por razones de privacidad).
+
+El desarrollo del software se llevará a cabo utilizando un equipo de trabajo, explicar que
+realiza cada estudiante. Deben decidir cuál es la más adecuada para su proyecto,
+justificada según las necesidades del sistema y los plazos del proyecto. Además, deben
+cómo se llevará a cabo el proceso, con entregas iterativas y trabajo colaborativo.
+
+Elección del Proyecto Final y Presentación de una Propuesta
+
+En esta parte nos centramos en comprender y estructurar todos los elementos necesarios
+para abordar la creación de un producto o sistema que sea viable, funcional y adecuado a
+las necesidades de los clientes. En este caso, el proyecto final está en la fase de
+reconocimiento, lo que implica una etapa inicial donde se evalúan todas las posibles áreas
+y consideraciones para llevar a cabo el desarrollo exitoso del proyecto.
+Fase de Reconocimiento:
+
+Esta fase implica estudiar el contexto en el que el proyecto se desarrollará y realizar un
+análisis de los siguientes aspectos:
+
+     1. Definición del Problema o Necesidad: El primer paso es identificar claramente cuál
+          es el problema o necesidad que el software o sistema debe resolver. Esta fase se
+          refiere a la investigación de las necesidades de los usuarios y del mercado. ¿Ya
+          existe algo similar? ¿Qué característica tiene? ¿Que problemas podría llegar a
+          tener? Entre otras preguntas a hacernos.
+
+     2. Estudio de Viabilidad: En esta etapa se evalúa si el proyecto es viable desde
+          diferentes perspectivas:
+
+               ○ Viabilidad técnica: ¿Es posible desarrollar el software utilizando las
+                    tecnologías actuales?
+
+               ○ Viabilidad económica: ¿Cuánto tiempo creo que me llevaría realizarlo?
+               ¿Podría estimar un costo? ¿Qué tipo de licencia convendría poner?
+
+               ○ Viabilidad operativa: ¿El sistema podrá ser integrado de manera efectiva en
+                    la operación de la empresa?
+
+     3. Análisis de Competencia: Se investiga sobre proyectos o soluciones similares ya
+          existentes en el mercado. Esto ayuda a entender qué se ha hecho anteriormente,
+          qué herramientas y tecnologías se están utilizando, y cómo el nuevo proyecto puede
+          ofrecer un valor agregado.
+
+     4. Selección del Tipo de Proyecto: Dependiendo de los resultados del análisis,
+          siempre es importante realizar una investigación sobre el mercado al que se dirige y
+          cómo el producto se ajustará a las necesidades específicas de los usuarios.
+
+     5. Establecimiento de Objetivos: Una vez definido el alcance y el propósito del
+          sistema, se deben establecer los objetivos claros del proyecto. ¿Qué se espera
+          lograr con este software? ¿Cuál es el impacto que se espera generar?
+
+Fases del Desarrollo
+
+El desarrollo se realizará y determinará quien realizará o supervisará esta área teniendo en
+cuenta el equipo de trabajo. Pueden tener o separar las fases para una mejor resolución.
+
+     1. Análisis y Requerimientos: Determinar las funcionalidades y necesidades del
+          sistema.
+
+2. Diseño del Sistema: Definir la arquitectura, interfaz y diseño técnico del software.
+
+     3. Desarrollo e Implementación: Programar las funcionalidades y construir el
+          software.
+
+4. Pruebas y Control de Calidad: Asegurar que el software funciona correctamente.
+
+     5. Preparación de una Capacitación: Crear materiales para que los usuarios
+          aprendan a usar el sistema.
+
+6. Manual y Soporte: Generar documentación técnica y ofrecer soporte a los usuarios.
+
+     7. Mantenimiento: Asegurar el buen funcionamiento a largo plazo, realizando
+          actualizaciones y ajustes según sea necesario.
+
+Presentación de la Propuesta:
+
+Una vez concluido el trabajo de investigación, el siguiente paso es presentar la propuesta
+del proyecto final. Esta propuesta debe incluir los siguientes elementos:
+
+     1. Resumen Ejecutivo: Un resumen claro y conciso de lo que se va a desarrollar,
+          explicando la problemática que se abordará y cómo el proyecto será una solución
+          efectiva.
+
+     2. Objetivos del Proyecto: Los objetivos deben ser específicos, medibles,
+          alcanzables, relevantes y temporales Los estudiantes deben especificar qué logrará
+          el proyecto en términos de funcionalidad, beneficios para los usuarios y mejoras
+          operativas.
+
+     3. Estimación de Recursos: Esto incluye el presupuesto estimado, los recursos
+          humanos necesarios, las herramientas y tecnologías que se utilizarán, y cualquier
+          otro requerimiento logístico.
+
+     4. Impacto y Beneficios Esperados: Los estudiantes deben especificar cómo se
+          beneficiarán los usuarios finales del sistema y cómo este software resolverá
+          problemas existentes, mejorará procesos o aumentará la eficiencia.
+
+Tareas a Realizar:
+
+1. Análisis del Diseño y Requerimientos:
+    ●​ Identificar y documentar los requisitos del sistema.
+    ●​ Definir la arquitectura del software en función de los requerimientos identificados.
+    ●​ Establecer los componentes clave del sistema y sus interacciones.
+
+2. Diseño de Diagramas:
+Elaborar los diferentes tipos de diagramas que pueden utilizarse en un proyecto de
+desarrollo de software. Los diagramas a considerar incluyen:
+
+    ●​ Diagrama de Casos de Uso: Representa las interacciones entre los usuarios y el
+         sistema. Muestra los actores (usuarios o sistemas externos) y los casos de uso
+         (funcionalidades o procesos del sistema), estableciendo las relaciones entre ellos
+         para entender mejor el comportamiento esperado.
+    ●​ Diagrama de Clases: Describe la estructura del sistema mediante la representación
+         de clases, sus atributos, métodos y relaciones(asociaciones, herencias,
+         dependencias) para modelar la lógica del negocio y la estructura del software.
+
+    ●​ Diagrama de Secuencia: Muestra la interacción entre los objetos del sistema en una
+         secuencia temporal. Representa los mensajes enviados entre ellos para ejecutar un
+         proceso específico, facilitando la comprensión del flujo de información.
+
+    ●​ Diagrama de Actividades: Representa los flujos de trabajo dentro del sistema,
+         ilustrando el orden y las condiciones de ejecución de actividades o procesos, lo que
+         permite modelar decisiones y flujos alternativos.
+
+    ●​ Diagrama de Estados: Modela los estados por los que puede pasar un objeto dentro
+         del sistema y las transiciones entre estos estados, describiendo cómo los eventos
+         afectan el comportamiento del objeto.
+
+    ●​ Diagrama de Componentes: Representa la organización y dependencias de los
+         diferentes componentes del software, mostrando cómo interactúan entre sí dentro del
+         sistema.
+
+    ●​ Diagrama de Despliegue: Muestra la distribución física del sistema en hardware,
+         representando servidores, dispositivos y conexiones de red, útil para definir la
+         arquitectura de implementación.
+
+    ●​ Diagrama de Entidad-Relación: Representa la estructura de la base de datos,
+         mostrando las entidades (tablas), sus atributos y las relaciones entre ellas, facilitando
+         el diseño del modelo de datos.
+
+    ●​ Wireframes y Prototipos: Son bocetos iniciales de la interfaz de usuario,
+         representando la disposición de los elementos visuales del sistema. Los wireframes
+         son esquemas de estructura, mientras que los prototipos pueden incluir interactividad
+         para simular la experiencia del usuario.
+
+3. Creación de Bocetos del Sistema y Entrega de Modelos en Formato Digital:
+    ●​ Diseñar prototipos y wireframes de la interfaz de usuario para mostrar la disposición
+         visual de los elementos.
+    ●​ Se pueden utilizar herramientas como Figma, Adobe XD, Lucidchart (Pueden variar)
+    ●​ No se pueden entregar bocetos en papel escaneados como definitivos.
+    ●​ Generar un documento con los enlaces a los diagramas creados en herramientas
+         digitales (Lucidchart, Draw.io, Visio, entre otras).
+    ●​ Elaborar un documento en PDF que contenga todos los diagramas y bocetos
+         generados.
+    ●​ Guardar el documento en la carpeta compartida del grupo en Google Drive. Agregar
+         los links dentro del documento Final.
+
+Orientaciones para la Tarea:
+    ●​ Se recomienda utilizar herramientas digitales para crear diagramas de manera más
+         clara y profesional.
+    ●​ Todos los diagramas deben estar bien etiquetados y explicados. Poner compartidos
+         todos los links
+    ●​ Se deben utilizar convenciones estándar en la notación de UML y otros diagramas.
+    ●​ Se sugiere dividir el trabajo en equipo, asignando roles específicos para la creación
+         de diagramas y bocetos.
+    ●​ El PDF final debe estar bien organizado y estructurado para facilitar su comprensión.
+Bibliografía Recomendada para Trabajar los Diagramas Por si les surgen dudas para
+comprender y aplicar correctamente los diferentes tipos de diagramas utilizados en el
+desarrollo de software, se recomienda consultar los siguientes capítulos del libro Ingeniería
+de Software (9ª edición) de Ian Sommerville:
+
+     ● Capítulo 5 - Modelado del Sistema
+     ● Capítulo 7 - Diseño del Sistema
+     ● Capítulo 8 - Diseño Orientado a Objetos
+     ● Capítulo 14 - Modelado de Datos
+     ● Capítulo 15 - Desarrollo Basado en Modelos
+
+Referencia bibliográfica: Sommerville, I. (2011). Ingeniería de software (9ª ed.). Pearson
+Educación.
+
+https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf
+

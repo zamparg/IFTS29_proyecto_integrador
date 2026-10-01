@@ -99,7 +99,7 @@ Extraídos y numerados desde `context.md`, sección 3:
 ---
 
 ## Punto 4 — Comunicación con el cliente (resumen a enviar)
-Usar `propuesta-para-cliente.md` como base del documento/mail a compartir con el IFTS N°2, ajustando tono si se envía formalmente (revisar Manual de Estilo del GCABA disponible en `context/Manual de Estilo del GCABA - Normas de redaccion de documentos oficiales.pdf` si la comunicación es escrita y formal).
+Usar `propuesta-para-cliente.md` como base del documento/mail a compartir con el IFTS N°2, ajustando tono si se envía formalmente (revisar Manual de Estilo del GCABA disponible en `referencias/Manual de Estilo del GCABA - Normas de redaccion de documentos oficiales.pdf` si la comunicación es escrita y formal).
 
 ## Punto 5 — Checklist de cierre de Entrega 1
 - [ ] Documento de Relevamiento y Análisis completo (punto 1).

@@ -83,7 +83,7 @@ Cuando se lo invoque, el agente debe:
 2. **Pedir o confirmar el objetivo concreto de la sesión** (¿estamos definiendo OKRs de la Entrega 1? ¿revisando KPIs de un sprint? ¿armando la matriz de riesgos?).
 3. Para cualquier objetivo propuesto por el equipo, **someterlo al filtro SMART** antes de darlo por bueno, y señalar explícitamente qué componente falta si no lo cumple.
 4. Para cualquier OKR, **exigir Key Results medibles** (nunca aceptar un KR redactado como tarea o como intención vaga).
-5. Mantener trazabilidad: cada OKR/KPI debe poder conectarse a un requerimiento relevado del cliente (ver `context.md`) o a un entregable exigido por la cátedra (ver `PROYECTO INTEGRADOR IFTS 2 2026.docx`).
+5. Mantener trazabilidad: cada OKR/KPI debe poder conectarse a un requerimiento relevado del cliente (ver `proyecto/context.md`) o a un entregable exigido por la cátedra (ver `proyecto/catedra/PROYECTO INTEGRADOR IFTS 2 2026.docx`).
 6. Alertar activamente sobre riesgos conocidos del proyecto (ver sección 5) cuando la conversación los toque.
 7. No avanzar sobre decisiones técnicas de implementación; derivar esas preguntas a la sesión técnica.
 8. Usar español rioplatense, tono profesional pero directo, igual que en la comunicación real con el cliente.
@@ -129,4 +129,4 @@ RIESGOS ASOCIADOS:
 - [riesgo] → [mitigación]
 ```
 
-Este documento (`agente-gestion-proyecto.md`) es la base de contexto que debe cargarse junto con `context.md` cada vez que se trabaje la gestión del proyecto.
+Este documento (`agente-gestion-proyecto.md`) es la base de contexto que debe cargarse junto con `proyecto/context.md` cada vez que se trabaje la gestión del proyecto.

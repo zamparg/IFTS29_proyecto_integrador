@@ -143,10 +143,10 @@ Duración total de la práctica: 16 clases de 9 hs semanales (2° cuatrimestre 2
 ---
 
 ## 5. Fuentes de este documento
-- Transcripción de reunión de relevamiento — Meet 04/09/2026 (`Meeting Transcription.pdf`).
-- Notas propias tomadas durante la reunión (`notes.md`).
-- Minuta de reunión 30/06 (`context/info IFTS 29/Minuta reunión 30_06.docx`).
-- Documento de cátedra "PROYECTO INTEGRADOR IFTS 2 2026" (`context/info IFTS 29/PROYECTO INTEGRADOR IFTS 2 2026.docx`).
+- Transcripción de reunión de relevamiento — Meet 04/09/2026 (`proyecto/Meeting Transcription.pdf`).
+- Notas propias tomadas durante la reunión (`proyecto/notes.md`).
+- Minuta de reunión 30/06 (`proyecto/catedra/Minuta reunión 30_06.docx`).
+- Documento de cátedra "PROYECTO INTEGRADOR IFTS 2 2026" (`proyecto/catedra/PROYECTO INTEGRADOR IFTS 2 2026.docx`).
 - Documento "Páginas a vincular con la WEB del IFTS N°2" (carpeta de contexto del cliente).
 - Presentación institucional y ficha de la Tecnicatura (PDFs de la carpeta de contexto del cliente).
 - Scraping del sitio actual: https://sites.google.com/bue.edu.ar/ifts-2-de-20/
