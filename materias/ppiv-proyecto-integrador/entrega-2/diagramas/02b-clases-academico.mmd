@@ -1,0 +1,54 @@
+classDiagram
+    direction LR
+    class PlanEstudio {
+        +int id
+        +String nombre
+        +String resolucion
+        +boolean vigente
+    }
+    class Materia {
+        +int id
+        +String nombre
+        +int anio
+        +int cargaHoraria
+        +correlativas() Materia[]
+    }
+    class Docente {
+        +int id
+        +String nombre
+        +String apellido
+        +String bio
+        +String fotoUrl
+        +boolean visible
+    }
+    class PeriodoAcademico {
+        +int id
+        +int anio
+        +int cuatrimestre
+        +boolean vigente
+        +esVigente() boolean
+    }
+    class AsignacionDocente {
+        +int id
+    }
+    class Horario {
+        +int id
+        +DiaSemana dia
+        +Time horaInicio
+        +Time horaFin
+        +String aula
+    }
+    class MesaExamen {
+        +int id
+        +DateTime fechaHora
+        +int llamado
+        +String aula
+    }
+    PlanEstudio "1" *-- "*" Materia : contiene
+    Materia "*" --> "*" Materia : correlativa de
+    Docente "1" --> "*" AsignacionDocente : tiene
+    Materia "1" --> "*" AsignacionDocente : se dicta en
+    PeriodoAcademico "1" --> "*" AsignacionDocente : corresponde a
+    AsignacionDocente "1" *-- "*" Horario : define
+    PeriodoAcademico "1" --> "*" MesaExamen : contiene
+    Materia "1" --> "*" MesaExamen : se evalua en

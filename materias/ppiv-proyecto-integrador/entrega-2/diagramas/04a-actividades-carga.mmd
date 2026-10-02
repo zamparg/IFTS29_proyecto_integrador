@@ -1,0 +1,17 @@
+flowchart TD
+    I((Inicio)) --> C{¿Origen del contenido?}
+    C -- Instagram --> E[Seleccionar publicación detectada]
+    C -- Carga manual --> F[Completar título, texto,<br/>imagen y categoría]
+    E --> G[Definir categoría y<br/>vigencia desde / hasta]
+    F --> G
+    G --> H{¿Datos válidos?}
+    H -- No --> G2[Marcar campos con error]
+    G2 --> G
+    H -- Sí --> J{¿Cuándo publicar?}
+    J -- Más tarde --> B[Estado: BORRADOR]
+    J -- Fecha futura --> L[Estado: PROGRAMADA]
+    J -- Ahora --> M[Estado: PUBLICADA]
+    B --> R[Registrar en bitácora]
+    L --> R
+    M --> R
+    R --> Z((Fin))

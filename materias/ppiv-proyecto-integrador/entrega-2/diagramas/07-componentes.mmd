@@ -1,0 +1,50 @@
+flowchart LR
+    subgraph CLI["Cliente"]
+        NAV["Navegador web<br/>(escritorio y móvil)"]
+    end
+
+    subgraph FE["Aplicación web (Next.js / React)"]
+        PUB["Sitio público<br/>SSR + caché"]
+        ADM["Panel de administración<br/>(rutas protegidas)"]
+    end
+
+    subgraph BE["API REST (Node.js + Express)"]
+        AUTH["Autenticación y roles<br/>JWT"]
+        CONT["Contenidos<br/>novedades · eventos · secciones"]
+        ACAD["Académico<br/>plan · docentes · horarios · mesas"]
+        GAL["Galería<br/>medios y categorías"]
+        SOC["Redes sociales<br/>importación y vinculación"]
+        CTO["Contacto<br/>formulario y mensajes"]
+        BIT["Bitácora de cambios"]
+    end
+
+    DB[("PostgreSQL")]
+    MED[("Almacenamiento<br/>de imágenes y video")]
+    IG["API de Instagram / Meta"]
+    MAIL["Servicio de correo<br/>institucional"]
+    EXT["Sistemas externos<br/>SIU Guaraní · Aulas Virtuales · Mi Argentina"]
+
+    NAV -->|HTTPS| PUB
+    NAV -->|HTTPS| ADM
+    PUB -->|REST / JSON| CONT
+    PUB -->|REST / JSON| ACAD
+    PUB -->|REST / JSON| GAL
+    PUB -->|REST / JSON| CTO
+    ADM -->|REST / JSON| AUTH
+    ADM -->|REST / JSON| CONT
+    ADM -->|REST / JSON| ACAD
+    ADM -->|REST / JSON| GAL
+    ADM -->|REST / JSON| SOC
+    AUTH --> DB
+    CONT --> DB
+    ACAD --> DB
+    GAL --> DB
+    GAL --> MED
+    SOC --> DB
+    SOC -->|Graph API| IG
+    CTO --> DB
+    CTO -->|SMTP / API| MAIL
+    CONT --> BIT
+    ACAD --> BIT
+    BIT --> DB
+    PUB -.->|enlaces de salida| EXT

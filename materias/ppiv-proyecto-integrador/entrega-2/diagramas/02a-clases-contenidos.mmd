@@ -1,0 +1,104 @@
+classDiagram
+    direction TB
+    class Usuario {
+        +int id
+        +String nombre
+        +String email
+        -String passwordHash
+        +Rol rol
+        +boolean activo
+        +autenticar(clave) boolean
+        +puede(accion) boolean
+    }
+    class Rol {
+        <<enumeration>>
+        ADMINISTRADOR
+        EDITOR
+    }
+    class Publicacion {
+        <<abstract>>
+        +int id
+        +String titulo
+        +String resumen
+        +String cuerpo
+        +String imagenPortada
+        +Estado estado
+        +Origen origen
+        +DateTime visibleDesde
+        +DateTime visibleHasta
+        +estaVigente(ahora) boolean
+        +publicar()
+        +archivar()
+        +reactivar()
+    }
+    class Novedad
+    class Evento {
+        +DateTime inicio
+        +DateTime fin
+        +String lugar
+    }
+    class Categoria {
+        +int id
+        +String nombre
+        +TipoCategoria tipo
+    }
+    class PublicacionSocial {
+        +int id
+        +Plataforma plataforma
+        +String idExterno
+        +String permalink
+        +String texto
+        +String mediaUrl
+        +DateTime fechaOrigen
+        +EstadoSocial estado
+        +vincular(publicacion)
+        +descartar()
+    }
+    class ServicioInstagram {
+        <<servicio>>
+        +importarPublicaciones(hashtag) PublicacionSocial[]
+        +renovarToken()
+    }
+    class MedioGaleria {
+        +int id
+        +TipoMedio tipo
+        +String url
+        +String titulo
+        +String descripcion
+        +boolean visible
+        +int orden
+    }
+    class SeccionInstitucional {
+        +int id
+        +String clave
+        +String titulo
+        +String cuerpo
+        +boolean visible
+    }
+    class EnlaceInteres {
+        +int id
+        +String titulo
+        +String url
+        +int orden
+        +boolean visible
+    }
+    class MensajeContacto {
+        +int id
+        +String nombre
+        +String email
+        +String asunto
+        +String mensaje
+        +EstadoMensaje estado
+        +marcarLeido()
+    }
+    Usuario --> Rol
+    Usuario "1" --> "*" Publicacion : redacta
+    Usuario "1" --> "*" MedioGaleria : sube
+    Usuario "1" --> "*" SeccionInstitucional : actualiza
+    Publicacion <|-- Novedad
+    Publicacion <|-- Evento
+    Categoria "1" o-- "*" Publicacion : clasifica
+    Categoria "1" o-- "*" MedioGaleria : clasifica
+    PublicacionSocial "0..1" --> "0..1" Publicacion : origina
+    ServicioInstagram ..> PublicacionSocial : crea
+    Usuario ..> MensajeContacto : revisa

@@ -7,7 +7,7 @@ Repositorio de trabajo del equipo **Talento Tech** (IFTS N°29, Tecnicatura Supe
 
 ## Enlaces
 
-- **Figma (MVP visual y panel de administración):** https://www.figma.com/design/aRnoXCbNpkCFkHPH0En5B5/IFTS-N%25C2%25B0-2-%25E2%2580%2594-MVP-visual-y-panel-de-administraci%25C3%25B3n?node-id=0-1&p=f — insumo para wireframes/prototipo de la Etapa 2 de PPIV y la DEMO de semana 6.
+- **Figma (MVP visual y panel de administración):** https://www.figma.com/design/aRnoXCbNpkCFkHPH0En5B5/IFTS-N%25C2%25B0-2-%25E2%2580%2594-MVP-visual-y-panel-de-administraci%25C3%25B3n?node-id=0-1&p=f — 6 pantallas de escritorio (01 Inicio, 02 La carrera, 03 Estudiantes, 04 Ingreso, 05 Novedades, 06 Panel administrador) y 9 móviles (M01–M09). Exportadas en `materias/ppiv-proyecto-integrador/entrega-2/wireframes/`. Se lee con el conector de Figma (cuenta zamparg; plan Starter = 20 llamadas/mes, usar con cuidado).
 
 ## Estructura
 
@@ -18,6 +18,7 @@ Repositorio de trabajo del equipo **Talento Tech** (IFTS N°29, Tecnicatura Supe
 │   └── agente-gestion-proyecto.md   Asesor de gestión (OKR, KPI, SMART, riesgos, WBS)
 ├── proyecto/                  FUENTE DE VERDAD compartida por todas las materias
 │   ├── context.md             Cliente, estado del sitio, requerimientos, restricciones, cronograma  ← leer primero
+│   ├── decisiones.md          Bitácora de decisiones (D-001: desarrollo a medida, NO WordPress; etc.) + diagramas/
 │   ├── propuesta-para-cliente.md   Resumen ejecutivo orientado al cliente
 │   ├── notes.md               Notas crudas de la reunión de relevamiento
 │   ├── Meeting Transcription.pdf   Transcripción reunión 04/09/2026
@@ -28,7 +29,9 @@ Repositorio de trabajo del equipo **Talento Tech** (IFTS N°29, Tecnicatura Supe
     ├── ppiv-proyecto-integrador/     Práctica Profesionalizante IV
     │   ├── consigna/          Etapa 2 (PDF + resumen del docente)
     │   ├── entrega-1/         Etapa 1 (PDF), sitio HTML interactivo, estructura de contenido
-    │   ├── entrega-2/         prompt-lovable-maqueta.md (prototipo)
+    │   ├── entrega-2/         Etapa 2 armada: etapa-2-documento.md (fuente) → "Etapa 2 - Proyecto Integrador.pdf",
+    │   │                      diagramas/ (.mmd editables + .svg/.png), presentacion-guion.md, wireframes/ (PNG de Figma),
+    │   │                      build.py (regenera HTML y PDF), prompt-lovable-maqueta.md
     │   └── material/          ITIL 4, Modelado de Sistemas, Vicente y Ayala cap. 7
     ├── gestion-de-proyectos/
     │   ├── consigna/          Propuesta de TP integrador + rúbrica
@@ -47,7 +50,7 @@ Convención: `materias/<materia>/{consigna, entrega-N, material}`. Todo lo compa
 
 | Materia | Entrega 1 | Entrega 2 |
 |---|---|---|
-| **PPIV – Proyecto integrador** | ✅ Hecha (Etapa 1: empresa Talento Tech, misión/visión, roles, relevamiento) | ⏳ Etapa 2 — *Análisis y Modelado del Diseño*: diagramas UML (casos de uso, clases, secuencia, actividades, estados, componentes, despliegue, ER), wireframes/prototipo en Figma, roles + CV/LinkedIn, viabilidad, propuesta (resumen ejecutivo, objetivos SMART, recursos, impacto). Formato APA, PDF + Canva/presentación, links públicos en Drive. Demo al cliente (semana 6). Hay un prompt de Lovable ya armado para la maqueta. |
+| **PPIV – Proyecto integrador** | ✅ Hecha (Etapa 1: empresa Talento Tech, misión/visión, roles, relevamiento) | 🟡 Etapa 2 — *Análisis y Modelado del Diseño*: **borrador completo** (35 págs., APA) con los 8 tipos de diagramas, viabilidad, objetivos SMART, fases y roles. Wireframes del Figma ya incluidos (`wireframes/`). Pendiente: CV de cada integrante (Anexo A), links de Drive/Trello/repo, armar el Canva con `presentacion-guion.md`, y validar el stack con la cátedra/DevOps. Ver `build.py` para regenerar el PDF. |
 | **Gestión de Proyectos** | ✅ Hecha (Parte 1: visión, cultura organizacional, fases, metodología, stakeholders y requerimientos) | ⏳ Parte 2: (6) planificación y seguimiento, (7) estructura y cronograma con Gantt + CPM/PERT, (8) riesgos y mitigación, (9) sostenibilidad y licenciamiento, (10) presupuesto, costos y punto de equilibrio. Máx. 10 páginas, PDF `GDP_Comisión X_Equipo ZZZ_TPI - Parte y.pdf`. |
 | **Emprendedurismo** | ✅ Hecha (1° TP: perfil emprendedor, desarrollo profesional, oportunidad, FODA) | ❓ Consigna de la 2ª entrega **no está en el repo** (el material cubre Unidades 1–3). Agregarla en `materias/emprendedurismo/consigna/`. |
 
@@ -65,7 +68,7 @@ Convención: `materias/<materia>/{consigna, entrega-N, material}`. Todo lo compa
 - **Problema:** sitio en Google Sites abandonado, con contenido de 2021–2026 mezclado, sin panel, sin contacto, sin integración con redes.
 - **Solución propuesta:** sitio público + panel de administración propio; contenido *estanco* vs *dinámico* (archivar, nunca borrar); selección editorial de posts de Instagram/Facebook (hashtag + rango de fechas); accesos a SIU Guaraní, Aulas Virtuales y Mi Argentina; formulario de contacto.
 - **Restricciones:** presupuesto casi nulo (hosting/dominio gratuitos; .edu.ar a evaluar), administradores no técnicos (Matías Peláez, María del Carmen Canobi), 3 equipos compitiendo por el mismo cliente, desarrollo propio (sin CMS de terceros).
-- **Marca:** azul institucional `#24507F`, tipografías Fraunces + Inter (usadas en el HTML de la Entrega 1).
+- **Marca del cliente (IFTS N°2):** verde bosque `#123B30`, verde de marca `#087B48`, dorado `#E4BA6E`, fondo `#F5F7F5`, tipografía Inter (tomado del logo y del Figma). El azul `#24507F` + Fraunces es la identidad de **Talento Tech** (HTML de la Entrega 1), no del cliente.
 
 ## Para agentes de IA
 

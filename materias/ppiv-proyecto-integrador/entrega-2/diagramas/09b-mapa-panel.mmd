@@ -1,0 +1,18 @@
+flowchart LR
+    L["Acceso para el personal<br/>(login)"] --> P["Panel de administración"]
+    P --> P0["Resumen"]
+    P --> P1["Publicaciones<br/>seleccionar · aprobar y publicar · descartar"]
+    P --> P2["Avisos académicos"]
+    P --> P3["Horarios y mesas"]
+    P --> P4["Archivo<br/>por año y período"]
+    P --> P5["Configuración<br/>usuarios · enlaces · secciones"]
+    P --> P6["Galería"]
+    P --> P7["Plantel y plan de estudios"]
+    P --> P8["Mensajes de contacto"]
+
+    classDef raiz fill:#123b30,stroke:#123b30,color:#ffffff
+    classDef mvp fill:#e3efe8,stroke:#087b48,color:#1a1f2b
+    classDef siguiente fill:#ffffff,stroke:#087b48,color:#1a1f2b,stroke-dasharray:6 4
+    class P raiz
+    class P0,P1,P2,P3,P4,P5 mvp
+    class P6,P7,P8 siguiente

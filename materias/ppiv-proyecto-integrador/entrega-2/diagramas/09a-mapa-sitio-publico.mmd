@@ -1,0 +1,30 @@
+flowchart LR
+    H["Inicio<br/>hero · accesos rápidos · actualidad institucional"]
+    INS["Institucional<br/>perfil del egresado · autoridades · ¿dónde estamos?"]
+    CAR["La carrera<br/>plan de estudios por año · correlatividades"]
+    ING["Ingreso<br/>convocatoria · pasos · documentos"]
+    EST["Estudiantes<br/>horarios y mesas del ciclo vigente · SIU · Aula virtual · Tutoría"]
+    NOV["Novedades y eventos<br/>filtros por año y categoría · archivo"]
+    CON["Contacto<br/>formulario"]
+    GAL["Galería<br/>imágenes y videos"]
+    DOC["Plantel docente"]
+
+    H --> INS
+    H --> CAR
+    H --> ING
+    H --> EST
+    H --> NOV
+    H --> CON
+    H --> GAL
+    H --> DOC
+
+    classDef estanco fill:#e3efe8,stroke:#087b48,color:#1a1f2b
+    classDef dinamico fill:#fbefd7,stroke:#b8862b,color:#1a1f2b
+    classDef servicio fill:#e2ebf5,stroke:#24507f,color:#1a1f2b
+    classDef raiz fill:#123b30,stroke:#123b30,color:#ffffff
+    classDef siguiente stroke-dasharray:6 4
+    class H raiz
+    class INS,CAR,ING,DOC estanco
+    class EST,NOV,GAL dinamico
+    class CON servicio
+    class INS,CON,GAL,DOC siguiente

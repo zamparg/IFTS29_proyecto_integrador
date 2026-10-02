@@ -1,0 +1,33 @@
+sequenceDiagram
+    autonumber
+    actor Ed as Editor
+    participant P as Panel de administración
+    participant A as API REST
+    participant IG as API de Instagram (Meta)
+    participant DB as Base de datos
+    actor V as Visitante
+    participant S as Sitio público
+
+    Ed->>P: Abre "Redes sociales"
+    P->>A: GET /social/pendientes
+    A->>IG: Solicita publicaciones recientes de la cuenta
+    IG-->>A: Lista de publicaciones
+    A->>A: Filtra las que contienen el hashtag institucional
+    A->>DB: Guarda nuevas como DETECTADA (sin duplicar id_externo)
+    A-->>P: Publicaciones detectadas
+    Ed->>P: Selecciona una y define vigencia (desde / hasta) y categoría
+    P->>A: POST /social/{id}/vincular
+    A->>DB: Crea Publicacion (origen=INSTAGRAM, estado=PUBLICADA)
+    A->>DB: Marca PublicacionSocial como VINCULADA y registra en bitácora
+    A-->>P: Confirmación
+    V->>S: Entra a Novedades
+    S->>A: GET /publicaciones?vigentes=true
+    A->>DB: Consulta con filtro visibleDesde <= hoy <= visibleHasta
+    DB-->>A: Publicaciones vigentes
+    A-->>S: Publicaciones vigentes
+    S-->>V: Muestra la novedad vinculada desde Instagram
+
+    alt Falla la API de Instagram o vence el token
+        IG-->>A: Error / token vencido
+        A-->>P: Aviso y opción de carga manual asistida
+    end

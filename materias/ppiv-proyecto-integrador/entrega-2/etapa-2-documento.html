@@ -1,0 +1,1020 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Etapa 2 - Proyecto Integrador - Talento Tech</title><style>
+@page { size: A4; margin: 2.54cm; @top-right { content: counter(page); font: 10pt 'Times New Roman', serif; } }
+@page apaisada { size: A4 landscape; margin: 2cm 2.54cm; @top-right { content: counter(page); font: 10pt 'Times New Roman', serif; } }
+.apaisada { page: apaisada; }
+.apaisada figure img { max-height: 12.6cm; }
+.apaisada h2 { break-before: page; }
+.apaisada figure ~ figure { break-before: page; }
+@page :first { @top-right { content: none; } }
+html { font-family: 'Times New Roman', Times, serif; font-size: 12pt; color: #000; }
+body { line-height: 1.45; margin: 0; }
+h1 { font-size: 13pt; font-weight: 700; text-align: center; margin: 1.6em 0 .6em; break-after: avoid; }
+h2 { font-size: 12pt; font-weight: 700; text-align: left; margin: 1.3em 0 .4em; break-after: avoid; }
+h3 { font-size: 12pt; font-weight: 700; font-style: italic; }
+p { margin: 0 0 .7em; text-align: left; }
+ul, ol { margin: 0 0 .8em 1.2em; padding-left: .8em; }
+li { margin-bottom: .25em; }
+a { color: #0b3d91; }
+.nueva-pagina { break-before: page; margin-top: 0; }
+.portada { height: 22cm; display: flex; flex-direction: column; justify-content: center; text-align: center; break-after: page; }
+.portada p { text-align: center; }
+.portada .inst { font-size: 12pt; margin-bottom: 3cm; }
+.portada .titulo { font-size: 18pt; margin: 0 0 .5em; }
+.portada .subtitulo { font-size: 14pt; margin-bottom: 2.4cm; }
+.portada .empresa { font-weight: 700; font-size: 14pt; color: #24507f; }
+.portada .autores { margin-bottom: 2.4cm; }
+.portada .meta { font-size: 11pt; }
+.cap { margin: 1.1em 0 0; font-weight: 700; break-after: avoid; }
+.cap-tit { margin: 0 0 .4em; break-after: avoid; }
+table { border-collapse: collapse; width: 100%; font-size: 9pt; line-height: 1.3; margin: 0 0 .5em; }
+th { text-align: left; background: #e2ebf5; border-top: 1.2pt solid #000; border-bottom: 1.2pt solid #000; padding: 4px 5px; }
+td { padding: 4px 5px; vertical-align: top; border-bottom: .5pt solid #bbb; }
+tr { break-inside: avoid; }
+tbody tr:last-child td { border-bottom: 1.2pt solid #000; }
+figure { margin: 0 0 1em; break-inside: avoid; text-align: center; }
+figure img { max-width: 100%; max-height: 20.5cm; width: auto; height: auto; }
+figcaption { text-align: left; font-size: 10pt; margin-top: .4em; }
+.pendiente { background: #fff3cd; padding: 6px 8px; border: 1px dashed #b58900; font-size: 10pt; }
+</style></head><body>
+<section class="portada">
+  <p class="inst">Instituto de Formación Técnica Superior N.° 29<br>Tecnicatura Superior en Desarrollo de Software</p>
+  <h1 class="titulo">Modernización del sitio institucional del IFTS N.° 2</h1>
+  <p class="subtitulo">Segunda etapa: Análisis y modelado del diseño</p>
+  <p class="empresa">Talento Tech</p>
+  <p class="autores">Santiago Cuda · Adrián Madroñal · Martín Juan · Nicolás Rolón · Gastón Zampar</p>
+  <p class="meta">Prácticas Profesionalizantes IV<br>
+  Docentes: Prof. Lic. Emir García Ontiveros · Prof. Lic. Kevin Del Bello<br>
+  Octubre de 2026</p>
+</section>
+<h1>1. Introducción del proyecto elegido</h1>
+<h2>1.1. Propósito del desarrollo</h2>
+<p>El Instituto de Formación Técnica Superior N.° 2 DE 20 (en adelante, IFTS N.° 2) es una institución pública dependiente del Ministerio de Educación del Gobierno de la Ciudad de Buenos Aires que dicta la Tecnicatura Superior en Emprendimientos Gastronómicos. Su sitio institucional actual está construido sobre Google Sites, no recibe mantenimiento desde hace más de un año y mezcla información académica de 2021 a 2026 sin ningún criterio de vigencia. No cuenta con un panel de gestión, no tiene formulario de contacto y no se relaciona con las redes sociales (Instagram y Facebook) que el equipo de comunicación del instituto sí utiliza de manera activa (Rectora del IFTS N.° 2, comunicación personal, 4 de septiembre de 2026).</p>
+<p>Talento Tech, la empresa de desarrollo de software simulada que el equipo constituyó en la Etapa 1 (Talento Tech, 2026) en el marco de Prácticas Profesionalizantes IV del IFTS N.° 29, propone construir una <strong>plataforma web propia</strong> compuesta por un sitio público y un panel de administración. El propósito es que el propio personal del instituto, sin perfil técnico, pueda mantener actualizado el contenido, decidir qué publicaciones de redes sociales se muestran en la web y garantizar que la información académica visible corresponda siempre al período en curso. El cliente lo resumió en una frase que guía todo el diseño: <em>"Nosotros no formamos chefs. Formamos empresarios/microempresarios gastronómicos"</em>, por lo que la plataforma debe transmitir la identidad de una institución que forma emprendedores y no la de un colegio secundario.</p>
+<h2>1.2. Continuidad con la Etapa 1</h2>
+<p>Este proyecto es la aplicación concreta de la identidad que Talento Tech definió en la primera etapa. Su propuesta de valor, <em>"Hablamos el mismo idioma que vos. Software claro, accesible y hecho a medida para tu negocio"</em>, se traduce aquí en un panel de administración pensado para docentes sin formación técnica, y la misión de la empresa (generar software accesible y de calidad) junto con sus valores de simplicidad, calidad y cortesía orientan las decisiones de diseño.</p>
+<p>El proyecto también avanza los objetivos de la empresa fijados en la Etapa 1. En el corto plazo (aumentar la cartera de clientes), el IFTS N.° 2 es el primer caso concreto en el que el equipo se relaciona con un cliente institucional real. En el mediano plazo (posicionarse como referencia), una plataforma adoptada y mantenida por el instituto se convierte en un antecedente verificable para otras instituciones.</p>
+<h2>1.3. Aspectos técnicos generales</h2>
+<p>La solución se plantea como una aplicación web responsive con arquitectura cliente-servidor: una aplicación Next.js (React) que sirve el sitio público y el panel; una API REST en Node.js; una base de datos relacional PostgreSQL; almacenamiento externo para imágenes y video; e integración con la API de Instagram de Meta para importar publicaciones. El despliegue se hará sobre planes gratuitos de hosting, dado que el instituto no dispone de presupuesto para servicios digitales. Las Secciones 2.3 y 7.2 detallan y justifican estas decisiones y la Sección 8 las representa en diagramas.</p>
+<h2>1.4. Propuesta de venta (explicada)</h2>
+<p>La propuesta comercial de Talento Tech se apoya en cuatro ideas, todas respondidas a un requerimiento concreto del cliente:</p>
+<ol>
+<li><strong>Autonomía de gestión.</strong> El instituto deja de depender de terceros: un panel simple permite cargar novedades, horarios, galería y plantel docente sin tocar código. Es la causa de fondo del abandono del sitio actual.</li>
+<li><strong>Información siempre vigente.</strong> El contenido dinámico tiene fechas de vigencia; al vencer se archiva y deja de mostrarse, pero nunca se elimina, porque el cliente calificó el borrado automático como un "riesgo grave".</li>
+<li><strong>Integración editorial con redes.</strong> No se replica todo Instagram: el instituto etiqueta con un hashtag las publicaciones relevantes, las selecciona desde el panel y define cuánto tiempo se muestran.</li>
+<li><strong>Costo cercano a cero y acompañamiento.</strong> Infraestructura gratuita, código propio sin dependencia de plugins de terceros y capacitación a los administradores.</li>
+</ol>
+<p>Esta propuesta aplica a un único cliente hoy, pero el modelo (sitio institucional con panel simple, vigencia de contenidos y selección editorial de redes) es reutilizable por otras instituciones educativas con necesidades similares.</p>
+<h1>2. Alcance del proyecto</h1>
+<h2>2.1. Objetivo del software</h2>
+<p>Desarrollar una plataforma web institucional con panel de administración para el IFTS N.° 2, que permita publicar y mantener información estanca (plan de estudios, perfil del egresado, autoridades) y dinámica (novedades, eventos, horarios, mesas de examen, galería), incorporar de forma selectiva contenido de las redes sociales del instituto y facilitar el acceso a los sistemas externos que alumnos y egresados ya utilizan.</p>
+<h2>2.2. Características principales</h2>
+<p>La plataforma se organiza en módulos. Cada uno se corresponde con requerimientos relevados (RF y RNF, ver Tabla 11) y con casos de uso del diagrama de la Figura 1.</p>
+<p class="cap"><strong>Tabla 1</strong></p>
+<p class="cap-tit"><em>Módulos de la plataforma, funciones principales y requerimientos que cubren</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Área</th>
+<th>Funciones principales</th>
+<th>Requerimientos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sitio institucional (estanco)</td>
+<td>Público</td>
+<td>Presentación del instituto, perfil del egresado ("empresarios gastronómicos"), autoridades, ubicación, plan de estudios por año con correlatividades, información de ingreso (convocatoria, pasos y documentos)</td>
+<td>RF02, RF10</td>
+</tr>
+<tr>
+<td>Novedades y cartelera</td>
+<td>Público / Panel</td>
+<td>Alta, edición y clasificación de novedades y eventos (institucionales, cuatrimestrales, por cátedra); orden por fecha; estados borrador, programada, publicada y archivada</td>
+<td>RF01, RF02, RF03</td>
+</tr>
+<tr>
+<td>Académico vigente</td>
+<td>Público / Panel</td>
+<td>Horarios y mesas de examen del período en curso, cargados desde formularios y mostrados como tablas o tarjetas (no como Excel o PDF incrustado); períodos anteriores archivados</td>
+<td>RF06, RF10</td>
+</tr>
+<tr>
+<td>Plantel docente y materias</td>
+<td>Público / Panel</td>
+<td>Alta y baja de docentes, asignación a materias por período, visibilidad activable</td>
+<td>RF10</td>
+</tr>
+<tr>
+<td>Galería</td>
+<td>Público / Panel</td>
+<td>Carga de imágenes y videos con descripción y categoría, orden y visibilidad</td>
+<td>RF09</td>
+</tr>
+<tr>
+<td>Redes sociales</td>
+<td>Panel</td>
+<td>Importación de publicaciones de Instagram que contienen el hashtag institucional, selección editorial, vigencia y descarte</td>
+<td>RF04</td>
+</tr>
+<tr>
+<td>Enlaces de interés</td>
+<td>Público / Panel</td>
+<td>Accesos a SIU Guaraní, Aula virtual, Tutoría y Mi Argentina; gestión de enlaces</td>
+<td>RF07</td>
+</tr>
+<tr>
+<td>Contacto</td>
+<td>Público / Panel</td>
+<td>Formulario con envío a correo institucional y registro de mensajes en el panel</td>
+<td>RF08</td>
+</tr>
+<tr>
+<td>Usuarios y seguridad</td>
+<td>Panel</td>
+<td>Autenticación, roles (Administrador, Editor), múltiples administradores, bitácora de cambios</td>
+<td>RF05, RNF06</td>
+</tr>
+</tbody>
+</table>
+<p><em>Nota.</em> RF = requerimiento funcional; RNF = requerimiento no funcional. La numeración continúa la de la Etapa 1 y se detalla en la Sección 7.1.</p>
+<p><strong>Sitio institucional (estanco).</strong> Reúne la información que cambia poco: identidad del instituto, perfil del egresado, plan de carrera y correlatividades, autoridades y ubicación (Cañada de Gómez 3850, Villa Lugano). Se edita desde el panel porque las autoridades pueden cambiar. El cliente pidió que la idea de formar empresarios gastronómicos sea lo más destacado del sitio, por lo que el inicio la expone con prioridad.</p>
+<p><strong>Novedades y cartelera.</strong> Es el corazón del contenido dinámico. Cada publicación (novedad o evento) pertenece a una categoría y tiene un rango de vigencia. Se muestra lo reciente arriba y lo vencido se archiva automáticamente sin eliminar datos. Este módulo es alimentado de forma manual o desde redes sociales.</p>
+<p><strong>Académico vigente.</strong> Muestra únicamente el período académico en curso. Los datos se cargan como registros estructurados (período, materia, docente, día, hora, aula, fecha de mesa) y no como archivos incrustados, lo que permite filtrar, ordenar y archivar.</p>
+<p><strong>Redes sociales.</strong> El flujo acordado con el cliente es <em>cargar en redes, etiquetar, seleccionar y mostrar en el sitio</em>, y no al revés. La plataforma consulta las publicaciones de la cuenta institucional, detecta las que contienen el hashtag acordado y las ofrece al editor, que decide cuáles mostrar, durante qué fechas y bajo qué categoría. Facebook queda cubierto porque, según el cliente, replica automáticamente lo que se publica en Instagram.</p>
+<p><strong>Usuarios y seguridad.</strong> Dos roles: <em>Administrador</em> (gestiona usuarios y toda la configuración) y <em>Editor</em> (carga y edita contenido). No hay límite relevante de usuarios, tal como confirmó el cliente. Toda acción de edición queda registrada en una bitácora.</p>
+<p><strong>Fuera de alcance de esta etapa:</strong> publicación automática desde el sitio hacia las redes, simulador gastronómico (idea futura del cliente), gestión documental de trámites de bedelía y certificados, y uso de un CMS de terceros.</p>
+<h2>2.3. Plataformas y tecnologías</h2>
+<p>La plataforma estará disponible como <strong>aplicación web responsive</strong> (computadoras, tabletas y celulares) accesible desde cualquier navegador moderno, sin instalación. No se prevé aplicación móvil nativa en esta etapa.</p>
+<p class="cap"><strong>Tabla 2</strong></p>
+<p class="cap-tit"><em>Stack tecnológico propuesto y justificación</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Capa</th>
+<th>Tecnología propuesta</th>
+<th>Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frontend (sitio y panel)</td>
+<td>Next.js (React) con CSS modular</td>
+<td>Renderizado en servidor para SEO (importa para captar nuevos alumnos), una sola base de código para sitio y panel, experiencia previa del equipo en React</td>
+</tr>
+<tr>
+<td>Backend</td>
+<td>Node.js con Express, API REST</td>
+<td>Experiencia del equipo, ecosistema amplio, capas simples (rutas, controladores, servicios)</td>
+</tr>
+<tr>
+<td>Base de datos</td>
+<td>PostgreSQL (servicio gestionado con plan gratuito)</td>
+<td>Modelo claramente relacional (períodos, materias, docentes, horarios); integridad referencial; respaldos</td>
+</tr>
+<tr>
+<td>Medios</td>
+<td>Servicio de almacenamiento y CDN de imágenes con plan gratuito</td>
+<td>El volumen histórico de imágenes es alto; se evita almacenarlo en el servidor de la API</td>
+</tr>
+<tr>
+<td>Integración con redes</td>
+<td>API de Instagram de Meta (cuenta profesional)</td>
+<td>Es el canal oficial y permite leer las publicaciones de la cuenta propia</td>
+</tr>
+<tr>
+<td>Correo</td>
+<td>Proveedor SMTP o API de correo con plan gratuito</td>
+<td>Envío del formulario de contacto al correo institucional</td>
+</tr>
+<tr>
+<td>Calidad y entrega</td>
+<td>Git y GitHub, GitHub Actions, Cypress, Trello</td>
+<td>Control de versiones, integración continua y pruebas de extremo a extremo</td>
+</tr>
+<tr>
+<td>Hosting</td>
+<td>Planes gratuitos de PaaS (frontend y backend por separado)</td>
+<td>El instituto no cuenta con presupuesto; DevOps validará proveedor definitivo antes de la Semana 6</td>
+</tr>
+</tbody>
+</table>
+<p><em>Nota.</em> El stack es una propuesta del equipo sujeta a validación técnica por DevOps. La cátedra confirmó que el proyecto se resuelve con desarrollo a medida: no se admite WordPress ni otro CMS de terceros, dado el alcance de la materia.</p>
+<p><strong>Metas medibles y posibles.</strong> Para que las tecnologías elegidas sean verificables, se fijan metas de calidad de la versión funcional (Semana 13): puntaje de Lighthouse en móvil de al menos 80 en Rendimiento y 90 en Accesibilidad para la página de inicio, en línea con las pautas WCAG 2.2 (World Wide Web Consortium [W3C], 2023); carga del contenido principal en menos de 2,5 segundos en una conexión móvil típica; y cobertura de pruebas automáticas de al menos 60 % de la lógica del backend. Las metas son alcanzables con el stack elegido porque las páginas públicas se sirven desde caché y las imágenes se optimizan en un CDN.</p>
+<h2>2.4. Usuarios objetivo</h2>
+<p class="cap"><strong>Tabla 3</strong></p>
+<p class="cap-tit"><em>Perfiles de usuario de la plataforma</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Perfil</th>
+<th>Descripción</th>
+<th>Uso principal</th>
+<th>Nivel técnico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aspirantes y comunidad</td>
+<td>Personas interesadas en la tecnicatura, público general</td>
+<td>Conocer la carrera, el plan de estudios y el perfil del egresado; contactar al instituto</td>
+<td>Bajo a medio</td>
+</tr>
+<tr>
+<td>Alumnos</td>
+<td>Estudiantes cursando la tecnicatura</td>
+<td>Consultar horarios, mesas de examen, novedades y acceder a SIU Guaraní y Aulas Virtuales</td>
+<td>Medio</td>
+</tr>
+<tr>
+<td>Egresados</td>
+<td>Técnicos superiores graduados</td>
+<td>Verificar el título digital en Mi Argentina; enterarse de eventos</td>
+<td>Medio</td>
+</tr>
+<tr>
+<td>Editores</td>
+<td>Docentes del equipo de comunicación (Matías Peláez, María del Carmen Canobi)</td>
+<td>Cargar novedades, horarios, galería; seleccionar publicaciones de redes</td>
+<td>Bajo (no técnico)</td>
+</tr>
+<tr>
+<td>Administradores</td>
+<td>Autoridades o personal designado</td>
+<td>Gestionar usuarios y configuración general</td>
+<td>Bajo</td>
+</tr>
+<tr>
+<td>Bedelía</td>
+<td>Oficina de alumnos</td>
+<td>Recibir consultas por el formulario de contacto</td>
+<td>Bajo</td>
+</tr>
+</tbody>
+</table>
+<h1>3. Organización interna y gestión de talentos humanos</h1>
+<h2>3.1. Roles y justificación</h2>
+<p>Talento Tech (info@talentotech.com) tiene como representante de la empresa a Nicolás Rolón, mientras que el contacto operativo con el IFTS N.° 2 es el Product Owner, Martín Juan. El equipo está formado por cinco integrantes. Cada rol se asignó según el perfil, las habilidades declaradas y las necesidades del sistema.</p>
+<p class="cap"><strong>Tabla 4</strong></p>
+<p class="cap-tit"><em>Roles del equipo, responsabilidades y justificación de la asignación</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Integrante</th>
+<th>Rol</th>
+<th>Responsabilidades en el proyecto</th>
+<th>Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Martín Juan</td>
+<td>Product Owner</td>
+<td>Único punto de contacto con el cliente, priorización del backlog, traducción de necesidades en historias de usuario, validación de entregables</td>
+<td>Su perfil es de gestión de producto y comunicación con el cliente; además el cliente pidió un único interlocutor para no saturarlo con los tres equipos</td>
+</tr>
+<tr>
+<td>Nicolás Rolón</td>
+<td>Backend Developer</td>
+<td>API REST, base de datos, autenticación y seguridad, integración con la API de Instagram</td>
+<td>Experiencia en Node.js, bases de datos y seguridad</td>
+</tr>
+<tr>
+<td>Gastón Zampar</td>
+<td>Frontend Developer</td>
+<td>Sitio público y panel, diseño de interfaz y prototipo, maquetado responsive y accesible</td>
+<td>Experiencia en React y UI/UX</td>
+</tr>
+<tr>
+<td>Adrián Madroñal</td>
+<td>Tester (QA)</td>
+<td>Plan de pruebas, pruebas funcionales y automatizadas, verificación de criterios de aceptación</td>
+<td>Perfil de control de calidad con Cypress</td>
+</tr>
+<tr>
+<td>Santiago Cuda</td>
+<td>DevOps</td>
+<td>Repositorio, integración y entrega continuas, hosting, dominio, respaldos y monitoreo</td>
+<td>Experiencia en infraestructura, AWS y automatización</td>
+</tr>
+</tbody>
+</table>
+<p>Para esta etapa, cada integrante es además responsable de los modelos de su especialidad (Tabla 5), lo que reparte el trabajo de diagramación y permite revisión cruzada.</p>
+<p class="cap"><strong>Tabla 5</strong></p>
+<p class="cap-tit"><em>Responsables de los entregables de la Etapa 2</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Entregable</th>
+<th>Responsable</th>
+<th>Revisa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Análisis de requerimientos y diagrama de casos de uso</td>
+<td>Martín Juan</td>
+<td>Adrián Madroñal</td>
+</tr>
+<tr>
+<td>Diagrama de clases y diagramas de secuencia</td>
+<td>Nicolás Rolón</td>
+<td>Gastón Zampar</td>
+</tr>
+<tr>
+<td>Modelo entidad-relación</td>
+<td>Nicolás Rolón</td>
+<td>Santiago Cuda</td>
+</tr>
+<tr>
+<td>Wireframes, prototipo en Figma y mapa del sitio</td>
+<td>Gastón Zampar</td>
+<td>Martín Juan</td>
+</tr>
+<tr>
+<td>Diagramas de actividades y de estados, plan de pruebas</td>
+<td>Adrián Madroñal</td>
+<td>Nicolás Rolón</td>
+</tr>
+<tr>
+<td>Diagramas de componentes y de despliegue</td>
+<td>Santiago Cuda</td>
+<td>Nicolás Rolón</td>
+</tr>
+<tr>
+<td>Integración del documento y la presentación</td>
+<td>Martín Juan</td>
+<td>Todo el equipo</td>
+</tr>
+</tbody>
+</table>
+<h2>3.2. Currículum vitae y perfil profesional</h2>
+<p>Los currículum vitae y los perfiles de LinkedIn de cada integrante se presentan en el Anexo A y se vinculan desde allí. Los datos corresponden a los perfiles públicos del equipo.</p>
+<h2>3.3. Metodología de trabajo</h2>
+<p>Se adopta <strong>Scrumban</strong>, que combina sprints livianos —puntos de control alineados a las reuniones con el cliente de las Semanas 2, 6 y 13— con un tablero Kanban de flujo continuo dentro de cada sprint (Ladas, 2009). Se descartó Scrum puro porque sus ceremonias fijas (daily, review, retrospectiva) no se sostienen con un equipo de cinco personas sin dedicación exclusiva, y Kanban puro porque no ofrece instancias formales de planificación ni puntos de control frente a fechas fijas. El tablero se lleva en Trello con las columnas Backlog, To Do, In Progress, Review y Done, tarjetas asignadas por responsable y etiquetas por sprint.</p>
+<p>El proceso es <strong>iterativo y colaborativo</strong>: cada sprint termina con un incremento revisable (Semana 6: prototipo validado; Semana 13: versión funcional), las decisiones y reuniones se registran en una bitácora, y toda pieza de trabajo pasa por una revisión cruzada antes de pasar a Done. El Product Owner centraliza la comunicación con el cliente para evitar respuestas contradictorias, un riesgo real dado que tres equipos trabajan sobre el mismo cliente.</p>
+<h1>4. Fase de reconocimiento</h1>
+<h2>4.1. Definición del problema o necesidad</h2>
+<p><strong>Problema.</strong> El IFTS N.° 2 no tiene una herramienta simple para mantener su presencia digital. El sitio actual quedó abandonado "por falta de tiempo y de personal", exhibe información de hasta cinco años de antigüedad sin curaduría, presenta horarios y mesas de examen en archivos Excel o PDF incrustados, no ofrece canal de contacto y no se vincula con las redes sociales que el instituto sí gestiona. Las consultas de alumnos recaen informalmente en una sola persona. Visualmente "parece un colegio secundario", lo que contradice la identidad de una institución que forma empresarios.</p>
+<p><strong>Necesidades relevadas.</strong> Modernización visual; panel simple para personal no técnico; contenido siempre vigente con archivo sin pérdida de datos; integración selectiva con Instagram y Facebook; accesos directos a SIU Guaraní, Aulas Virtuales y Mi Argentina; formulario de contacto; operación sin costo relevante.</p>
+<p><strong>¿Existe algo similar?</strong> Sí, existen alternativas parciales (Sección 4.3). Ninguna resuelve a la vez la selección editorial de redes, el archivado por vigencia y la simplicidad para usuarios no técnicos sin costo.</p>
+<p><strong>Problemas que podría tener la solución.</strong> Cambios o restricciones en la API de Instagram (vencimiento de tokens, permisos de la cuenta); baja disponibilidad del cliente para validar; volumen de imágenes que supere los planes gratuitos; adopción por parte de los administradores; trámites externos para un dominio .edu.ar.</p>
+<h2>4.2. Estudio de viabilidad</h2>
+<p><strong>Viabilidad técnica: alta, con un punto a verificar.</strong> Todas las piezas (React/Next.js, Node.js, PostgreSQL, almacenamiento de imágenes, envío de correo) son tecnologías maduras con planes gratuitos y que el equipo domina. El punto a verificar es la integración con Instagram: la API oficial exige una cuenta profesional y un token que debe renovarse periódicamente (Meta for Developers, s. f.). Por eso se planifica una prueba de concepto antes de la Semana 6 y un plan de contingencia de carga manual asistida desde el panel, de modo que el sitio nunca dependa de la API para funcionar.</p>
+<p><strong>Viabilidad económica: alta.</strong></p>
+<p class="cap"><strong>Tabla 6</strong></p>
+<p class="cap-tit"><em>Estimación de esfuerzo y costos</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Estimación</th>
+<th>Observaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Duración</td>
+<td>16 semanas (2.º cuatrimestre 2026)</td>
+<td>Cronograma fijado por la cátedra</td>
+</tr>
+<tr>
+<td>Esfuerzo del equipo</td>
+<td>Aproximadamente 680 horas-persona</td>
+<td>5 integrantes con 9 h semanales durante 16 semanas equivalen a 720 h; se reserva un margen para imprevistos. Detalle por fase en la Tabla 9</td>
+</tr>
+<tr>
+<td>Costo de infraestructura</td>
+<td>$0 en la fase inicial</td>
+<td>Hosting, base de datos, CDN y correo en planes gratuitos</td>
+</tr>
+<tr>
+<td>Costo contingente</td>
+<td>Dominio .com.ar, del orden de $8.500 ARS anuales (valor mencionado en la reunión)</td>
+<td>Se evaluará un dominio .edu.ar, potencialmente gratuito y sujeto a documentación y a la supervisión del GCABA</td>
+</tr>
+<tr>
+<td>Costo de mano de obra</td>
+<td>680 h × valor hora referencial [completar con el valor definido en Gestión de Proyectos, Parte 2]</td>
+<td>Es un proyecto académico sin cobro; el valor se estima para dimensionar el servicio</td>
+</tr>
+<tr>
+<td>Licencia</td>
+<td>Código bajo licencia de código abierto (propuesta: MIT) con cesión de uso al IFTS N.° 2; contenidos y marca pertenecen al instituto</td>
+<td>La decisión final se formaliza en Gestión de Proyectos (sostenibilidad y licenciamiento)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Viabilidad operativa: media-alta.</strong> Los futuros administradores son docentes sin formación técnica, por lo que la usabilidad del panel es un requisito central (RNF01) y se acompaña con capacitación y manual. Ya existe personal con práctica en redes sociales que puede operar un flujo de etiquetado. El principal riesgo operativo es la disponibilidad del cliente; se mitiga con un canal único de contacto, pedidos de material con anticipación y datos de prueba mientras llegan los reales.</p>
+<h2>4.3. Análisis de competencia</h2>
+<p>Se compararon las alternativas que el instituto tiene hoy a su alcance.</p>
+<p class="cap"><strong>Tabla 7</strong></p>
+<p class="cap-tit"><em>Comparación de alternativas existentes frente a la propuesta</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Google Sites (actual)</th>
+<th>Constructores SaaS (Wix, Squarespace)</th>
+<th>WordPress con plugins</th>
+<th>Plataforma Talento Tech</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Costo</td>
+<td>Gratuito, sin dominio propio</td>
+<td>Planes pagos para dominio propio y funciones avanzadas</td>
+<td>Hosting y plugins; parte gratuita</td>
+<td>Infraestructura gratuita inicial</td>
+</tr>
+<tr>
+<td>Facilidad para personal no técnico</td>
+<td>Media: edición manual página por página</td>
+<td>Alta para páginas; baja para datos estructurados</td>
+<td>Media: el panel es conocido pero extenso</td>
+<td>Alta: panel hecho a medida con solo las funciones necesarias</td>
+</tr>
+<tr>
+<td>Contenido con vigencia y archivo</td>
+<td>No</td>
+<td>No de forma nativa</td>
+<td>Posible con plugins</td>
+<td>Nativo (estados y fechas de vigencia)</td>
+</tr>
+<tr>
+<td>Horarios y mesas como datos estructurados</td>
+<td>No (archivos incrustados)</td>
+<td>Limitado</td>
+<td>Posible con plugins</td>
+<td>Nativo</td>
+</tr>
+<tr>
+<td>Selección editorial de Instagram</td>
+<td>No</td>
+<td>Existen widgets de feed completo</td>
+<td>Existen plugins de feed</td>
+<td>Nativo: hashtag, selección y fechas</td>
+</tr>
+<tr>
+<td>Control y dependencia de terceros</td>
+<td>Alta dependencia de Google</td>
+<td>Alta dependencia de la plataforma</td>
+<td>Media: dependencia de plugins</td>
+<td>Baja: código propio</td>
+</tr>
+<tr>
+<td>Valor formativo (objetivo de la materia)</td>
+<td>No aplica</td>
+<td>Bajo</td>
+<td>Bajo</td>
+<td>Alto</td>
+</tr>
+</tbody>
+</table>
+<p><em>Nota.</em> WordPress se incluye solo como referencia de mercado: no es una opción válida para este proyecto. Valoración cualitativa del equipo a partir de las funciones públicas de cada herramienta; no se midió rendimiento ni costos reales de terceros.</p>
+<p><strong>Valor agregado.</strong> Las soluciones existentes resuelven la presentación de páginas, pero no el problema de fondo: un instituto con poco personal necesita un flujo de mantenimiento muy corto, donde lo vencido se archive solo y lo relevante de las redes llegue al sitio con un par de clics. La integración con Instagram existente en el mercado suele mostrar todo el feed, lo que contradice el pedido del cliente de mantener el criterio editorial.</p>
+<h2>4.4. Selección del tipo de proyecto</h2>
+<p>La Etapa 1 definió como foco de la empresa a las pequeñas y medianas empresas e instituciones que necesitan digitalizarse y se encuentran con la misma barrera: proveedores que hablan un lenguaje técnico difícil de entender y herramientas dispersas que no se comunican entre sí. El IFTS N.° 2 comparte esa situación, por lo que encaja en el segmento elegido.</p>
+<p>Se trata de un <strong>proyecto de desarrollo web a medida (software por encargo)</strong> para el sector educativo público: una plataforma de gestión de contenidos institucional con panel de administración e integración con redes sociales. El mercado inmediato es un único cliente, el IFTS N.° 2, con usuarios finales de tres tipos (aspirantes, alumnos y egresados). El mercado ampliado son otros institutos, escuelas y organizaciones pequeñas con la misma necesidad; el diseño modular y la separación entre contenido estanco y dinámico facilitan su reutilización. Existe además la posibilidad de continuidad: la cátedra y el cliente mencionaron que la siguiente cohorte podría retomar el proyecto para mejoras (Minuta de reunión del 30 de junio de 2026).</p>
+<h2>4.5. Establecimiento de objetivos</h2>
+<p><strong>Objetivo general.</strong> Modernizar el sitio institucional del IFTS N.° 2 y dar autonomía de gestión al instituto, de modo que su propio equipo pueda mantenerlo actualizado sin depender de terceros.</p>
+<p class="cap"><strong>Tabla 8</strong></p>
+<p class="cap-tit"><em>Objetivos específicos SMART</em></p>
+
+<table>
+<thead>
+<tr>
+<th>N.º</th>
+<th>Objetivo</th>
+<th>Medida de éxito</th>
+<th>Plazo</th>
+<th>Requerimiento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O1</td>
+<td>Validar con el cliente el diseño y el prototipo navegable</td>
+<td>Al menos 90 % de las pantallas del mapa del sitio aprobadas en la DEMO</td>
+<td>Semana 6</td>
+<td>RF01, RF02</td>
+</tr>
+<tr>
+<td>O2</td>
+<td>Entregar un panel de administración operativo para novedades, horarios y mesas, galería y plantel</td>
+<td>0 errores bloqueantes abiertos; los criterios de aceptación de RF01, RF06, RF09 y RF10 aprobados</td>
+<td>Semana 13</td>
+<td>RF01, RF05, RF06, RF09, RF10</td>
+</tr>
+<tr>
+<td>O3</td>
+<td>Probar el mecanismo de selección editorial de redes</td>
+<td>Al menos 1 publicación real de Instagram vinculada al sitio de punta a punta</td>
+<td>Semana 13</td>
+<td>RF04</td>
+</tr>
+<tr>
+<td>O4</td>
+<td>Garantizar vigencia del contenido académico</td>
+<td>100 % de los horarios y mesas visibles corresponden al período vigente, verificado con casos de prueba</td>
+<td>Semana 13</td>
+<td>RF03, RF06</td>
+</tr>
+<tr>
+<td>O5</td>
+<td>Lograr que los editores operen el panel de forma autónoma</td>
+<td>Matías Peláez y María del Carmen Canobi completan 3 tareas típicas (crear novedad, cargar horario, vincular publicación) sin asistencia</td>
+<td>Semana 15</td>
+<td>RNF01</td>
+</tr>
+<tr>
+<td>O6</td>
+<td>Cumplir metas de calidad web</td>
+<td>Lighthouse móvil: Rendimiento mayor o igual a 80 y Accesibilidad mayor o igual a 90 en la página de inicio</td>
+<td>Semana 13</td>
+<td>RNF04, RNF05</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Impacto esperado.</strong> Un sitio con identidad profesional mejora la percepción institucional ante potenciales alumnos; el panel reduce la carga de trabajo del personal; la información vigente evita confusiones sobre mesas de examen; y el formulario de contacto distribuye consultas que hoy recaen en una persona.</p>
+<h1>5. Fases del desarrollo</h1>
+<p>Las siete fases propuestas por la cátedra se alinean con las cinco fases del plan de la Etapa 1 y con los hitos con el cliente. Cada una tiene un responsable principal y un entregable verificable.</p>
+<p class="cap"><strong>Tabla 9</strong></p>
+<p class="cap-tit"><em>Fases del desarrollo, responsables, entregables y semanas</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Responsable</th>
+<th>Entregable</th>
+<th>Semanas</th>
+<th>Esfuerzo estimado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Análisis y requerimientos</td>
+<td>Martín Juan</td>
+<td>Documento de relevamiento y análisis; backlog inicial</td>
+<td>1 a 4</td>
+<td>70 h</td>
+</tr>
+<tr>
+<td>2. Diseño del sistema</td>
+<td>Gastón Zampar con Nicolás Rolón y Santiago Cuda</td>
+<td>Diagramas, modelo de datos, prototipo en Figma; DEMO al cliente</td>
+<td>3 a 6</td>
+<td>110 h</td>
+</tr>
+<tr>
+<td>3. Desarrollo e implementación</td>
+<td>Nicolás Rolón (API) y Gastón Zampar (interfaz)</td>
+<td>Versión funcional del sitio y del panel; integración con Instagram</td>
+<td>6 a 13</td>
+<td>280 h</td>
+</tr>
+<tr>
+<td>4. Pruebas y control de calidad</td>
+<td>Adrián Madroñal</td>
+<td>Plan de pruebas, pruebas automatizadas, informe de errores</td>
+<td>8 a 14</td>
+<td>90 h</td>
+</tr>
+<tr>
+<td>5. Preparación de una capacitación</td>
+<td>Martín Juan</td>
+<td>Capacitación a editores con casos prácticos y material de apoyo</td>
+<td>14 a 15</td>
+<td>40 h</td>
+</tr>
+<tr>
+<td>6. Manual y soporte</td>
+<td>Gastón Zampar y Adrián Madroñal</td>
+<td>Manual de usuario, documentación técnica, canal de soporte</td>
+<td>13 a 16</td>
+<td>60 h</td>
+</tr>
+<tr>
+<td>7. Mantenimiento</td>
+<td>Santiago Cuda</td>
+<td>Monitoreo, respaldos, renovación de token de Instagram, correcciones; traspaso a la cohorte siguiente</td>
+<td>14 a 16 y posterior</td>
+<td>30 h</td>
+</tr>
+</tbody>
+</table>
+<p><em>Nota.</em> Las fases se solapan por trabajo iterativo; el total (680 h) deja un margen sobre las 720 h disponibles. El cronograma detallado con camino crítico se desarrolla en Gestión de Proyectos, Parte 2.</p>
+<h1>6. Presentación de la propuesta</h1>
+<h2>6.1. Resumen ejecutivo</h2>
+<p>El IFTS N.° 2 forma empresarios gastronómicos pero comunica con un sitio abandonado, desactualizado y desconectado de sus redes. Talento Tech propone una plataforma web propia —sitio público más panel de administración— que reemplaza al sitio actual y que el propio personal del instituto puede mantener sin conocimientos técnicos. La plataforma separa el contenido estanco del dinámico, archiva sin borrar lo vencido, incorpora de forma selectiva publicaciones de Instagram mediante un hashtag y una selección editorial, y ofrece accesos directos a SIU Guaraní, Aulas Virtuales y Mi Argentina, además de un formulario de contacto. Se desarrolla en 16 semanas con un equipo de cinco personas sobre infraestructura gratuita, con hitos de validación con el cliente en las Semanas 6 y 13.</p>
+<h2>6.2. Objetivos del proyecto</h2>
+<p>Los objetivos general y específicos (O1 a O6) se presentan en la Sección 4.5, en formato SMART y con requerimientos asociados.</p>
+<h2>6.3. Estimación de recursos</h2>
+<ul>
+<li><strong>Recursos humanos:</strong> cinco integrantes con los roles de la Tabla 4, aproximadamente 680 horas-persona.</li>
+<li><strong>Herramientas y tecnologías:</strong> Git y GitHub (control de versiones e integración continua), Trello (gestión), Figma (diseño y prototipo), Next.js, Node.js, PostgreSQL, Cypress, servicios gratuitos de hosting, CDN y correo, Meet y Discord (comunicación).</li>
+<li><strong>Presupuesto:</strong> $0 de infraestructura en la fase inicial; contingencia de dominio de aproximadamente $8.500 ARS por año. El presupuesto completo, costos directos e indirectos y punto de equilibrio se desarrollan en Gestión de Proyectos, Parte 2.</li>
+<li><strong>Requerimientos logísticos:</strong> acceso a la carpeta de materiales de marca (colores, tipografía, logo), a la cuenta de Instagram institucional con perfil profesional, y a un correo institucional de destino para el formulario de contacto.</li>
+</ul>
+<h2>6.4. Impacto y beneficios esperados</h2>
+<p class="cap"><strong>Tabla 10</strong></p>
+<p class="cap-tit"><em>Beneficios esperados por tipo de usuario</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Usuario</th>
+<th>Problema actual</th>
+<th>Beneficio con la plataforma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editores (docentes)</td>
+<td>Mantener un sitio manual y redes por separado; sin tiempo ni herramienta</td>
+<td>Un panel corto: cargan una vez y deciden qué se muestra y hasta cuándo</td>
+</tr>
+<tr>
+<td>Autoridades</td>
+<td>Imagen institucional desactualizada; consultas informales</td>
+<td>Sitio profesional alineado con la identidad de formación de empresarios; contacto ordenado</td>
+</tr>
+<tr>
+<td>Alumnos</td>
+<td>Horarios y mesas mezclados entre años, en archivos externos</td>
+<td>Información del período vigente, clara y en el celular; accesos a SIU y Aulas Virtuales en un lugar</td>
+</tr>
+<tr>
+<td>Aspirantes</td>
+<td>Dificultad para conocer la carrera</td>
+<td>Plan de estudios, perfil del egresado, novedades y contacto visibles</td>
+</tr>
+<tr>
+<td>Egresados</td>
+<td>No saben dónde verificar el título digital</td>
+<td>Acceso directo a Mi Argentina</td>
+</tr>
+</tbody>
+</table>
+<h1>7. Análisis del diseño y requerimientos</h1>
+<h2>7.1. Requerimientos</h2>
+<p>Se mantienen los requerimientos funcionales y no funcionales de la Etapa 1, ahora con trazabilidad hacia los casos de uso y los componentes.</p>
+<p class="cap"><strong>Tabla 11</strong></p>
+<p class="cap-tit"><em>Trazabilidad de requerimientos hacia casos de uso y componentes</em></p>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Requerimiento</th>
+<th>Caso de uso (Figura 1)</th>
+<th>Componente (Figura 10)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF01</td>
+<td>Administrar contenido desde un panel sin conocimientos técnicos</td>
+<td>Gestionar novedades y eventos; gestionar enlaces y secciones</td>
+<td>Panel de administración; Contenidos</td>
+</tr>
+<tr>
+<td>RF02</td>
+<td>Distinguir contenido estanco de dinámico</td>
+<td>Gestionar enlaces y secciones; gestionar novedades y eventos</td>
+<td>Contenidos</td>
+</tr>
+<tr>
+<td>RF03</td>
+<td>Archivar contenido dinámico vencido sin eliminarlo</td>
+<td>Archivar y reactivar contenido</td>
+<td>Contenidos (vigencia por consulta)</td>
+</tr>
+<tr>
+<td>RF04</td>
+<td>Vincular publicaciones de Instagram y Facebook mediante selección editorial</td>
+<td>Seleccionar publicaciones de redes; importar publicaciones</td>
+<td>Redes sociales</td>
+</tr>
+<tr>
+<td>RF05</td>
+<td>Soportar múltiples administradores</td>
+<td>Gestionar usuarios y permisos</td>
+<td>Autenticación y roles</td>
+</tr>
+<tr>
+<td>RF06</td>
+<td>Mostrar solo horarios y mesas del período vigente</td>
+<td>Consultar horarios y mesas vigentes; gestionar horarios y mesas</td>
+<td>Académico</td>
+</tr>
+<tr>
+<td>RF07</td>
+<td>Accesos directos a SIU Guaraní, Aulas Virtuales y Mi Argentina</td>
+<td>Acceder a enlaces de interés</td>
+<td>Sitio público</td>
+</tr>
+<tr>
+<td>RF08</td>
+<td>Formulario de contacto a correo institucional</td>
+<td>Enviar consulta de contacto; revisar mensajes</td>
+<td>Contacto</td>
+</tr>
+<tr>
+<td>RF09</td>
+<td>Gestionar galería con descripción y categoría</td>
+<td>Gestionar galería; ver galería</td>
+<td>Galería</td>
+</tr>
+<tr>
+<td>RF10</td>
+<td>Gestionar plantel docente y materias</td>
+<td>Gestionar plantel y plan de estudios; ver plantel docente</td>
+<td>Académico</td>
+</tr>
+<tr>
+<td>RNF01</td>
+<td>Usabilidad para personal no técnico</td>
+<td>Todos los casos del panel</td>
+<td>Panel de administración</td>
+</tr>
+<tr>
+<td>RNF02</td>
+<td>Infraestructura gratuita o de costo mínimo</td>
+<td>No aplica</td>
+<td>Despliegue (Figura 11)</td>
+</tr>
+<tr>
+<td>RNF03</td>
+<td>Disponibilidad estable</td>
+<td>No aplica</td>
+<td>Despliegue</td>
+</tr>
+<tr>
+<td>RNF04</td>
+<td>Responsive</td>
+<td>Todos los casos públicos</td>
+<td>Sitio público</td>
+</tr>
+<tr>
+<td>RNF05</td>
+<td>Rendimiento con alto volumen de imágenes</td>
+<td>Ver galería</td>
+<td>Galería y almacenamiento de medios</td>
+</tr>
+<tr>
+<td>RNF06</td>
+<td>Acceso al panel restringido por autenticación</td>
+<td>Iniciar sesión</td>
+<td>Autenticación y roles</td>
+</tr>
+</tbody>
+</table>
+<h2>7.2. Arquitectura propuesta</h2>
+<p>Se propone una arquitectura en capas con separación entre presentación, API y datos:</p>
+<ul>
+<li><strong>Presentación.</strong> Una aplicación Next.js que sirve el sitio público (renderizado en servidor con caché) y el panel (rutas protegidas).</li>
+<li><strong>API REST.</strong> Servicio Node.js organizado en módulos (autenticación, contenidos, académico, galería, redes sociales, contacto y bitácora), con capas de rutas, servicios y acceso a datos.</li>
+<li><strong>Datos.</strong> PostgreSQL como fuente única de verdad; almacenamiento externo para imágenes y video.</li>
+<li><strong>Integraciones.</strong> API de Instagram de Meta y servicio de correo, ambos detrás de módulos propios que se pueden reemplazar o desactivar sin romper el resto.</li>
+</ul>
+<p><strong>Decisiones de diseño relevantes.</strong></p>
+<ol>
+<li><em>La vigencia se calcula al consultar.</em> El sitio muestra una publicación si su estado es publicada y la fecha actual está dentro de su rango de vigencia. Así, el archivado no depende de una tarea programada que podría no ejecutarse en hosting gratuito, y nunca se elimina información.</li>
+<li><em>Un solo modelo para novedades y eventos.</em> Ambos son especializaciones de una misma publicación con fechas de vigencia y estado; el evento agrega fechas y lugar.</li>
+<li><em>Las publicaciones de redes se guardan aparte.</em> Una publicación social detectada no es contenido del sitio hasta que un editor la vincula, lo que preserva el criterio editorial pedido por el cliente.</li>
+<li><em>Seguridad.</em> Contraseñas con hash, sesión con token en cookie protegida, roles con permisos mínimos, validación de entradas, límite de frecuencia en el formulario de contacto, secretos en variables de entorno y bitácora de cambios.</li>
+<li><em>Degradación controlada.</em> Si falla Instagram o el correo, el sitio sigue funcionando: se ofrece carga manual asistida y los mensajes se conservan en la base de datos.</li>
+</ol>
+<h2>7.3. Componentes clave e interacciones</h2>
+<p>Los componentes y sus interacciones se muestran en el diagrama de componentes (Figura 10) y en los diagramas de secuencia (Figuras 4 y 5). La Figura 11 muestra cómo se distribuyen en el despliegue.</p>
+<h1>8. Diagramas</h1>
+<p>Los diagramas siguen la notación estándar de UML (Object Management Group [OMG], 2017). Las fuentes editables están en la carpeta compartida del grupo y los enlaces se listan en la Sección 9.</p>
+<h2>8.1. Diagrama de casos de uso</h2>
+<figure><p class="cap"><strong>Figura 1</strong></p><p class="cap-tit"><em>Diagrama de casos de uso de la plataforma</em></p><img src="diagramas/01-casos-de-uso.svg" alt="Diagrama de casos de uso de la plataforma"><figcaption><em>Nota.</em> Se distinguen tres actores humanos (Visitante, Editor, Administrador) y un actor secundario (API de Instagram y Facebook). El Administrador hereda los casos del Editor. «Archivar y reactivar contenido» extiende la gestión de novedades; «Seleccionar publicaciones de redes» incluye la importación desde Instagram.</figcaption></figure>
+
+<div class="apaisada"><h2>8.2. Diagrama de clases</h2>
+<p>El modelo de dominio se presenta en dos partes: contenidos y redes, y área académica.</p>
+<figure class="ancho"><p class="cap"><strong>Figura 2</strong></p><p class="cap-tit"><em>Diagrama de clases: contenidos, usuarios y redes sociales</em></p><img src="diagramas/02a-clases-contenidos.svg" alt="Diagrama de clases: contenidos, usuarios y redes sociales"><figcaption><em>Nota.</em> Publicacion es una clase abstracta especializada en Novedad y Evento. Una PublicacionSocial puede originar una Publicacion.</figcaption></figure>
+
+<figure class="ancho"><p class="cap"><strong>Figura 3</strong></p><p class="cap-tit"><em>Diagrama de clases: área académica</em></p><img src="diagramas/02b-clases-academico.svg" alt="Diagrama de clases: área académica"><figcaption><em>Nota.</em> La asignación docente relaciona docente, materia y período; de ella dependen los horarios. Las mesas de examen se asocian a materia y período.</figcaption></figure>
+
+</div><div class="apaisada"><h2>8.3. Diagramas de secuencia</h2>
+<figure class="ancho"><p class="cap"><strong>Figura 4</strong></p><p class="cap-tit"><em>Secuencia: vinculación de una publicación de Instagram al sitio</em></p><img src="diagramas/03a-secuencia-vinculacion-redes.svg" alt="Secuencia: vinculación de una publicación de Instagram al sitio"><figcaption><em>Nota.</em> Incluye el flujo alternativo cuando falla la API de Instagram o vence el token.</figcaption></figure>
+
+<figure class="ancho"><p class="cap"><strong>Figura 5</strong></p><p class="cap-tit"><em>Secuencia: envío del formulario de contacto</em></p><img src="diagramas/03b-secuencia-contacto.svg" alt="Secuencia: envío del formulario de contacto"><figcaption><em>Nota.</em> El mensaje se guarda siempre, aun si falla el envío de correo.</figcaption></figure>
+
+</div><h2>8.4. Diagramas de actividades</h2>
+<figure><p class="cap"><strong>Figura 6</strong></p><p class="cap-tit"><em>Actividades: carga y publicación de contenido</em></p><img src="diagramas/04a-actividades-carga.svg" alt="Actividades: carga y publicación de contenido"><figcaption><em>Nota.</em> Describe las decisiones de origen del contenido, validación y momento de publicación.</figcaption></figure>
+
+<figure><p class="cap"><strong>Figura 7</strong></p><p class="cap-tit"><em>Actividades: vigencia y archivado del contenido</em></p><img src="diagramas/04b-actividades-vigencia.svg" alt="Actividades: vigencia y archivado del contenido"><figcaption><em>Nota.</em> El contenido fuera de vigencia no se muestra pero se conserva y puede reactivarse.</figcaption></figure>
+
+<h2>8.5. Diagramas de estados</h2>
+<figure><p class="cap"><strong>Figura 8</strong></p><p class="cap-tit"><em>Estados de una Publicacion</em></p><img src="diagramas/05a-estados-publicacion.svg" alt="Estados de una Publicacion"><figcaption><em>Nota.</em> No existe transición de eliminación: el estado final es una publicación archivada y conservada.</figcaption></figure>
+
+<figure><p class="cap"><strong>Figura 9</strong></p><p class="cap-tit"><em>Estados de una PublicacionSocial</em></p><img src="diagramas/05b-estados-publicacion-social.svg" alt="Estados de una PublicacionSocial"><figcaption><em>Nota.</em> Una publicación descartada puede recuperarse.</figcaption></figure>
+
+<div class="apaisada"><h2>8.6. Diagrama de componentes</h2>
+<figure class="ancho"><p class="cap"><strong>Figura 10</strong></p><p class="cap-tit"><em>Diagrama de componentes</em></p><img src="diagramas/07-componentes.svg" alt="Diagrama de componentes"><figcaption><em>Nota.</em> El sitio público y el panel consumen la misma API REST. Las dependencias externas (Instagram, correo, almacenamiento de medios) están aisladas en módulos propios.</figcaption></figure>
+
+</div><div class="apaisada"><h2>8.7. Diagrama de despliegue</h2>
+<figure class="ancho"><p class="cap"><strong>Figura 11</strong></p><p class="cap-tit"><em>Diagrama de despliegue</em></p><img src="diagramas/08-despliegue.svg" alt="Diagrama de despliegue"><figcaption><em>Nota.</em> Se prevén planes gratuitos de proveedores gestionados; el proveedor definitivo será validado por DevOps antes de la Semana 6.</figcaption></figure>
+
+</div><div class="apaisada"><h2>8.8. Diagrama entidad-relación</h2>
+<p>El modelo relacional se presenta en dos partes. La herencia entre Novedad y Evento se implementa en una sola tabla con un campo discriminador (tipo) y campos de evento opcionales.</p>
+<figure class="ancho"><p class="cap"><strong>Figura 12</strong></p><p class="cap-tit"><em>Modelo entidad-relación: contenidos, usuarios y redes sociales</em></p><img src="diagramas/06a-er-contenidos.svg" alt="Modelo entidad-relación: contenidos, usuarios y redes sociales"><figcaption><em>Nota.</em> PK = clave primaria; FK = clave foránea; UK = clave única.</figcaption></figure>
+
+<figure class="ancho"><p class="cap"><strong>Figura 13</strong></p><p class="cap-tit"><em>Modelo entidad-relación: área académica</em></p><img src="diagramas/06b-er-academico.svg" alt="Modelo entidad-relación: área académica"><figcaption><em>Nota.</em> CORRELATIVIDAD resuelve la relación recursiva de MATERIA con sí misma.</figcaption></figure>
+
+</div><div class="apaisada"><h2>8.9. Mapa del sitio, wireframes y prototipo</h2>
+<p>El prototipo visual y del panel de administración se diseñó en Figma como un <strong>MVP navegable</strong> que se presenta al cliente en la DEMO de la Semana 6. Contiene seis pantallas de escritorio y nueve de móvil. Se prioriza lo que más valor aporta al cliente y más riesgo reduce: la identidad visual, la información académica vigente y el flujo editorial de publicaciones de redes sociales. Lo que queda para la siguiente iteración se indica de forma explícita en el prototipo.</p>
+<p><strong>Prototipo en Figma:</strong> <a href="https://www.figma.com/design/aRnoXCbNpkCFkHPH0En5B5/IFTS-N%25C2%25B0-2-%25E2%2580%2594-MVP-visual-y-panel-de-administraci%25C3%25B3n?node-id=0-1&amp;p=f">IFTS N.° 2 — MVP visual y panel de administración</a></p>
+<p class="cap"><strong>Tabla 12</strong></p>
+<p class="cap-tit"><em>Pantallas del prototipo y requerimientos que ilustran</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Pantalla</th>
+<th>Contenido</th>
+<th>Requerimientos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inicio</td>
+<td>Mensaje central "Formamos emprendedores gastronómicos", accesos rápidos (plan de estudios, horarios y exámenes, ingreso, contacto) y "Actualidad institucional" con las publicaciones seleccionadas por el instituto</td>
+<td>RF02, RF04</td>
+</tr>
+<tr>
+<td>La carrera</td>
+<td>Perfil profesional ("más que cocinar: emprender y gestionar"), plan de estudios por año y acceso a correlatividades</td>
+<td>RF02, RF10</td>
+</tr>
+<tr>
+<td>Estudiantes</td>
+<td>Selector de año y cuatrimestre, horarios de cursada, mesas de examen y accesos a SIU Guaraní, Aula virtual y Tutoría; nota de que los períodos anteriores se conservan en el archivo</td>
+<td>RF03, RF06, RF07</td>
+</tr>
+<tr>
+<td>Ingreso</td>
+<td>Próxima convocatoria, pasos para aspirantes (requisitos, preinscripción, confirmación) y material de consulta descargable</td>
+<td>RF02</td>
+</tr>
+<tr>
+<td>Novedades</td>
+<td>Filtros por año y por categoría, tarjetas de eventos, avisos, vida institucional y archivo histórico</td>
+<td>RF03, RF04</td>
+</tr>
+<tr>
+<td>Panel administrador</td>
+<td>Menú lateral (Resumen, Publicaciones, Avisos académicos, Horarios, Archivo, Configuración); lista de publicaciones de Instagram con filtros de origen y estado y acciones por tarjeta</td>
+<td>RF01, RF04, RF05</td>
+</tr>
+<tr>
+<td>Móvil (M01 a M09)</td>
+<td>Versión responsive de las seis pantallas, navegación inferior, menú desplegable y el flujo editorial de tres decisiones (seleccionar, aprobar, publicar) con los resultados "Publicación aprobada" y "Publicación descartada"</td>
+<td>RNF04, RF04</td>
+</tr>
+</tbody>
+</table>
+<p><em>Nota.</em> Los textos de las pantallas son provisorios; el material oficial del instituto los reemplazará.</p>
+<p><strong>Flujo editorial del panel.</strong> El prototipo expresa el criterio central pedido por el cliente: nada llega al sitio sin decisión humana. Cada publicación detectada aparece como <em>Pendiente</em>, y el editor decide entre <em>Aprobar y publicar</em> o <em>Descartar</em>; el contenido no prioritario (por ejemplo, un saludo de efeméride) se señala para revisar. Estos estados se corresponden con el modelo del sistema: Pendiente es DETECTADA, aprobada es VINCULADA y descartada es DESCARTADA (Figura 9). El propio prototipo aclara que la integración automática con las redes queda sujeta a validación técnica y que la aprobación editorial es el requisito principal, lo cual coincide con la prueba de concepto y el plan de contingencia de carga manual planteados en la Sección 4.2.</p>
+<p><strong>Alcance del MVP frente al alcance completo.</strong> El prototipo cubre los módulos de novedades, académico vigente, enlaces y redes. Quedan para la iteración siguiente, ya indicadas en el prototipo: la sección Institucional y el formulario de Contacto (RF08), y los módulos de galería (RF09) y de gestión de plantel docente (RF10) en el panel. Los cuatro forman parte del alcance de la versión funcional de la Semana 13.</p>
+<figure class="ancho"><p class="cap"><strong>Figura 14</strong></p><p class="cap-tit"><em>Mapa del sitio público</em></p><img src="diagramas/09a-mapa-sitio-publico.svg" alt="Mapa del sitio público"><figcaption><em>Nota.</em> Verde: contenido estanco; dorado: contenido dinámico con vigencia; azul: servicios. Línea punteada: previsto para la iteración siguiente. Cada sección corresponde a un módulo de la Tabla 1.</figcaption></figure>
+
+<figure class="ancho"><p class="cap"><strong>Figura 15</strong></p><p class="cap-tit"><em>Mapa del panel de administración</em></p><img src="diagramas/09b-mapa-panel.svg" alt="Mapa del panel de administración"><figcaption><em>Nota.</em> El acceso requiere autenticación. Línea punteada: módulos previstos para la iteración siguiente.</figcaption></figure>
+
+<figure class="ancho"><p class="cap"><strong>Figura 16</strong></p><p class="cap-tit"><em>Wireframe: Escritorio inicio y la carrera</em></p><img src="wireframes/01-escritorio-inicio-y-la-carrera.png" alt="Wireframe: Escritorio inicio y la carrera"></figure>
+<figure class="ancho"><p class="cap"><strong>Figura 17</strong></p><p class="cap-tit"><em>Wireframe: Escritorio estudiantes e ingreso</em></p><img src="wireframes/02-escritorio-estudiantes-e-ingreso.png" alt="Wireframe: Escritorio estudiantes e ingreso"></figure>
+<figure class="ancho"><p class="cap"><strong>Figura 18</strong></p><p class="cap-tit"><em>Wireframe: Escritorio novedades y panel</em></p><img src="wireframes/03-escritorio-novedades-y-panel.png" alt="Wireframe: Escritorio novedades y panel"></figure>
+<figure class="ancho"><p class="cap"><strong>Figura 19</strong></p><p class="cap-tit"><em>Wireframe: Moviles m01 a m09</em></p><img src="wireframes/04-moviles-m01-a-m09.png" alt="Wireframe: Moviles m01 a m09"></figure>
+
+<p><strong>Lineamientos visuales.</strong> La paleta del prototipo toma los colores del logo del IFTS N.° 2: verde bosque (#123B30) para encabezados y pie, verde de marca (#087B48) para acentos y acciones principales, dorado (#E4BA6E) para llamados secundarios y fondo neutro cálido (#F5F7F5). La tipografía es una sans-serif geométrica (Inter) en toda la interfaz. Las tarjetas llevan un filete verde a la izquierda y las etiquetas de sección en mayúsculas, lo que da una jerarquía clara. El panel reutiliza el mismo sistema visual para que los editores reconozcan el sitio que están administrando. La paleta y la tipografía definitivas se ajustarán a los materiales de la Agencia de Habilidades cuando el cliente confirme el acceso a su carpeta de marca.</p>
+</div><h1>9. Recursos y enlaces</h1>
+<p class="cap"><strong>Tabla 13</strong></p>
+<p class="cap-tit"><em>Enlaces a los recursos del proyecto</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>Enlace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prototipo en Figma</td>
+<td><a href="https://www.figma.com/design/aRnoXCbNpkCFkHPH0En5B5/IFTS-N%25C2%25B0-2-%25E2%2580%2594-MVP-visual-y-panel-de-administraci%25C3%25B3n?node-id=0-1&amp;p=f">Abrir en Figma</a></td>
+</tr>
+<tr>
+<td>Carpeta compartida del grupo en Google Drive</td>
+<td>[completar]</td>
+</tr>
+<tr>
+<td>Diagramas editables (draw.io / Lucidchart)</td>
+<td>[completar]</td>
+</tr>
+<tr>
+<td>Tablero de Trello</td>
+<td>[completar]</td>
+</tr>
+<tr>
+<td>Repositorio de GitHub</td>
+<td>[completar]</td>
+</tr>
+<tr>
+<td>Sitio de presentación del equipo</td>
+<td>https://talento-tech-group.vercel.app</td>
+</tr>
+<tr>
+<td>Presentación (Canva / diapositivas)</td>
+<td>[completar]</td>
+</tr>
+</tbody>
+</table>
+<p><em>Nota.</em> Todos los enlaces deben estar compartidos públicamente antes de la entrega.</p>
+<h1 class="nueva-pagina">Referencias</h1>
+<p>Ladas, C. (2009). <em>Scrumban: Essays on Kanban systems for lean software development</em>. Modus Cooperandi Press.</p>
+<p>Meta for Developers. (s. f.). <em>Instagram Platform</em>. Meta Platforms. https://developers.facebook.com/docs/instagram-platform</p>
+<p>Minuta de reunión entre el IFTS N.° 2 y el IFTS N.° 29. (2026, 30 de junio). [Documento interno].</p>
+<p>Object Management Group. (2017). <em>OMG Unified Modeling Language (OMG UML)</em> (Versión 2.5.1). https://www.omg.org/spec/UML/2.5.1</p>
+<p>Talento Tech. (2026). <em>Práctica profesionalizante IV: Proyecto integrador. Primera etapa: creación de la empresa y software a desarrollar</em> [Trabajo práctico]. IFTS N.° 29.</p>
+<p>Sommerville, I. (2011). <em>Ingeniería de software</em> (9.ª ed.). Pearson Educación.</p>
+<p>World Wide Web Consortium. (2023). <em>Web Content Accessibility Guidelines (WCAG) 2.2</em>. https://www.w3.org/TR/WCAG22/</p>
+<h1 class="nueva-pagina">Anexo A. Currículum vitae y perfiles del equipo</h1>
+<p>Los datos de esta sección provienen de los perfiles presentados en la Etapa 1 (Talento Tech, 2026), donde figuran los enlaces completos. Los campos entre corchetes deben completarse con la información personal de cada integrante antes de entregar.</p>
+<p class="cap"><strong>Tabla 14</strong></p>
+<p class="cap-tit"><em>Fichas profesionales del equipo</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Integrante</th>
+<th>Rol</th>
+<th>Habilidades</th>
+<th>Herramientas</th>
+<th>LinkedIn</th>
+<th>GitHub</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Martín Juan</td>
+<td>Product Owner</td>
+<td>Gestión de producto, comunicación con el cliente, priorización de tareas</td>
+<td>n8n, Jira</td>
+<td>linkedin.com/in/martojuandev</td>
+<td>github.com/Marto85</td>
+</tr>
+<tr>
+<td>Nicolás Rolón</td>
+<td>Backend Developer</td>
+<td>Node.js, bases de datos, APIs y seguridad</td>
+<td>Node.js, arquitectura, seguridad</td>
+<td>linkedin.com/in/nicolaslrs</td>
+<td>github.com/NicolasRolon</td>
+</tr>
+<tr>
+<td>Gastón Zampar</td>
+<td>Frontend Developer</td>
+<td>React, Angular, UI/UX</td>
+<td>React, Angular, CSS</td>
+<td>linkedin.com/in/zamparg</td>
+<td>github.com/zamparg</td>
+</tr>
+<tr>
+<td>Adrián Madroñal</td>
+<td>Tester (QA)</td>
+<td>Testing manual, detección de errores, control de calidad</td>
+<td>Cypress</td>
+<td>linkedin.com/in/adrian-madroñal-63a38480</td>
+<td>github.com/MaverickARG</td>
+</tr>
+<tr>
+<td>Santiago Cuda</td>
+<td>DevOps</td>
+<td>Infraestructura, AWS, automatización de despliegues</td>
+<td>AWS, Linux, seguridad</td>
+<td>linkedin.com/in/santiagocuda</td>
+<td>github.com/santicuda</td>
+</tr>
+</tbody>
+</table>
+<p>Por cada integrante se adjunta un currículum vitae de una página con el siguiente contenido:</p>
+<ul>
+<li><strong>Martín Juan:</strong> formación [completar]; experiencia [completar]; resumen profesional (ver perfil de la Etapa 1).</li>
+<li><strong>Nicolás Rolón:</strong> formación [completar]; experiencia [completar]; resumen profesional (ver perfil de la Etapa 1).</li>
+<li><strong>Gastón Zampar:</strong> formación [completar]; experiencia [completar]; resumen profesional (ver perfil de la Etapa 1).</li>
+<li><strong>Adrián Madroñal:</strong> formación [completar]; experiencia [completar]; resumen profesional (ver perfil de la Etapa 1).</li>
+<li><strong>Santiago Cuda:</strong> formación [completar]; experiencia [completar]; resumen profesional (ver perfil de la Etapa 1).</li>
+</ul></body></html>

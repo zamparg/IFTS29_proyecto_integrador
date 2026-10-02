@@ -1,0 +1,38 @@
+flowchart LR
+    subgraph USR["Dispositivo del usuario"]
+        BR["Navegador<br/>(PC / celular)"]
+    end
+
+    subgraph REP["GitHub"]
+        GH["Repositorio + GitHub Actions<br/>CI/CD: lint · tests · deploy"]
+    end
+
+    subgraph FEH["Hosting frontend (plan gratuito)"]
+        WEB["Next.js<br/>sitio público + panel"]
+    end
+
+    subgraph BEH["Hosting backend (plan gratuito)"]
+        API["Contenedor Node.js<br/>API REST"]
+    end
+
+    subgraph DAT["Servicios gestionados"]
+        PG[("PostgreSQL gestionado<br/>(con backups)")]
+        CDN[("Almacenamiento de medios<br/>+ CDN de imágenes")]
+    end
+
+    subgraph TER["Servicios de terceros"]
+        META["Meta Graph API<br/>(Instagram / Facebook)"]
+        SMTP["Proveedor de correo"]
+    end
+
+    DNS["Dominio / DNS<br/>(subdominio provisorio → .edu.ar)"]
+
+    BR -->|HTTPS 443| DNS
+    DNS --> WEB
+    WEB -->|HTTPS / JSON| API
+    API -->|TLS| PG
+    API -->|HTTPS| CDN
+    API -->|HTTPS| META
+    API -->|SMTP / API| SMTP
+    GH -->|deploy| WEB
+    GH -->|deploy| API

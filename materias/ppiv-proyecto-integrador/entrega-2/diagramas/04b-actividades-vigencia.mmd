@@ -1,0 +1,12 @@
+flowchart TD
+    I((Inicio)) --> A[El visitante entra a<br/>Novedades u Horarios]
+    A --> B[La API consulta el contenido]
+    B --> C{¿visibleDesde ≤ hoy ≤ visibleHasta<br/>y estado publicado?}
+    C -- Sí --> D[Se muestra en el sitio]
+    C -- No --> E[No se muestra:<br/>queda archivado, sin borrar]
+    E --> F{¿El editor lo reactiva<br/>con nueva vigencia?}
+    F -- Sí --> G[Estado: PUBLICADA]
+    G --> D
+    F -- No --> H[Se conserva en el archivo]
+    D --> Z((Fin))
+    H --> Z

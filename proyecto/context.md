@@ -28,7 +28,7 @@
   - **Matías Peláez** y **María del Carmen Canobi** — Docentes de gastronomía, **administradores/editores de contenido reales**: son quienes manejan hoy Instagram y Facebook institucional y serán quienes carguen datos en la futura plataforma.
   - **Mónica** — Asesora que gestiona la carpeta Drive con materiales de marca (mencionada varias veces, sin acceso directo confirmado en la reunión; se gestionó el acceso a cierre de la llamada).
 - Referentes del lado de la cátedra/facultad: Emir García Ontiveros y Kevin Del Bello (docentes responsables Desarrollo de Software).
-- Dentro de nuestro propio equipo: **Javier N.** quedó definido como punto único de contacto con el cliente (para no saturarlo con múltiples interlocutores de los 3 grupos).
+- **Javier N. (Javier Navarro)** pertenece a **otro de los 3 grupos de desarrollo** de IFTS 29 (competidor/par, no es del cliente ni de Talento Tech). En la reunión de relevamiento del 04/09/2026 inició la grabación y consultó al instituto por costos. Nuestro canal único con el cliente es el Product Owner, **Martín Juan** (Etapa 1 y Gestión de Proyectos Parte 1).
 
 ---
 
@@ -117,7 +117,7 @@ Objetivo central: **modernizar/renovar el sitio institucional** y que pueda **nu
 - **Volumen de imágenes/videos**: alto (hay historial extenso en Instagram desde ~2021). Puede exceder límites de planes gratuitos de hosting/almacenamiento; a evaluar con el cliente cuántas fotos por álbum/slide son razonables.
 - **Sin backup automático de borrado**: cualquier mecanismo de "vencimiento" de contenido debe ocultar/archivar, nunca eliminar datos de forma irreversible.
 - **Capacidad digital limitada del cliente**: perfil de usuarios administradores no técnico (docentes, no personal de sistemas), la plataforma debe ser **simple e intuitiva**.
-- **Se decidió no usar WordApp/CMS genérico de mercado** (evaluado internamente en el equipo) porque el objetivo pedagógico de la carrera es que el equipo desarrolle su propia plataforma (Software Factory), no integrar un CMS de terceros.
+- **Decisión cerrada: desarrollo a medida; la cátedra dijo NO a WordPress/CMS genérico** (ver `proyecto/decisiones.md`, D-001), porque el objetivo pedagógico de la carrera es que el equipo desarrolle su propia plataforma (Software Factory), no integrar un CMS de terceros.
 
 ### Materiales que el cliente se comprometió a compartir (pendientes de confirmación de acceso completo)
 - Carpeta Drive institucional con: plan de estudios, flyer de la tecnicatura (identidad visual: colores/tipografía provistos por la Agencia de Habilidades), materiales de marca.
@@ -142,7 +142,14 @@ Duración total de la práctica: 16 clases de 9 hs semanales (2° cuatrimestre 2
 
 ---
 
-## 5. Fuentes de este documento
+## 5. Prototipo en Figma (MVP para la DEMO de semana 6)
+- Archivo: ver `readme.md` (sección Enlaces). Identidad tomada del logo del IFTS N°2: verde bosque `#123B30`, verde `#087B48`, dorado `#E4BA6E`, fondo `#F5F7F5`, Inter.
+- Sitio público: Inicio, Institucional, La carrera, Estudiantes, Ingreso, Novedades (Institucional y Contacto marcados como "siguiente iteración"). Estudiantes: selector de año/cuatrimestre, horarios, mesas, accesos SIU Guaraní, Aula virtual y Tutoría.
+- Panel: Resumen, Publicaciones, Avisos académicos, Horarios, Archivo, Configuración. Flujo editorial en 3 decisiones: seleccionar → aprobar y publicar / descartar; estados Pendiente, Revisar, Aprobada, Descartada. Ejemplo usado: "Mateada Patria" (archivo 2025).
+- El prototipo declara que la integración automática con redes está sujeta a validación técnica y que la aprobación editorial es el requisito principal.
+- Aún sin diseñar: galería, plantel docente, formulario de contacto, gestión de usuarios.
+
+## 6. Fuentes de este documento
 - Transcripción de reunión de relevamiento — Meet 04/09/2026 (`proyecto/Meeting Transcription.pdf`).
 - Notas propias tomadas durante la reunión (`proyecto/notes.md`).
 - Minuta de reunión 30/06 (`proyecto/catedra/Minuta reunión 30_06.docx`).

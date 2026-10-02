@@ -1,0 +1,64 @@
+erDiagram
+    PLAN_ESTUDIO ||--o{ MATERIA : contiene
+    MATERIA ||--o{ CORRELATIVIDAD : requiere
+    MATERIA ||--o{ CORRELATIVIDAD : "es requisito de"
+    DOCENTE ||--o{ ASIGNACION_DOCENTE : tiene
+    MATERIA ||--o{ ASIGNACION_DOCENTE : se_dicta_en
+    PERIODO_ACADEMICO ||--o{ ASIGNACION_DOCENTE : corresponde_a
+    ASIGNACION_DOCENTE ||--o{ HORARIO : define
+    PERIODO_ACADEMICO ||--o{ MESA_EXAMEN : contiene
+    MATERIA ||--o{ MESA_EXAMEN : se_evalua_en
+
+    PLAN_ESTUDIO {
+        int id PK
+        string nombre
+        string resolucion
+        boolean vigente
+    }
+    MATERIA {
+        int id PK
+        string nombre
+        int anio
+        int carga_horaria
+        int plan_estudio_id FK
+    }
+    CORRELATIVIDAD {
+        int materia_id FK
+        int correlativa_id FK
+    }
+    DOCENTE {
+        int id PK
+        string nombre
+        string apellido
+        text bio
+        string foto_url
+        boolean visible
+    }
+    PERIODO_ACADEMICO {
+        int id PK
+        int anio
+        int cuatrimestre
+        boolean vigente
+    }
+    ASIGNACION_DOCENTE {
+        int id PK
+        int docente_id FK
+        int materia_id FK
+        int periodo_id FK
+    }
+    HORARIO {
+        int id PK
+        string dia_semana
+        time hora_inicio
+        time hora_fin
+        string aula
+        int asignacion_id FK
+    }
+    MESA_EXAMEN {
+        int id PK
+        datetime fecha_hora
+        int llamado
+        string aula
+        int periodo_id FK
+        int materia_id FK
+    }

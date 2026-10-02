@@ -1,0 +1,6 @@
+stateDiagram-v2
+    [*] --> DETECTADA : importada desde Instagram con hashtag
+    DETECTADA --> VINCULADA : el editor la selecciona y crea Publicacion
+    DETECTADA --> DESCARTADA : el editor la descarta
+    DESCARTADA --> DETECTADA : el editor la recupera
+    VINCULADA --> [*]

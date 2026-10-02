@@ -1,0 +1,97 @@
+erDiagram
+    USUARIO ||--o{ PUBLICACION : redacta
+    CATEGORIA |o--o{ PUBLICACION : clasifica
+    PUBLICACION_SOCIAL |o--o| PUBLICACION : origina
+    CATEGORIA |o--o{ MEDIO_GALERIA : clasifica
+    USUARIO ||--o{ MEDIO_GALERIA : sube
+    USUARIO ||--o{ SECCION_INSTITUCIONAL : actualiza
+    USUARIO ||--o{ BITACORA : genera
+
+    USUARIO {
+        int id PK
+        string nombre
+        string email UK
+        string password_hash
+        string rol "ADMINISTRADOR | EDITOR"
+        boolean activo
+        datetime creado_en
+    }
+    CATEGORIA {
+        int id PK
+        string nombre
+        string tipo "NOVEDAD | EVENTO | GALERIA"
+    }
+    PUBLICACION {
+        int id PK
+        string tipo "NOVEDAD | EVENTO"
+        string titulo
+        string resumen
+        text cuerpo
+        string imagen_portada
+        string estado "BORRADOR | PROGRAMADA | PUBLICADA | ARCHIVADA"
+        string origen "MANUAL | INSTAGRAM"
+        datetime visible_desde
+        datetime visible_hasta
+        datetime evento_inicio
+        datetime evento_fin
+        string lugar
+        int categoria_id FK
+        int autor_id FK
+        int publicacion_social_id FK
+    }
+    PUBLICACION_SOCIAL {
+        int id PK
+        string plataforma "INSTAGRAM | FACEBOOK"
+        string id_externo UK
+        string permalink
+        text texto
+        string media_url
+        datetime fecha_origen
+        string estado "DETECTADA | VINCULADA | DESCARTADA"
+        datetime importada_en
+    }
+    MEDIO_GALERIA {
+        int id PK
+        string tipo "IMAGEN | VIDEO"
+        string url
+        string titulo
+        string descripcion
+        boolean visible
+        int orden
+        int categoria_id FK
+        int subido_por FK
+    }
+    SECCION_INSTITUCIONAL {
+        int id PK
+        string clave UK
+        string titulo
+        text cuerpo
+        int orden
+        boolean visible
+        int actualizado_por FK
+    }
+    ENLACE_INTERES {
+        int id PK
+        string titulo
+        string url
+        string descripcion
+        int orden
+        boolean visible
+    }
+    MENSAJE_CONTACTO {
+        int id PK
+        string nombre
+        string email
+        string asunto
+        text mensaje
+        string estado "NUEVO | LEIDO | RESPONDIDO"
+        datetime recibido_en
+    }
+    BITACORA {
+        int id PK
+        string accion
+        string entidad
+        int entidad_id
+        datetime fecha
+        int usuario_id FK
+    }

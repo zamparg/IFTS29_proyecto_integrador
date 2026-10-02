@@ -94,7 +94,7 @@ Cuando se lo invoque, el agente debe:
 
 | Riesgo | Impacto | Mitigación sugerida |
 |---|---|---|
-| Cliente con baja disponibilidad de tiempo/respuesta (ya reconocido: "se abandonó por falta de tiempo") | Alto — bloquea validaciones y contenido real | Fijar un único canal de contacto (ya definido: Javier), pedir materiales con anticipación, no bloquear desarrollo esperando assets reales (usar placeholders) |
+| Cliente con baja disponibilidad de tiempo/respuesta (ya reconocido: "se abandonó por falta de tiempo") | Alto — bloquea validaciones y contenido real | Fijar un único canal de contacto (ya definido: Martín Juan, Product Owner), pedir materiales con anticipación, no bloquear desarrollo esperando assets reales (usar placeholders) |
 | Acceso a materiales de marca (carpeta Drive de "Mónica") no confirmado al cierre de la reunión | Medio — puede demorar diseño visual | Escalar pedido de acceso por escrito (mail), definir fecha límite, tener paleta/tipografía alternativa de respaldo si no llega a tiempo |
 | Presupuesto = 0 o casi nulo | Medio — condiciona elección de hosting/dominio | Priorizar stack 100% gratuito en tiers iniciales; documentar costos eventuales como "a decidir con el cliente" |
 | Alcance ambiguo entre "estanco" y "dinámico" | Medio — puede generar retrabajo de UI | Cerrar catálogo de secciones estancas vs dinámicas en la Entrega 1, validar con cliente en la demo de semana 6 |

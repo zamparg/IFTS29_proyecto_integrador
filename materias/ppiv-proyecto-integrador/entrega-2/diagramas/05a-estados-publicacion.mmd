@@ -1,0 +1,11 @@
+stateDiagram-v2
+    [*] --> BORRADOR : crear
+    BORRADOR --> BORRADOR : editar
+    BORRADOR --> PROGRAMADA : publicar con visibleDesde futuro
+    BORRADOR --> PUBLICADA : publicar ahora
+    PROGRAMADA --> PUBLICADA : llega visibleDesde
+    PROGRAMADA --> BORRADOR : despublicar
+    PUBLICADA --> ARCHIVADA : pasa visibleHasta / archivar manual
+    PUBLICADA --> BORRADOR : despublicar
+    ARCHIVADA --> PUBLICADA : reactivar con nueva vigencia
+    ARCHIVADA --> [*] : conservada (nunca se elimina)

@@ -71,4 +71,4 @@ Vamos a priorizar alternativas **gratuitas o de costo mínimo**, entendiendo las
 | Semana 6 | Presentación de diseño y prototipos navegables + alcance definitivo (DEMO) |
 | Semana 13 | Entrega de versión funcional del sistema, con panel de administración operativo |
 
-Quedamos en contacto por el correo institucional del equipo, con Javier como referente único de nuestro lado para coordinar dudas y envíos de material.
+Quedamos en contacto por el correo institucional del equipo, con Martín Juan (Product Owner) como referente único de nuestro lado para coordinar dudas y envíos de material.
