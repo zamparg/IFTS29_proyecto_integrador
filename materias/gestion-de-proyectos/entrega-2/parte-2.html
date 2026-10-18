@@ -1,0 +1,1054 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>GdP Parte 2</title><style>
+@page { size: A4; margin: 1.6cm 1.7cm; @bottom-right { content: counter(page); font: 8.5pt Arial, sans-serif; color:#4d5566; } }
+html { font-family: Arial, Helvetica, sans-serif; font-size: 10.5pt; color: #1a1f2b; }
+body { line-height: 1.32; margin: 0; }
+h1 { font-size: 13pt; color: #24507f; margin: .9em 0 .35em; border-bottom: 1.5pt solid #24507f; padding-bottom: 2px; break-after: avoid; }
+h2 { font-size: 10.5pt; color: #1c3f66; margin: .8em 0 .3em; break-after: avoid; }
+p { margin: 0 0 .5em; } ul, ol { margin: 0 0 .5em 1.1em; padding-left: .6em; } li { margin-bottom: .15em; }
+a { color: #24507f; }
+.nueva-pagina { break-before: page; }
+.portada { text-align: left; margin-bottom: .4em; border-left: 5px solid #24507f; padding-left: 10px; }
+.portada .marca { font-weight: 700; letter-spacing: .12em; color: #24507f; font-size: 9pt; }
+.portada .titulo { font-size: 16pt; border: 0; margin: .1em 0; padding: 0; color:#1a1f2b; }
+.portada .sub { font-size: 10.5pt; margin: 0; } .portada .aut { font-size: 8.5pt; color: #4d5566; margin: .2em 0 0; }
+.cap { margin: .7em 0 .25em; break-after: avoid; font-size: 9pt; }
+table { border-collapse: collapse; width: 100%; font-size: 8.4pt; line-height: 1.25; margin: 0 0 .5em; }
+th { text-align: left; background: #e2ebf5; border-top: 1pt solid #24507f; border-bottom: 1pt solid #24507f; padding: 2.5px 3.5px; }
+td { padding: 2.5px 3.5px; vertical-align: top; border-bottom: .4pt solid #c9d3e0; } tr { break-inside: avoid; }
+figure { margin: 0 0 .5em; break-inside: avoid; text-align: center; } figure img { max-width: 100%; max-height: 12cm; }
+figcaption { text-align: left; font-size: 8pt; color: #4d5566; }
+</style></head><body><header class="portada"><div class="marca">TALENTO TECH</div>
+<h1 class="titulo">Gestión de proyectos · Trabajo integrador, Parte 2</h1>
+<p class="sub">Modernización del sitio institucional del IFTS N.° 2</p>
+<p class="aut">Comisión E · Equipo 08 · Santiago Cuda · Adrián Madroñal · Martín Juan · Nicolás Rolón · Gastón Zampar</p></header><h1>6. Planificación y seguimiento</h1>
+<p><strong>Herramientas utilizadas y justificación.</strong> Cada herramienta cubre una necesidad de flujo, iteración o control del proyecto, y todas funcionan en plan gratuito.</p>
+<table>
+<thead>
+<tr>
+<th>Necesidad</th>
+<th>Herramienta</th>
+<th>Evidencia</th>
+<th>Por qué</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flujo de tareas (Kanban) y backlog</td>
+<td>Trello, tablero <em>ifts-n2-sprint-board-scrum</em></td>
+<td><a href="https://trello.com/invite/b/6ab060ef5c1a94256279aa09/ATTI8f6929fe873ca1ea489347a631df47bfD3DB9833/ifts-n2-sprint-board-scrum">Tablero</a></td>
+<td>Visualiza el flujo y el trabajo en curso; curva de aprendizaje mínima</td>
+</tr>
+<tr>
+<td>Código y control de versiones</td>
+<td>GitHub (repositorio con revisión cruzada)</td>
+<td><a href="https://github.com/zamparg/IFTS29_proyecto_integrador">Repositorio</a></td>
+<td>Historial de decisiones y cambios verificable</td>
+</tr>
+<tr>
+<td>Diseño y validación con el cliente</td>
+<td>Figma</td>
+<td><a href="https://www.figma.com/design/aRnoXCbNpkCFkHPH0En5B5/IFTS-N%25C2%25B0-2-%25E2%2580%2594-MVP-visual-y-panel-de-administraci%25C3%25B3n?node-id=0-1&amp;p=f">Prototipo</a></td>
+<td>Permitió que el cliente rechazara la paleta antes de programar</td>
+</tr>
+<tr>
+<td>Diagramas y documentación</td>
+<td>Lucidchart, Google Drive</td>
+<td><a href="https://lucid.app/lucidchart/a1dba306-c42d-45a0-a6f8-8c9b250ab91b/edit?invitationId=inv_e3ec5e19-c06e-4fbd-8fa3-2f5d9c389cd5">Diagramas</a>, <a href="https://drive.google.com/drive/folders/1UNzvDp6loFH1cEmlk3ogOX_Ol3Lwo_UN?usp=drive_link">Drive</a></td>
+<td>Trabajo compartido y enlaces públicos para la cátedra</td>
+</tr>
+<tr>
+<td>Cronograma</td>
+<td>Gantt y red CPM (secciones 7.2 y 7.3)</td>
+<td>Figuras 1 y 2</td>
+<td>Muestra dependencias y camino crítico</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Metodología: Scrumban (justificación corregida).</strong> La Parte 1 descartaba Scrum argumentando el tamaño del equipo; la cátedra observó que ese no es un criterio válido. Scrumban se elige por tres necesidades del proyecto: <strong>(1) iteración</strong>, porque hay hitos fijos con el cliente (semanas 2, 6 y 13) que exigen incrementos revisables cada dos semanas; <strong>(2) flujo</strong>, porque las prioridades cambian según las devoluciones del cliente (por ejemplo, el rediseño de la paleta tras su rechazo) y un tablero continuo absorbe ese cambio sin replanificar un sprint completo; y <strong>(3) control</strong>, porque el límite de trabajo en curso (WIP) y la revisión cruzada de cada tarea detectan cuellos de botella temprano. Se mantienen del marco Scrum la planificación y la retrospectiva por sprint, y de Kanban el tablero con límite de WIP.</p>
+<p><strong>Sprints</strong> (2 semanas): S1 relevamiento (sem. 1-2) · S2 análisis y modelado (3-4) · S3 diseño y DEMO (5-6) · S4 base técnica y backend (7-8) · S5 desarrollo del panel y del sitio (9-10, en curso al 18/10) · S6 integración y QA (11-12) · S7 versión funcional y capacitación (13-14) · S8 cierre y traspaso (15-16).</p>
+<p><strong>Plan de seguimiento y control.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Indicador</th>
+<th>Meta</th>
+<th>Umbral de alerta</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tareas completadas por sprint / planificadas</td>
+<td>≥ 80 %</td>
+<td>&lt; 60 %</td>
+<td>Retrospectiva y recorte de alcance del sprint siguiente</td>
+</tr>
+<tr>
+<td>Trabajo en curso por persona (WIP)</td>
+<td>≤ 2 tarjetas</td>
+<td>&gt; 3</td>
+<td>Terminar antes de empezar</td>
+</tr>
+<tr>
+<td>Desvío del cronograma (semanas de atraso de la ruta crítica)</td>
+<td>0</td>
+<td>≥ 1</td>
+<td>Aplicar el plan de contingencia de la sección 8</td>
+</tr>
+<tr>
+<td>Errores bloqueantes abiertos</td>
+<td>0 al hito</td>
+<td>&gt; 0 a dos semanas del hito</td>
+<td>Congelar funciones nuevas</td>
+</tr>
+<tr>
+<td>Respuesta del cliente a una validación</td>
+<td>≤ 5 días</td>
+<td>&gt; 10 días</td>
+<td>Escalar a Martín Juan (canal único) y avanzar con datos de prueba</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Registro de reuniones.</strong> Las reuniones internas se resumen en actas en la carpeta de Drive del equipo <code>[completar enlace a las actas]</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Reunión</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30/06/2026</td>
+<td>IFTS N.° 2 e IFTS N.° 29 (cátedra)</td>
+<td>Roles cliente y oferentes, cronograma de tres reuniones</td>
+</tr>
+<tr>
+<td>04/09/2026</td>
+<td>Relevamiento con el cliente (S2)</td>
+<td>Requerimientos, restricciones de costo, criterio editorial de redes</td>
+</tr>
+<tr>
+<td>Semana del 28/09/2026 <code>[confirmar fecha]</code></td>
+<td>DEMO de diseño con el cliente (S6) y devolución</td>
+<td>Prototipo presentado; el cliente rechazó la paleta verde y dará correcciones adicionales</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Registro de decisiones relevantes.</strong></p>
+<table>
+<thead>
+<tr>
+<th>N.°</th>
+<th>Decisión</th>
+<th>Motivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D-001</td>
+<td>Desarrollo a medida; la cátedra descartó WordPress</td>
+<td>El alcance de la materia exige el ciclo completo de ingeniería de software</td>
+</tr>
+<tr>
+<td>D-002</td>
+<td>Martín Juan, único canal con el cliente</td>
+<td>Evitar respuestas contradictorias con tres equipos en paralelo</td>
+</tr>
+<tr>
+<td>D-004</td>
+<td>El contenido vencido se archiva, nunca se borra</td>
+<td>Pedido explícito del cliente ("un riesgo grave")</td>
+</tr>
+<tr>
+<td>D-005</td>
+<td>Redes sociales: selección editorial del instituto</td>
+<td>Criterio institucional humano, no réplica automática</td>
+</tr>
+<tr>
+<td>D-006</td>
+<td>Infraestructura gratuita en la etapa inicial</td>
+<td>El instituto no puede asumir costos</td>
+</tr>
+<tr>
+<td>D-007</td>
+<td>Paleta tierra en lugar de la verde</td>
+<td>Rechazo del cliente tras la DEMO</td>
+</tr>
+<tr>
+<td>D-010</td>
+<td>La Etapa 3 se entrega como especificaciones para generar el MVP</td>
+<td>Separar diseño técnico de implementación</td>
+</tr>
+</tbody>
+</table>
+<h1>7. Estructura del proyecto y cronograma</h1>
+<h2>7.1. Estructura de desglose del trabajo (WBS)</h2>
+<table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Paquetes de trabajo</th>
+<th>Responsable</th>
+<th>Horas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Análisis y requerimientos</td>
+<td>Relevamiento, documento de requerimientos, backlog (A, B)</td>
+<td>Martín Juan</td>
+<td>70</td>
+</tr>
+<tr>
+<td>2. Diseño del sistema</td>
+<td>Prototipo, diagramas UML, modelo de datos, DEMO (C, D, E)</td>
+<td>Gastón Zampar, Nicolás Rolón</td>
+<td>110</td>
+</tr>
+<tr>
+<td>3. Desarrollo</td>
+<td>Arquitectura y CI/CD (F), API y base (G), sitio (H), panel (I), Instagram (J)</td>
+<td>Nicolás Rolón, Gastón Zampar, Santiago Cuda</td>
+<td>280</td>
+</tr>
+<tr>
+<td>4. Pruebas y calidad</td>
+<td>QA de integración y aceptación (K)</td>
+<td>Adrián Madroñal</td>
+<td>90</td>
+</tr>
+<tr>
+<td>5. Capacitación</td>
+<td>Capacitación a editores (L)</td>
+<td>Martín Juan</td>
+<td>40</td>
+</tr>
+<tr>
+<td>6. Manual y soporte</td>
+<td>Manual de usuario y documentación técnica (N)</td>
+<td>Gastón Zampar, Adrián Madroñal</td>
+<td>60</td>
+</tr>
+<tr>
+<td>7. Mantenimiento</td>
+<td>Correcciones, cierre y traspaso (O, P)</td>
+<td>Santiago Cuda</td>
+<td>30</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Total</strong> (de 720 h disponibles: 5 personas × 9 h × 16 semanas)</td>
+<td></td>
+<td><strong>680</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>7.2. Diagrama de Gantt</h2>
+<p>El cronograma tiene 16 semanas, del 24/08 al 11/12/2026, con los tres hitos de la cátedra. En rojo, las actividades críticas; la línea vertical marca la fecha de elaboración de este documento (semana 9).</p>
+<figure><p class="cap"><strong>Figura 1.</strong> <em>Diagrama de Gantt del proyecto</em></p><img src="diagramas/gantt.svg"><figcaption><em>Nota.</em> Las semanas 1 a 6 (análisis, diseño y DEMO) corresponden a trabajo ya realizado; las duraciones de las actividades A a E son las efectivamente transcurridas.</figcaption></figure>
+
+<h2>7.3. Método de la ruta crítica (CPM)</h2>
+<p>Con las duraciones probables y las dependencias de la Figura 2, el proyecto dura <strong>16 semanas</strong>, que es exactamente el cuatrimestre: <strong>no hay margen global</strong>. La ruta crítica es <strong>A → D → F → G → (J y K) → hito de la semana 13 → (L → P y N)</strong>. Las actividades B, C, E, H, I y O tienen holgura de 1 o 2 semanas y funcionan como amortiguador.</p>
+<figure><p class="cap"><strong>Figura 2.</strong> <em>Red de actividades con ruta crítica</em></p><img src="diagramas/red-cpm.svg"><figcaption><em>Nota.</em> Cada nodo muestra duración, inicio más temprano (ES), fin más temprano (EF) y holgura. Rojo: actividades críticas.</figcaption></figure>
+
+<p class="cap"><strong>Tabla.</strong> <em>Cálculo CPM: tiempos más tempranos y más tardíos, en semanas desde el 24/08</em></p>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Actividad</th>
+<th>Resp.</th>
+<th>Dur. (sem)</th>
+<th>Pred.</th>
+<th>ES</th>
+<th>EF</th>
+<th>LS</th>
+<th>LF</th>
+<th>Holgura</th>
+<th>Crít.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Relevamiento (reuniones y requerimientos)</td>
+<td>Martín</td>
+<td>2</td>
+<td>—</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>Sí</strong></td>
+</tr>
+<tr>
+<td>B</td>
+<td>Análisis, documento de requerimientos y backlog</td>
+<td>Martín</td>
+<td>2</td>
+<td>A</td>
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>1</td>
+<td>No</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Prototipo en Figma y preparación de la DEMO</td>
+<td>Gastón</td>
+<td>3</td>
+<td>A</td>
+<td>2</td>
+<td>5</td>
+<td>3</td>
+<td>6</td>
+<td>1</td>
+<td>No</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Modelado: diagramas UML y modelo de datos</td>
+<td>Nicolás</td>
+<td>3</td>
+<td>A</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>0</td>
+<td><strong>Sí</strong></td>
+</tr>
+<tr>
+<td>E</td>
+<td>DEMO con el cliente (S6) y ajustes</td>
+<td>Martín</td>
+<td>1</td>
+<td>C, D</td>
+<td>5</td>
+<td>6</td>
+<td>6</td>
+<td>7</td>
+<td>1</td>
+<td>No</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Arquitectura, repositorio, CI/CD y hosting</td>
+<td>Santiago</td>
+<td>1</td>
+<td>B, D</td>
+<td>5</td>
+<td>6</td>
+<td>5</td>
+<td>6</td>
+<td>0</td>
+<td><strong>Sí</strong></td>
+</tr>
+<tr>
+<td>G</td>
+<td>Backend: API, base de datos y autenticación</td>
+<td>Nicolás</td>
+<td>5</td>
+<td>F</td>
+<td>6</td>
+<td>11</td>
+<td>6</td>
+<td>11</td>
+<td>0</td>
+<td><strong>Sí</strong></td>
+</tr>
+<tr>
+<td>H</td>
+<td>Frontend del sitio público</td>
+<td>Gastón</td>
+<td>5</td>
+<td>E, F</td>
+<td>6</td>
+<td>11</td>
+<td>8</td>
+<td>13</td>
+<td>2</td>
+<td>No</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Panel de administración</td>
+<td>Gastón y Nicolás</td>
+<td>6</td>
+<td>E, F</td>
+<td>6</td>
+<td>12</td>
+<td>7</td>
+<td>13</td>
+<td>1</td>
+<td>No</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Integración con Instagram (PoC y módulo)</td>
+<td>Nicolás</td>
+<td>2</td>
+<td>G</td>
+<td>11</td>
+<td>13</td>
+<td>11</td>
+<td>13</td>
+<td>0</td>
+<td><strong>Sí</strong></td>
+</tr>
+<tr>
+<td>K</td>
+<td>QA pruebas de integración y aceptación</td>
+<td>Adrián</td>
+<td>2</td>
+<td>G</td>
+<td>11</td>
+<td>13</td>
+<td>11</td>
+<td>13</td>
+<td>0</td>
+<td><strong>Sí</strong></td>
+</tr>
+<tr>
+<td>M</td>
+<td>HITO: versión funcional (reunión 3, S13)</td>
+<td>Todos</td>
+<td>0</td>
+<td>H, I, J, K</td>
+<td>13</td>
+<td>13</td>
+<td>13</td>
+<td>13</td>
+<td>0</td>
+<td><strong>Sí</strong></td>
+</tr>
+<tr>
+<td>L</td>
+<td>Capacitación a los editores</td>
+<td>Martín</td>
+<td>2</td>
+<td>M</td>
+<td>13</td>
+<td>15</td>
+<td>13</td>
+<td>15</td>
+<td>0</td>
+<td><strong>Sí</strong></td>
+</tr>
+<tr>
+<td>N</td>
+<td>Manual de usuario y documentación técnica</td>
+<td>Gastón y Adrián</td>
+<td>3</td>
+<td>M</td>
+<td>13</td>
+<td>16</td>
+<td>13</td>
+<td>16</td>
+<td>0</td>
+<td><strong>Sí</strong></td>
+</tr>
+<tr>
+<td>O</td>
+<td>Correcciones posteriores a la reunión 3</td>
+<td>Todos</td>
+<td>1</td>
+<td>M</td>
+<td>13</td>
+<td>14</td>
+<td>14</td>
+<td>15</td>
+<td>1</td>
+<td>No</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Cierre, traspaso y mantenimiento inicial</td>
+<td>Santiago</td>
+<td>1</td>
+<td>L, O</td>
+<td>15</td>
+<td>16</td>
+<td>15</td>
+<td>16</td>
+<td>0</td>
+<td><strong>Sí</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>7.4. Estimación PERT de la ruta crítica</h2>
+<p>Para la parte de la ruta crítica anterior al hito de la semana 13 se usaron estimaciones de tres puntos: <strong>te = (O + 4M + P) / 6</strong> y varianza <strong>((P − O) / 6)²</strong>.</p>
+<p class="cap"><strong>Tabla.</strong> <em>Estimaciones PERT de las actividades críticas hasta el hito de la semana 13</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Act.</th>
+<th>Optimista</th>
+<th>Probable</th>
+<th>Pesimista</th>
+<th>Esperada te</th>
+<th>Varianza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>1.5</td>
+<td>2</td>
+<td>2.5</td>
+<td>2.00</td>
+<td>0.028</td>
+</tr>
+<tr>
+<td>D</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>3.00</td>
+<td>0.111</td>
+</tr>
+<tr>
+<td>F</td>
+<td>0.5</td>
+<td>1</td>
+<td>1.5</td>
+<td>1.00</td>
+<td>0.028</td>
+</tr>
+<tr>
+<td>G</td>
+<td>4</td>
+<td>5</td>
+<td>7</td>
+<td>5.17</td>
+<td>0.250</td>
+</tr>
+<tr>
+<td>J</td>
+<td>1.5</td>
+<td>2</td>
+<td>3</td>
+<td>2.08</td>
+<td>0.062</td>
+</tr>
+<tr>
+<td><strong>Ruta crítica hasta el hito</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>13.25</strong></td>
+<td><strong>0.479</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lectura.</strong> La duración esperada hasta el hito es de <strong>13,25 semanas</strong> con desvío estándar de <strong>0,69</strong>. La probabilidad de llegar a la versión funcional dentro de la semana 13 es de <strong>36 %</strong>, y de llegar dentro de la semana 14, de <strong>86 %</strong>. Es decir, <strong>el hito de la semana 13 es ajustado</strong>: la incertidumbre se concentra en el backend (G, varianza 0,25) y en el modelado de datos (D). Por eso el plan de riesgos prioriza recortar alcance antes que extender plazos (sección 8) y acordar con el cliente que la reunión 3 puede mostrar un MVP con los módulos esenciales.</p>
+<h1>8. Informe de riesgos y mitigación</h1>
+<p>Escala: probabilidad (P) e impacto (I) de 1 (bajo) a 3 (alto); exposición = P × I. Orden por exposición.</p>
+<p class="cap"><strong>Tabla.</strong> <em>Registro de riesgos, evaluación y planes de mitigación y contingencia</em></p>
+
+<table>
+<thead>
+<tr>
+<th>N.°</th>
+<th>Riesgo</th>
+<th>Tipo</th>
+<th>P</th>
+<th>I</th>
+<th>Exp.</th>
+<th>Mitigación (preventiva)</th>
+<th>Contingencia (si ocurre)</th>
+<th>Resp.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>Retraso en la ruta crítica (backend) y no llegar al hito de la semana 13 (probabilidad calculada en 7.4)</td>
+<td>Técnico</td>
+<td>3</td>
+<td>3</td>
+<td>9</td>
+<td>Contrato de API definido primero; trabajo en paralelo de frontend y panel con datos simulados; WIP limitado</td>
+<td>Recortar a un MVP: novedades, horarios, archivo y login; el resto va a la semana 14</td>
+<td>Nicolás</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>La integración con la API de Instagram no resulta viable o el token vence</td>
+<td>Técnico</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+<td>Prueba de concepto temprana; módulo aislado detrás de una interfaz</td>
+<td>Carga manual asistida desde el panel; el sitio no depende de la API</td>
+<td>Nicolás</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>El cliente cambia o rechaza el diseño y obliga a rehacer (ya ocurrió con la paleta)</td>
+<td>Cliente</td>
+<td>3</td>
+<td>2</td>
+<td>6</td>
+<td>Tokens de diseño centralizados; validar en Figma antes de programar</td>
+<td>Cambio de tokens, sin rediseño de estructura</td>
+<td>Gastón</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>Baja disponibilidad del cliente para validar y entregar contenidos</td>
+<td>Cliente</td>
+<td>3</td>
+<td>2</td>
+<td>6</td>
+<td>Canal único; pedidos anticipados con fecha</td>
+<td>Avanzar con datos de prueba; validar solo en reuniones 2 y 3</td>
+<td>Martín</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>Crecimiento de alcance (el Figma sumó avisos, archivo documental y configuración)</td>
+<td>Alcance</td>
+<td>3</td>
+<td>2</td>
+<td>6</td>
+<td>Backlog priorizado (MoSCoW); todo pedido nuevo pasa por Martín</td>
+<td>Posponer lo "Could" a la siguiente cohorte</td>
+<td>Martín</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>Dedicación parcial, ausencias o sobrecarga del equipo</td>
+<td>Humano</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+<td>Revisión cruzada y conocimiento compartido entre pares; buffers de holgura</td>
+<td>Reasignar tareas según holgura; reducir WIP</td>
+<td>Martín</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>Infraestructura gratuita: suspensión por inactividad, límites de base de datos o de almacenamiento</td>
+<td>Económico</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>Elegir planes sin vencimiento; compresión de imágenes; respaldos periódicos</td>
+<td>Migrar a otro proveedor; costo mínimo aprobado con el cliente</td>
+<td>Santiago</td>
+</tr>
+<tr>
+<td>R8</td>
+<td>Datos personales y fotos de estudiantes sin consentimiento (Ley 25.326)</td>
+<td>Legal</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+<td>Aviso de uso de datos; publicar solo con consentimiento; mínimo de datos</td>
+<td>Retiro inmediato del contenido</td>
+<td>Adrián</td>
+</tr>
+<tr>
+<td>R9</td>
+<td>Pérdida de datos o acceso indebido al panel</td>
+<td>Técnico</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+<td>Hash de contraseñas, roles, respaldos, secretos en variables de entorno</td>
+<td>Restaurar el último respaldo; rotar credenciales</td>
+<td>Santiago</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>Tres equipos con el mismo cliente generan pedidos contradictorios</td>
+<td>Organizacional</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>Acuerdos por escrito; no asumir exclusividad</td>
+<td>Priorizar lo confirmado por escrito</td>
+<td>Martín</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>Trámite del dominio .edu.ar demorado</td>
+<td>Externo</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>Iniciar documentación temprano</td>
+<td>Subdominio provisorio gratuito</td>
+<td>Santiago</td>
+</tr>
+<tr>
+<td>R12</td>
+<td>Baja adopción del panel por parte de los docentes</td>
+<td>Humano</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+<td>Panel simple, capacitación con casos prácticos, manual</td>
+<td>Sesión de refuerzo y acompañamiento en las primeras semanas</td>
+<td>Martín</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mapa de calor.</strong> Exposición alta (6 a 9): R1, R2, R3, R4, R5, R6, R8, R12. Media (3 a 4): R7, R9, R10. Baja (1 a 2): R11. Los riesgos R1, R3 y R5 son los que la propia ejecución ya puso a prueba y se revisan en cada retrospectiva.</p>
+<h1>9. Sostenibilidad del proyecto</h1>
+<p><strong>Estrategia de sostenimiento.</strong> El proyecto es académico y no se cobra; la sostenibilidad se resuelve en tres capas:</p>
+<ol>
+<li><strong>Costo operativo cero para el cliente:</strong> hosting, base de datos, CDN y correo en planes gratuitos, y un dominio .edu.ar o un subdominio provisorio. El instituto solo asume, eventualmente, un dominio .com.ar de unos $8.500 ARS por año.</li>
+<li><strong>Mantenimiento por continuidad académica:</strong> la cátedra y el cliente acordaron que una cohorte siguiente puede retomar el proyecto para mejoras (minuta del 30/06). El traspaso incluye documentación técnica, manual de usuario y repositorio, y el equipo de Talento Tech cierra el proyecto con la fase de mantenimiento inicial (actividad P).</li>
+<li><strong>Reutilización como servicio:</strong> la estructura modular permite adaptar la plataforma a otras instituciones con costos de adaptación y soporte; esa línea es la que sostiene económicamente a la empresa (sección 10.3).</li>
+</ol>
+<p><strong>Modelo de licenciamiento.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Modelo</th>
+<th>A favor</th>
+<th>En contra</th>
+<th>Evaluación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MIT (propuesto)</strong></td>
+<td>Máxima reutilización; el instituto y futuras cohortes pueden modificar y mejorar el código; sin costo de licencias</td>
+<td>No obliga a quien lo reutilice a compartir sus mejoras</td>
+<td><strong>Elegido</strong></td>
+</tr>
+<tr>
+<td>GPL v3</td>
+<td>Obliga a mantener abiertas las derivaciones</td>
+<td>Desalienta su adopción en entornos que quieran integrarlo con software cerrado</td>
+<td>Alternativa válida</td>
+</tr>
+<tr>
+<td>Propietario</td>
+<td>Control comercial</td>
+<td>Contradice el carácter público del cliente, genera dependencia y costo</td>
+<td>Descartado</td>
+</tr>
+<tr>
+<td>Freemium / SaaS</td>
+<td>Ingreso recurrente</td>
+<td>Requiere operar infraestructura y soporte con pago, lo que el instituto no puede sostener hoy</td>
+<td>Posible a futuro para otras instituciones</td>
+</tr>
+</tbody>
+</table>
+<p>Se adopta <strong>MIT para el código</strong>, con cesión de uso al IFTS N.° 2; los contenidos, textos, fotografías y la marca pertenecen al instituto y no se licencian.</p>
+<p><strong>Prácticas sostenibles y control de calidad.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Dimensión</th>
+<th>Práctica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Económica</td>
+<td>Infraestructura gratuita; documentación de traspaso para que el mantenimiento no dependa del equipo original</td>
+</tr>
+<tr>
+<td>Ambiental</td>
+<td>Sin servidores propios dedicados; imágenes comprimidas y servidas por CDN; páginas livianas</td>
+</tr>
+<tr>
+<td>Social</td>
+<td>Accesibilidad WCAG 2.2 AA; protección de datos personales (Ley 25.326); panel pensado para personal no técnico</td>
+</tr>
+<tr>
+<td>Calidad</td>
+<td>Revisión cruzada de cada tarea; pruebas automatizadas (meta: 60 % de cobertura del backend); integración continua; definición de "terminado" con QA; retrospectiva por sprint</td>
+</tr>
+</tbody>
+</table>
+<h1>10. Presupuesto estimado y análisis de costos</h1>
+<h2>10.1. Costos del proyecto actual</h2>
+<p>Los costos de mano de obra se calculan con 680 horas a un valor referencial de <strong>USD 30 por hora</strong>. Es un proyecto sin cobro: el valor sirve para dimensionar el servicio y evaluar su factibilidad.</p>
+<p class="cap"><strong>Tabla.</strong> <em>Presupuesto por fase, costos directos e indirectos</em></p>
+
+<table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Tipo</th>
+<th>Cálculo</th>
+<th>Monto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Análisis y requerimientos</td>
+<td>Directo, variable</td>
+<td>70 h × USD 30</td>
+<td>USD 2.100</td>
+</tr>
+<tr>
+<td>2. Diseño del sistema</td>
+<td>Directo, variable</td>
+<td>110 h × USD 30</td>
+<td>USD 3.300</td>
+</tr>
+<tr>
+<td>3. Desarrollo e implementación</td>
+<td>Directo, variable</td>
+<td>280 h × USD 30</td>
+<td>USD 8.400</td>
+</tr>
+<tr>
+<td>4. Pruebas y control de calidad</td>
+<td>Directo, variable</td>
+<td>90 h × USD 30</td>
+<td>USD 2.700</td>
+</tr>
+<tr>
+<td>5. Capacitación</td>
+<td>Directo, variable</td>
+<td>40 h × USD 30</td>
+<td>USD 1.200</td>
+</tr>
+<tr>
+<td>6. Manual y soporte</td>
+<td>Directo, variable</td>
+<td>60 h × USD 30</td>
+<td>USD 1.800</td>
+</tr>
+<tr>
+<td>7. Mantenimiento inicial</td>
+<td>Directo, variable</td>
+<td>30 h × USD 30</td>
+<td>USD 900</td>
+</tr>
+<tr>
+<td><strong>Subtotal mano de obra</strong></td>
+<td></td>
+<td>680 h × USD 30</td>
+<td><strong>USD 20.400</strong></td>
+</tr>
+<tr>
+<td>Hosting, base de datos, CDN y correo</td>
+<td>Directo, fijo</td>
+<td>Planes gratuitos</td>
+<td>USD 0</td>
+</tr>
+<tr>
+<td>Licencias de software (Trello, GitHub, Figma, Lucidchart)</td>
+<td>Indirecto, fijo</td>
+<td>Planes gratuitos</td>
+<td>USD 0</td>
+</tr>
+<tr>
+<td>Dominio .com.ar (contingente)</td>
+<td>Directo, fijo anual</td>
+<td>Valor mencionado en la reunión</td>
+<td>$8.500 ARS</td>
+</tr>
+<tr>
+<td>Equipamiento, conexión y energía</td>
+<td>Indirecto</td>
+<td>Aportados por los integrantes</td>
+<td>No imputado</td>
+</tr>
+<tr>
+<td>Reserva de contingencia (10 % de mano de obra, sobre R1 y R5)</td>
+<td>Indirecto</td>
+<td>10 % × USD 20.400</td>
+<td>USD 2.040</td>
+</tr>
+<tr>
+<td><strong>Total estimado</strong></td>
+<td></td>
+<td></td>
+<td><strong>USD 22.440</strong> + dominio</td>
+</tr>
+</tbody>
+</table>
+<h2>10.2. Costos de mantenimiento posterior</h2>
+<p>Supuesto del equipo: 4 horas mensuales de soporte y correcciones (48 h por año), es decir <strong>USD 1.440 por año</strong> a valor referencial, más hosting USD 0 mientras alcance el plan gratuito. Si fuera necesario pasar a un plan pago, el costo se cotizará y se acordará con el instituto antes de aplicarlo (riesgo R7).</p>
+<h2>10.3. Factibilidad económica y punto de equilibrio</h2>
+<p><strong>Factibilidad.</strong> Para el instituto el proyecto es factible porque su costo en dinero es cero; para el equipo es factible porque las 680 horas planificadas entran en las 720 disponibles. No lo es como negocio de un único cliente: el costo de USD 22.440 supera cualquier presupuesto institucional del cliente, y por eso se sostiene como práctica profesional y como base reutilizable.</p>
+<p><strong>Punto de equilibrio de la empresa con proyectos similares.</strong> Fórmula: <strong>PE = costos fijos anuales / (precio − costo variable por proyecto)</strong>. Se supone que Talento Tech tiene costos fijos de USD 4.200 por año (herramientas pagas, administración y difusión), supuesto a validar.</p>
+<table>
+<thead>
+<tr>
+<th>Escenario</th>
+<th>Precio</th>
+<th>Costo variable</th>
+<th>Margen por proyecto</th>
+<th>Punto de equilibrio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Proyecto nuevo desde cero (como el actual)</td>
+<td>USD 26.000 (costo más 25 %)</td>
+<td>USD 20.700 (mano de obra e infraestructura)</td>
+<td>USD 5.300</td>
+<td>4.200 / 5.300 = 0,8, o sea <strong>1 proyecto por año</strong></td>
+</tr>
+<tr>
+<td>Proyecto similar reutilizando la plataforma (120 h de adaptación)</td>
+<td>USD 6.000</td>
+<td>USD 3.700 (120 h × USD 30 más USD 100 de infraestructura)</td>
+<td>USD 2.300</td>
+<td>4.200 / 2.300 = 1,8, o sea <strong>2 proyectos por año</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conclusión.</strong> El modelo reutilizable es el que hace accesible el servicio para instituciones con presupuesto reducido (USD 6.000 contra USD 26.000) y alcanza el equilibrio con dos adaptaciones por año. Un solo proyecto desde cero cubre los costos fijos, pero solo con un cliente que pueda pagar el precio completo, que no es el caso del IFTS N.° 2.</p>
+<h1 class="nueva-pagina">Anexo A. Corrección de la Parte 1: origen de los requerimientos</h1>
+<p>La cátedra pidió consignar el origen de cada requerimiento. <strong>Negocio:</strong> surge de los objetivos o restricciones del instituto. <strong>Sistema:</strong> surge de condiciones técnicas, normativas o de calidad del producto. Fuentes: reunión de relevamiento (R04/09), notas del equipo (N) y normativa (L: Ley 25.326; W: WCAG 2.2).</p>
+<p class="cap"><strong>Tabla.</strong> <em>Origen y fuente de los requerimientos relevados</em></p>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Requerimiento</th>
+<th>Tipo</th>
+<th>Origen</th>
+<th>Fuente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF01</td>
+<td>Administrar contenido desde un panel sin conocimientos técnicos</td>
+<td>Funcional</td>
+<td>Negocio</td>
+<td>R04/09</td>
+</tr>
+<tr>
+<td>RF02</td>
+<td>Distinguir contenido estanco de dinámico</td>
+<td>Funcional</td>
+<td>Negocio</td>
+<td>R04/09</td>
+</tr>
+<tr>
+<td>RF03</td>
+<td>Archivar contenido vencido sin eliminarlo</td>
+<td>Funcional</td>
+<td>Negocio</td>
+<td>R04/09</td>
+</tr>
+<tr>
+<td>RF04</td>
+<td>Vincular publicaciones de Instagram y Facebook por selección editorial</td>
+<td>Funcional</td>
+<td>Negocio</td>
+<td>R04/09</td>
+</tr>
+<tr>
+<td>RF05</td>
+<td>Soportar múltiples administradores</td>
+<td>Funcional</td>
+<td>Negocio</td>
+<td>R04/09</td>
+</tr>
+<tr>
+<td>RF06</td>
+<td>Mostrar solo horarios y mesas del período vigente</td>
+<td>Funcional</td>
+<td>Negocio</td>
+<td>R04/09</td>
+</tr>
+<tr>
+<td>RF07</td>
+<td>Accesos a SIU Guaraní, Aulas Virtuales y Mi Argentina</td>
+<td>Funcional</td>
+<td>Negocio</td>
+<td>Documento "Páginas a vincular"</td>
+</tr>
+<tr>
+<td>RF08</td>
+<td>Formulario de contacto a correo institucional</td>
+<td>Funcional</td>
+<td>Negocio</td>
+<td>R04/09</td>
+</tr>
+<tr>
+<td>RF09</td>
+<td>Gestionar galería con descripción y categoría</td>
+<td>Funcional</td>
+<td>Negocio</td>
+<td>R04/09</td>
+</tr>
+<tr>
+<td>RF10</td>
+<td>Gestionar plantel docente y materias</td>
+<td>Funcional</td>
+<td>Negocio</td>
+<td>R04/09</td>
+</tr>
+<tr>
+<td>RNF01</td>
+<td>Usabilidad para personal no técnico</td>
+<td>No funcional</td>
+<td>Negocio</td>
+<td>R04/09</td>
+</tr>
+<tr>
+<td>RNF02</td>
+<td>Infraestructura gratuita o de costo mínimo</td>
+<td>No funcional</td>
+<td>Negocio</td>
+<td>R04/09</td>
+</tr>
+<tr>
+<td>RNF03</td>
+<td>Disponibilidad estable</td>
+<td>No funcional</td>
+<td>Sistema</td>
+<td>N</td>
+</tr>
+<tr>
+<td>RNF04</td>
+<td>Diseño responsive</td>
+<td>No funcional</td>
+<td>Sistema</td>
+<td>N</td>
+</tr>
+<tr>
+<td>RNF05</td>
+<td>Rendimiento con alto volumen de imágenes</td>
+<td>No funcional</td>
+<td>Sistema</td>
+<td>R04/09</td>
+</tr>
+<tr>
+<td>RNF06</td>
+<td>Acceso al panel con autenticación</td>
+<td>No funcional</td>
+<td>Sistema</td>
+<td>N</td>
+</tr>
+<tr>
+<td>RNF07</td>
+<td>Accesibilidad WCAG 2.2 AA</td>
+<td>No funcional</td>
+<td>Sistema</td>
+<td>W</td>
+</tr>
+<tr>
+<td>RNF08</td>
+<td>Protección de datos personales</td>
+<td>No funcional</td>
+<td>Sistema</td>
+<td>L</td>
+</tr>
+</tbody>
+</table></body></html>
