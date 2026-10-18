@@ -142,8 +142,19 @@ Duración total de la práctica: 16 clases de 9 hs semanales (2° cuatrimestre 2
 
 ---
 
+## 4b. Segunda reunión con el cliente (prototipo en Figma), 06/10/2026
+Fuente: `cliente/ifts2/Segunda Reunión Prototipo Figma - Notas de Gemini.pdf` (notas automáticas y transcripción; revisadas solo por lectura, pueden tener imprecisiones). Participan del equipo Martín Juan, Nicolás Rolón, Santiago Cuda y Adrián Madroñal.
+- **Acordado:** (1) **roles diferenciados**: bedelía administra la sección de alumnos y otros usuarios gestionan las publicaciones; (2) **nueva paleta**: el cliente encontró el prototipo "muy monocromático y con predominio del blanco" y sugirió **tonos naranjas y amarillos pasteles combinados con verdes**; (3) **módulo de calendario académico y mesas de examen**, gestionable por el administrador **mediante carga de archivos**, con **casillas para destacar eventos próximos**; (4) **MVP en código** y **nueva reunión en 2 o 3 semanas** (aprox. 20 al 27/10/2026) para evaluarlo y revisar la comodidad de edición.
+- **Menú:** separar en el menú principal el ingreso a la tecnicatura (aspirantes) de la inscripción a carreras y exámenes (alumnos).
+- **Capacidad:** consultas más frecuentes = fechas de inscripción a la tecnicatura y de exámenes. Más de 100 alumnos se anotan en los ingresos, con 150 a 200 aspirantes. El equipo estimó **300 a 400 personas concurrentes** en picos: inscripciones de octubre para el ciclo 2027, mediados de 2027 y mesas finales.
+- **Costos:** el equipo se comprometió a informar al instituto antes de cualquier costo o limitación de la API de Instagram. Dominio .com.ar: entre $8.000 y $9.000.
+- **Selección entre grupos:** el IFTS N.° 2 elegirá uno de los desarrollos de los tres grupos; los docentes de la cátedra evalúan cada proyecto por separado.
+- **Drive institucional:** estaba compartido con un solo grupo; el cliente pidió compartirlo con todos y el equipo aceptó. Confirmar el acceso a los logotipos y materiales.
+- **Pendientes del grupo:** compartir el Figma con el cliente (lo envía Nicolás Rolón con instrucciones de navegación); ajustar la paleta; reestructurar el menú; implementar el calendario; analizar infraestructura gratuita (base de datos e imágenes) según la carga; coordinar la reunión siguiente. **El cliente** debe enviar su devolución tras explorar el prototipo.
+- **Paleta, resuelta después de la reunión:** en la propia reunión el cliente sugirió naranjas y amarillos pasteles con verdes; luego dio feedback sobre los colores y **se decidió la paleta de marrones**, que es la del Figma vigente (§5). Queda definida.
+
 ## 5. Prototipo en Figma (MVP) — versión vigente, 18/10/2026
-**Por qué cambió:** en una reunión reciente con el cliente (segunda reunión; fecha `[completar]`) no les gustó la paleta verde y quedaron en darnos correcciones adicionales. El equipo rediseñó todo el Figma. La Etapa 2 ya se entregó con la versión verde y **no se reentrega**: el trabajo avanza hacia la Etapa 3.
+**Por qué cambió:** en la segunda reunión con el cliente (06/10/2026) no les gustó la paleta verde y quedaron en darnos correcciones adicionales. El equipo rediseñó todo el Figma. La Etapa 2 ya se entregó con la versión verde y **no se reentrega**: el trabajo avanza hacia la Etapa 3.
 
 **Tokens (Color styles, leídos con `get_variable_defs`):** primary `#8D775F` · base `#F6F6F3` · accent `#6F5142` · accent-2 `#E0DFD5` · accent-3 `#291711` · font `#6E7271` · success-text `#556B3F` / back `#E8EDE4` · warning-text `#B77A3A` / back `#F7E9D6` · danger-text `#7A3A32` / back `#F3DCDC`. Tipografía Inter. Fotografías reales de cocina e instituto en hero y tarjetas. Pie oscuro (accent-3).
 

@@ -84,6 +84,10 @@ Ningún secreto se versiona. `.env.example` tiene valores de ejemplo no sensible
 - Secretos en variables de entorno; token de Instagram cifrado en base.
 - Datos personales mínimos (contacto: nombre, correo, mensaje, consentimiento) y aviso de uso conforme a la Ley 25.326.
 
+## Capacidad
+
+El cliente estimó, con el equipo, picos de **300 a 400 personas concurrentes** (inscripciones a la tecnicatura en octubre para el ciclo siguiente, mediados de año y mesas de examen finales; más de 100 alumnos y entre 150 y 200 aspirantes por ingreso). Consecuencia: el sitio público se sirve **desde caché** (páginas estáticas con revalidación), la API pública es de solo lectura y cacheable, y los archivos (PDF, imágenes) salen de un CDN. El panel tiene pocos usuarios simultáneos. La elección de hosting y base gratuitos (ADR-15) debe verificarse contra este objetivo con una prueba de carga antes de la demostración.
+
 ## Rendimiento
 
 Páginas públicas en caché; imágenes WebP con `next/image`, `loading="lazy"` y dimensiones explícitas; paginación en listados; índices en `status` y fechas de vigencia; sin dependencias pesadas en el sitio público.

@@ -11,7 +11,7 @@ Prioridad: **M** = Debe · **S** = Debería · **C** = Podría. Origen: **Negoci
 | RF03 | Archivar contenido vencido sin eliminarlo; restaurarlo | M | Negocio | 08, 09, 11 |
 | RF04 | Vincular publicaciones de Instagram por selección y aprobación editorial | M | Negocio | 07, 08 |
 | RF05 | Soportar múltiples administradores con roles | M | Negocio | 12, 13 |
-| RF06 | Mostrar solo horarios y mesas del ciclo público vigente | M | Negocio | 04, 10, 12 |
+| RF06 | Mostrar solo horarios y mesas del ciclo público vigente; calendario académico y mesas cargados por archivo, con casilla para destacar eventos próximos | M | Negocio | 04, 10, 12 |
 | RF07 | Accesos directos a SIU Guaraní, Aula virtual, Mi Argentina y Tutoría | M | Negocio | 04 |
 | RF08 | Formulario de contacto a correo institucional | S | Negocio | sin diseño |
 | RF09 | Galería con descripción y categoría | C | Negocio | sin diseño |
@@ -28,6 +28,7 @@ Prioridad: **M** = Debe · **S** = Debería · **C** = Podría. Origen: **Negoci
 | RNF05 | Rendimiento con alto volumen de imágenes | M | Sistema | Lighthouse móvil Rendimiento ≥ 80; imágenes comprimidas y con CDN |
 | RNF06 | Panel protegido por autenticación y permisos por rol | M | Sistema | Pruebas de API 401/403 |
 | RNF07 | Accesibilidad WCAG 2.2 AA en el sitio público y en el panel | M | Sistema | axe automático + Lighthouse Accesibilidad ≥ 90 |
+| RNF09 | Capacidad: soportar 300 a 400 usuarios concurrentes en picos (inscripciones y mesas) sin caída del sitio público | M | Sistema | Prueba de carga con k6 sobre el sitio público (400 usuarios virtuales) y caché de páginas |
 | RNF08 | Protección de datos personales (Ley 25.326) en contacto e imágenes de estudiantes | M | Sistema | Aviso de uso de datos; consentimiento; datos mínimos |
 
 ## Criterios de aceptación (Gherkin) de los requerimientos Must
@@ -115,6 +116,13 @@ los formularios tienen etiquetas, los estados no se comunican solo con color y e
 Dado el formulario de contacto
 Entonces exige aceptar el aviso de uso de datos antes de enviar
 Y las fotos con estudiantes solo se publican si el editor confirma que existe consentimiento (casilla en el modal de moderación)
+```
+
+**RF06 · Calendario y destacados (reunión del 06/10)**
+```
+Dado un llamado a examen o un aviso con la casilla "destacar" marcada
+Cuando un visitante entra a Inicio o a Estudiantes
+Entonces el elemento aparece resaltado como próximo evento hasta su fecha
 ```
 
 ## Reglas de negocio

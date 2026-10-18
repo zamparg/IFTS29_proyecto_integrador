@@ -85,7 +85,7 @@ def gantt_mmd():
                 L.append(f"    {k} · {short} :{tag}{k.lower()}, {a}, {max((b - a).days, 3)}d")
     L.append(f"    section Hitos con el cliente")
     L.append(f"    Reunión 1 (relevamiento) :milestone, r1, 2026-09-04, 0d")
-    L.append(f"    Reunión 2 (DEMO) :milestone, r2, 2026-10-02, 0d")
+    L.append(f"    Reunión 2 (DEMO) :milestone, r2, 2026-10-06, 0d")
     return "\n".join(L)
 
 def network_mmd():

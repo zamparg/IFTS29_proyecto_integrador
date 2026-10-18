@@ -6,6 +6,8 @@
 
 **Componentes transversales:** barra superior institucional (logo, "IFTS N.° 2", navegación con ítem activo subrayado, acceso al panel), pie oscuro (`accent-3`) con la leyenda "IFTS N.° 2 • Tecnicatura Superior en Emprendimientos Gastronómicos", tarjetas con filete lateral, etiquetas de sección en mayúsculas, insignias de estado (éxito, advertencia, peligro), botones primario y secundario, diálogos de confirmación.
 
+**Ajuste de navegación acordado con el cliente (06/10):** separar en el menú principal el **ingreso a la tecnicatura** (aspirantes) de la **inscripción a carreras y exámenes** (alumnos). El Figma vigente tiene un único ítem "Ingreso"; el agente debe reflejar la separación y registrar el nombre final de los ítems en `09-preguntas-abiertas.md`.
+
 ## Sitio público (escritorio 1440 px; móvil 390 px)
 
 | Pantalla | Nodo | Contenido | Datos que consume |

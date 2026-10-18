@@ -31,7 +31,7 @@
 |---|---|---|
 | 30/06/2026 | IFTS N.° 2 e IFTS N.° 29 (cátedra) | Roles cliente y oferentes, cronograma de tres reuniones |
 | 04/09/2026 | Relevamiento con el cliente (S2) | Requerimientos, restricciones de costo, criterio editorial de redes |
-| Semana del 28/09/2026 `[confirmar fecha]` | DEMO de diseño con el cliente (S6) y devolución | Prototipo presentado; el cliente rechazó la paleta verde y dará correcciones adicionales |
+| 06/10/2026 | Segunda reunión con el cliente: DEMO del prototipo en Figma | Roles diferenciados, calendario por archivos, MVP en código; el cliente pidió cambiar la paleta (luego se definió la de marrones); nueva reunión en 2 o 3 semanas |
 
 **Registro de decisiones relevantes.**
 
