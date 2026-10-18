@@ -60,7 +60,8 @@ Versión gráfica: [diagramas/decision-001-desarrollo-a-medida.png](diagramas/de
 ## D-004 · Nunca se borra contenido: se archiva
 
 - **Estado:** cerrada · **Fecha:** 04/09/2026 · **Decide:** cliente (IFTS N°2), en la reunión de relevamiento.
-- **Decisión:** el contenido vencido se oculta o archiva, jamás se elimina de forma automática ni irreversible ("un riesgo grave"). Lo anterior al período vigente se puede borrar solo manualmente.
+- **Decisión:** el contenido vencido se oculta o archiva, jamás se elimina de forma automática ("un riesgo grave"). Lo anterior al período vigente se puede borrar solo manualmente.
+- **Aclaración 18/10/2026:** la consigna de la Etapa 3 de la cátedra exige un CRUD completo con confirmación antes de eliminar. Se cumplen ambas: sin borrado automático; `DELETE` manual con confirmación, auditoría y reglas de elegibilidad (ver ADR-07 de la Etapa 3).
 
 ## D-005 · Redes sociales: selección editorial, de las redes hacia el sitio
 

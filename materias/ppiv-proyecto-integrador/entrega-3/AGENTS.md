@@ -4,14 +4,14 @@ Sos el agente de desarrollo de **Talento Tech** y vas a construir el MVP del sit
 
 ## Cómo empezar
 
-1. Leé en este orden: `README.md` → `especificaciones/00-vision-y-alcance.md` → `01-requerimientos.md` → `02-decisiones-tecnicas.md` → `03-arquitectura-y-estructura.md` → `04-api.md` → `05-ui-y-pantallas.md` → `06-testing-y-calidad.md` → `07-backlog-y-plan.md` → `08-contenido-y-datos-semilla.md` → `09-preguntas-abiertas.md`.
+1. Leé en este orden: `README.md` → `especificaciones/00-vision-y-alcance.md` → `01-requerimientos.md` → `02-decisiones-tecnicas.md` → `03-arquitectura-y-estructura.md` → `04-api.md` → `05-ui-y-pantallas.md` → `06-testing-y-calidad.md` → `07-backlog-y-plan.md` → `08-contenido-y-datos-semilla.md` → `09-preguntas-abiertas.md` → `10-entregables-etapa-3.md`.
 2. Copiá `especificaciones/` al repo nuevo (por ejemplo en `docs/specs/`) y usala como fuente de verdad.
 3. Seguí el plan de `07-backlog-y-plan.md` por fases. No avances de fase sin cumplir la definición de terminado.
 
 ## Reglas no negociables
 
 1. **Desarrollo a medida.** La cátedra descartó WordPress y cualquier CMS de terceros. No uses uno.
-2. **Nada se borra.** El contenido vencido se archiva o se pausa. No hay endpoints `DELETE` para contenido; tampoco borrados físicos desde la interfaz.
+2. **Nada se borra de forma automática ni sin confirmar.** El contenido vencido se archiva o se pausa solo; jamás se elimina por tarea programada. La **eliminación es siempre manual**, con diálogo de confirmación, solo para roles autorizados, solo sobre contenido en borrador, pausado, descartado, vencido o archivado, y queda en `AuditLog`. La consigna de la cátedra exige un CRUD completo con confirmación antes de eliminar (ver `especificaciones/10-entregables-etapa-3.md`).
 3. **La vigencia se calcula al consultar** (estado + fechas `visibleFrom` / `visibleUntil`). No dependas de tareas programadas para ocultar contenido.
 4. **Nada de redes llega al sitio sin aprobación humana.** Una publicación de Instagram queda `DETECTED` hasta que un usuario del panel la aprueba.
 5. **El sitio sigue funcionando si fallan Instagram, el correo o el almacenamiento externo.** Esas integraciones van detrás de interfaces y con alternativa manual.
@@ -44,6 +44,10 @@ Sos el agente de desarrollo de **Talento Tech** y vas a construir el MVP del sit
 - Responsive verificado a 390 px y 1440 px.
 - Documentación actualizada (README del repo, variables de entorno, ADR si hubo decisión).
 - Registro en `AuditLog` en toda mutación de contenido.
+
+## La entrega de la cátedra
+
+La Etapa 3 de la materia (consigna en `consigna/Etapa 3 - Desarrollo completo.pdf` del repo del equipo) exige una aplicación funcional **más** Manual Técnico, Manual de Usuario, evidencia de pruebas unitarias y de integración, base de datos con CRUD completo e instrucciones de instalación que permitan a un docente ejecutarla. Todo eso está bajado a tareas en `especificaciones/10-entregables-etapa-3.md`. Guardá evidencias (capturas, salidas de pruebas) a medida que avanzás: no se pueden reconstruir al final.
 
 ## Qué entregar al terminar cada fase
 

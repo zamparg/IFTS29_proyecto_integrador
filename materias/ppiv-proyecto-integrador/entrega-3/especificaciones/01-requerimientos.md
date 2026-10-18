@@ -41,8 +41,13 @@ Y el aviso sigue existiendo y aparece en el panel con el filtro "Vencidos"
 Y un usuario con permiso puede reactivarlo con una nueva vigencia
 ```
 ```
-Dado cualquier contenido
-Entonces la API no ofrece operaciones de borrado físico
+Dado cualquier contenido que vence o se pausa
+Entonces ninguna tarea automática lo elimina
+```
+```
+Dado un aviso vencido o pausado
+Cuando un usuario autorizado elige "Eliminar" y confirma en el diálogo
+Entonces el aviso se elimina, la acción queda en AuditLog con quién y cuándo, y no se puede eliminar contenido vigente ni referenciado (409)
 ```
 
 **RF04 · Moderación de redes**
@@ -120,4 +125,6 @@ Y las fotos con estudiantes solo se publican si el editor confirma que existe co
 4. Archivar un `Document` lo marca `ARCHIVED` con `archivedAt`; restaurar vuelve a `ACTIVE` con `restoredAt`. Un documento adjunto a algo visible no se puede archivar sin confirmación.
 5. Los avisos "próximos a vencer" son los que vencen en los siguientes 7 días (tarjeta del Resumen).
 6. Un `SocialPost.externalId` es único: sincronizar dos veces no duplica.
-7. Ninguna mutación sin `AuditLog`; ninguna eliminación física de contenido.
+7. Ninguna mutación sin `AuditLog`.
+8. **Eliminación:** solo manual, con confirmación, nunca automática. Solo se elimina contenido en estado borrador, pausado, descartado, vencido o archivado; un elemento referenciado por otro (por ejemplo un documento adjunto a un aviso vigente) devuelve 409. Roles: ver matriz de `04-api.md`.
+9. **Validaciones mínimas (consigna de la cátedra):** campos obligatorios no vacíos, evitar duplicados (correo de usuario, nombre de categoría, ciclo año+tipo, `externalId` de redes), mensajes claros en español.

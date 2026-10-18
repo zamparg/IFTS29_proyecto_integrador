@@ -36,6 +36,22 @@ La semilla (`prisma/seed.ts`) crea: un usuario por rol, un ciclo público 2026-2
 | E2E-13 | Todas las pantallas se operan con teclado; los diálogos atrapan y devuelven el foco | RNF07 |
 | E2E-14 | (Should) Contacto: exige consentimiento, guarda el mensaje aunque falle el correo | RF08 |
 | E2E-15 | Subir un archivo de tipo no permitido o excedido muestra un error claro | RNF06 |
+| E2E-16 | CRUD completo de avisos: crear, ver, editar y eliminar (con diálogo de confirmación) un aviso vencido; no se puede eliminar uno vigente | Consigna de la cátedra |
+| E2E-17 | Validaciones: campos obligatorios vacíos, correo de usuario duplicado y ciclo duplicado muestran mensajes claros | Consigna de la cátedra |
+
+## Pruebas que se documentan para la cátedra
+
+La consigna pide **2 o 3 pruebas unitarias** y **1 o 2 de integración**, cada una documentada con *qué se probó, resultado esperado, resultado obtenido* y evidencia (captura o salida del framework). Selección propuesta, que además cubre las reglas más críticas:
+
+| Tipo | Prueba | Esperado |
+|---|---|---|
+| Unitaria | Regla de visibilidad de un aviso o publicación (en vigencia, vencido, pausado, límite exacto) | Solo es visible cuando corresponde |
+| Unitaria | Validación zod de un aviso (título vacío, fecha de fin anterior a la de inicio) | Rechaza con mensaje claro |
+| Unitaria | Cifrado y descifrado del token de Instagram | El valor descifrado coincide; un token alterado falla |
+| Integración | Crear un aviso desde la API y verificar que existe en PostgreSQL y que aparece en `/public/students` | 201, fila en la base, visible al público |
+| Integración | Eliminar un aviso vencido con confirmación: se borra, queda en AuditLog; uno vigente devuelve 409 | 204 y registro de auditoría; 409 |
+
+Guardar la salida de Vitest y de Supertest y las capturas de Cypress en `docs/evidencias/`.
 
 ## Pruebas de la regla de vigencia (unitarias, obligatorias)
 

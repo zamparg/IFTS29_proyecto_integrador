@@ -106,45 +106,50 @@ Escala: probabilidad (P) e impacto (I) de 1 (bajo) a 3 (alto); exposición = P �
 | R11 | Trámite del dominio .edu.ar demorado | Externo | 2 | 1 | 2 | Iniciar documentación temprano | Subdominio provisorio gratuito | Santiago |
 | R12 | Baja adopción del panel por parte de los docentes | Humano | 2 | 3 | 6 | Panel simple, capacitación con casos prácticos, manual | Sesión de refuerzo y acompañamiento en las primeras semanas | Martín |
 
+**Gestión del registro.** El registro se abre en la definición del proyecto, se revisa al menos una vez por mes en las reuniones de seguimiento (cambios de probabilidad o impacto, planes de contingencia, riesgos nuevos) y **ningún riesgo se elimina** aunque pase su ventana, porque queda como aprendizaje. Cada riesgo tiene un responsable.
+
 **Mapa de calor.** Exposición alta (6 a 9): R1, R2, R3, R4, R5, R6, R8, R12. Media (3 a 4): R7, R9, R10. Baja (1 a 2): R11. Los riesgos R1, R3 y R5 son los que la propia ejecución ya puso a prueba y se revisan en cada retrospectiva.
 
 # 9. Sostenibilidad del proyecto
 
-**Estrategia de sostenimiento.** El proyecto es académico y no se cobra; la sostenibilidad se resuelve en tres capas:
+**Estrategia de sostenimiento y financiamiento.** Se trata de un desarrollo por encargo para una institución pública sin presupuesto: no hay pago por hitos, por lo que el sostenimiento se resuelve en cuatro frentes, tomados de las estrategias vistas en la materia:
 
 1. **Costo operativo cero para el cliente:** hosting, base de datos, CDN y correo en planes gratuitos, y un dominio .edu.ar o un subdominio provisorio. El instituto solo asume, eventualmente, un dominio .com.ar de unos $8.500 ARS por año.
-2. **Mantenimiento por continuidad académica:** la cátedra y el cliente acordaron que una cohorte siguiente puede retomar el proyecto para mejoras (minuta del 30/06). El traspaso incluye documentación técnica, manual de usuario y repositorio, y el equipo de Talento Tech cierra el proyecto con la fase de mantenimiento inicial (actividad P).
-3. **Reutilización como servicio:** la estructura modular permite adaptar la plataforma a otras instituciones con costos de adaptación y soporte; esa línea es la que sostiene económicamente a la empresa (sección 10.3).
+2. **Continuidad académica:** la cátedra y el cliente acordaron que una cohorte siguiente puede retomar el proyecto (minuta del 30/06). El traspaso incluye repositorio, documentación técnica y manual; la actividad P del cronograma lo cubre.
+3. **Mantenimiento anual opcional y paquetes de horas:** soporte y evolución con contrato separado (USD 1.800 por año, sección 10.2), la fuente de ingreso recurrente que la materia recomienda para software a medida.
+4. **Subsidios y fondos para proyectos educativos, y reutilización:** la plataforma, modular, puede adaptarse a otras instituciones con servicios asociados de instalación, personalización y capacitación (sección 10.3).
 
-**Modelo de licenciamiento.**
+**Modelo de licenciamiento.** Para el desarrollo por encargo la materia distingue la cesión total de derechos, la licencia de uso exclusiva o no exclusiva y la licencia abierta, esta última indicada cuando el cliente es una entidad pública o el proyecto tiene interés educativo o comunitario.
 
 | Modelo | A favor | En contra | Evaluación |
 |---|---|---|---|
-| **MIT (propuesto)** | Máxima reutilización; el instituto y futuras cohortes pueden modificar y mejorar el código; sin costo de licencias | No obliga a quien lo reutilice a compartir sus mejoras | **Elegido** |
-| GPL v3 | Obliga a mantener abiertas las derivaciones | Desalienta su adopción en entornos que quieran integrarlo con software cerrado | Alternativa válida |
-| Propietario | Control comercial | Contradice el carácter público del cliente, genera dependencia y costo | Descartado |
-| Freemium / SaaS | Ingreso recurrente | Requiere operar infraestructura y soporte con pago, lo que el instituto no puede sostener hoy | Posible a futuro para otras instituciones |
+| **Licencia abierta MIT (propuesta)** | Cliente público y proyecto educativo; el instituto y futuras cohortes pueden modificar y reutilizar; Talento Tech puede reutilizar sus componentes | No obliga a compartir las mejoras | **Elegido** |
+| GPL v3 | Recomendada para proyectos comunitarios y educativos; mantiene libres las derivaciones | No permite integrarla con software propietario, lo que limita futuras adaptaciones comerciales | Alternativa válida |
+| Cesión total de derechos | Propiedad completa del cliente | Impide que la empresa reutilice el código; reduce el valor del modelo de reutilización | Descartada |
+| Propietario, freemium o SaaS | Control comercial, ingreso recurrente | Contradice el carácter público del cliente y exige un pago que el instituto no puede sostener hoy | Descartada por ahora |
 
-Se adopta **MIT para el código**, con cesión de uso al IFTS N.° 2; los contenidos, textos, fotografías y la marca pertenecen al instituto y no se licencian.
+Se adopta **MIT para el código**, con licencia de uso al IFTS N.° 2; los contenidos, textos, fotografías y la marca pertenecen al instituto (si decide abrir los contenidos, corresponde una licencia Creative Commons).
 
 **Prácticas sostenibles y control de calidad.**
 
 | Dimensión | Práctica |
 |---|---|
 | Económica | Infraestructura gratuita; documentación de traspaso para que el mantenimiento no dependa del equipo original |
-| Ambiental | Sin servidores propios dedicados; imágenes comprimidas y servidas por CDN; páginas livianas |
+| Ambiental | Código y recursos eficientes: imágenes comprimidas y servidas por CDN, carga diferida (lazy loading), caché de páginas públicas y menos solicitudes al servidor; sin servidores dedicados; integración continua que ejecuta pruebas solo cuando hay cambios; preferir proveedores con centros de datos de energía renovable; medición con Lighthouse |
 | Social | Accesibilidad WCAG 2.2 AA; protección de datos personales (Ley 25.326); panel pensado para personal no técnico |
-| Calidad | Revisión cruzada de cada tarea; pruebas automatizadas (meta: 60 % de cobertura del backend); integración continua; definición de "terminado" con QA; retrospectiva por sprint |
+| Calidad | Criterios de ISO/IEC 25010 priorizados: adecuación funcional, usabilidad, seguridad, mantenibilidad y eficiencia; revisión cruzada de cada tarea; pruebas unitarias y de integración automatizadas (meta: 60 % de cobertura del backend); integración continua con GitHub Actions; definición de terminado con QA; retrospectiva por sprint |
 
 # 10. Presupuesto estimado y análisis de costos
 
-## 10.1. Costos del proyecto actual
+Se sigue el método de la materia: se distingue el **presupuesto de costo** del **presupuesto de venta**; el costo total suma los costos directos y los indirectos prorrateados por la duración del proyecto; el precio de venta es **costo total × (1 + ganancia)**; y el punto de equilibrio es **costos fijos totales / (precio de venta − costo variable por proyecto)**.
 
-Los costos de mano de obra se calculan con 680 horas a un valor referencial de **USD 30 por hora**. Es un proyecto sin cobro: el valor sirve para dimensionar el servicio y evaluar su factibilidad.
+## 10.1. Presupuesto de costo del proyecto actual
 
-{{tabla|Presupuesto por fase, costos directos e indirectos}}
+Mano de obra: 680 horas a un valor referencial de **USD 30 por hora**, dentro del rango que la materia da para equipos de Sudamérica. Es un proyecto sin cobro: el valor sirve para dimensionar el servicio y evaluar su factibilidad.
 
-| Concepto | Tipo | Cálculo | Monto |
+{{tabla|Presupuesto de costo por fase y concepto}}
+
+| Concepto | Clasificación | Cálculo | Monto |
 |---|---|---|---|
 | 1. Análisis y requerimientos | Directo, variable | 70 h × USD 30 | USD 2.100 |
 | 2. Diseño del sistema | Directo, variable | 110 h × USD 30 | USD 3.300 |
@@ -153,30 +158,32 @@ Los costos de mano de obra se calculan con 680 horas a un valor referencial de *
 | 5. Capacitación | Directo, variable | 40 h × USD 30 | USD 1.200 |
 | 6. Manual y soporte | Directo, variable | 60 h × USD 30 | USD 1.800 |
 | 7. Mantenimiento inicial | Directo, variable | 30 h × USD 30 | USD 900 |
-| **Subtotal mano de obra** | | 680 h × USD 30 | **USD 20.400** |
-| Hosting, base de datos, CDN y correo | Directo, fijo | Planes gratuitos | USD 0 |
-| Licencias de software (Trello, GitHub, Figma, Lucidchart) | Indirecto, fijo | Planes gratuitos | USD 0 |
+| **Subtotal costos directos de mano de obra** | | 680 h × USD 30 | **USD 20.400** |
+| Hosting, base de datos, CDN y correo del proyecto | Directo, variable | Planes gratuitos | USD 0 |
+| Licencias del proyecto (Trello, GitHub, Figma, Lucidchart) | Directo | Planes gratuitos | USD 0 |
 | Dominio .com.ar (contingente) | Directo, fijo anual | Valor mencionado en la reunión | $8.500 ARS |
+| Costos indirectos de la empresa (herramientas de uso general, administración, difusión) | Indirecto, fijo | USD 4.200 anuales × 16/52 (duración del proyecto) | USD 1.292 |
 | Equipamiento, conexión y energía | Indirecto | Aportados por los integrantes | No imputado |
-| Reserva de contingencia (10 % de mano de obra, sobre R1 y R5) | Indirecto | 10 % × USD 20.400 | USD 2.040 |
-| **Total estimado** | | | **USD 22.440** + dominio |
+| **Costo total estimado** | | USD 20.400 + USD 1.292 | **USD 21.692** + dominio |
+
+**Presupuesto de venta.** Con una ganancia del 25 %: precio de venta = USD 21.692 × 1,25 = **USD 27.115**; margen de ganancia = (1 − costo / precio) × 100 = **20 %**. Como ese precio supera lo que el instituto puede pagar, el proyecto se desarrolla sin cobro y su valor está en la práctica profesional y en la base reutilizable. Como reserva de gestión se cuenta con las **40 horas** que sobran entre las 720 disponibles y las 680 planificadas.
 
 ## 10.2. Costos de mantenimiento posterior
 
-Supuesto del equipo: 4 horas mensuales de soporte y correcciones (48 h por año), es decir **USD 1.440 por año** a valor referencial, más hosting USD 0 mientras alcance el plan gratuito. Si fuera necesario pasar a un plan pago, el costo se cotizará y se acordará con el instituto antes de aplicarlo (riesgo R7).
+Supuesto del equipo: 4 horas mensuales de soporte y correcciones (48 h por año), es decir **USD 1.440 por año** de costo, a ofrecer como contrato de mantenimiento anual opcional (precio de USD 1.800 con ganancia del 25 %). El hosting cuesta USD 0 mientras alcance el plan gratuito; si hiciera falta un plan pago, se cotizará y se acordará con el instituto antes de aplicarlo (riesgo R7).
 
 ## 10.3. Factibilidad económica y punto de equilibrio
 
-**Factibilidad.** Para el instituto el proyecto es factible porque su costo en dinero es cero; para el equipo es factible porque las 680 horas planificadas entran en las 720 disponibles. No lo es como negocio de un único cliente: el costo de USD 22.440 supera cualquier presupuesto institucional del cliente, y por eso se sostiene como práctica profesional y como base reutilizable.
+**Factibilidad.** Para el instituto es factible porque no tiene costo en dinero; para el equipo, porque las 680 horas entran en las 720 disponibles. No es viable como negocio de un único cliente institucional, porque el precio de venta supera cualquier presupuesto del instituto.
 
-**Punto de equilibrio de la empresa con proyectos similares.** Fórmula: **PE = costos fijos anuales / (precio − costo variable por proyecto)**. Se supone que Talento Tech tiene costos fijos de USD 4.200 por año (herramientas pagas, administración y difusión), supuesto a validar.
+**Punto de equilibrio con proyectos similares.** Costos fijos de la empresa: USD 4.200 por año (supuesto del equipo, a validar).
 
-| Escenario | Precio | Costo variable | Margen por proyecto | Punto de equilibrio |
-|---|---|---|---|---|
-| Proyecto nuevo desde cero (como el actual) | USD 26.000 (costo más 25 %) | USD 20.700 (mano de obra e infraestructura) | USD 5.300 | 4.200 / 5.300 = 0,8, o sea **1 proyecto por año** |
-| Proyecto similar reutilizando la plataforma (120 h de adaptación) | USD 6.000 | USD 3.700 (120 h × USD 30 más USD 100 de infraestructura) | USD 2.300 | 4.200 / 2.300 = 1,8, o sea **2 proyectos por año** |
+| Escenario | Costo variable por proyecto | Costo total | Precio de venta (+25 %) | Margen unitario | Punto de equilibrio |
+|---|---|---|---|---|---|
+| Proyecto nuevo desde cero (como el actual) | USD 20.400 | USD 21.692 | USD 27.115 | USD 6.715 | 4.200 / 6.715 = 0.6, o sea **1 proyecto por año** |
+| Proyecto similar reutilizando la plataforma (120 h de adaptación en 4 semanas, más USD 100 de infraestructura) | USD 3.700 | USD 4.023 | USD 5.029 | USD 1.329 | 4.200 / 1.329 = 3.2, o sea **4 proyectos por año** |
 
-**Conclusión.** El modelo reutilizable es el que hace accesible el servicio para instituciones con presupuesto reducido (USD 6.000 contra USD 26.000) y alcanza el equilibrio con dos adaptaciones por año. Un solo proyecto desde cero cubre los costos fijos, pero solo con un cliente que pueda pagar el precio completo, que no es el caso del IFTS N.° 2.
+**Conclusión.** Un proyecto desde cero cubre los costos fijos del año, pero solo con un cliente que pueda pagar USD 27.115, que no es el caso del IFTS N.° 2. El modelo reutilizable baja el precio a unos USD 5.029 y hace accesible el servicio a instituciones con presupuesto reducido, pero exige 4 adaptaciones por año para equilibrarse. Por eso se combina con el contrato de mantenimiento anual opcional (USD 1.800 por institución), que aporta ingreso recurrente (sección 9).
 
 # Anexo A. Corrección de la Parte 1: origen de los requerimientos
 

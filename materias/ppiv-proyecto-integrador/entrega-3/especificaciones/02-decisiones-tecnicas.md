@@ -10,7 +10,7 @@ Cada decisión indica **estado**: *Cerrada* (decidida por la cátedra o el clien
 | 04 | Backend: Node.js + Express + TypeScript, API REST | Propuesta (Etapa 2) |
 | 05 | Base de datos: PostgreSQL + Prisma | Propuesta (Etapa 2) |
 | 06 | Autenticación: sesiones en base con cookie, argon2id | Propuesta |
-| 07 | Vigencia calculada al consultar; sin borrado físico | Cerrada (cliente) |
+| 07 | Vigencia calculada al consultar; sin borrado automático; eliminación manual con confirmación | Cerrada (cliente y cátedra) |
 | 08 | Almacenamiento de archivos tras una interfaz | A validar |
 | 09 | Integración con Instagram | A validar (prueba de concepto) |
 | 10 | Renderizado público con caché y revalidación | Propuesta |
@@ -56,7 +56,7 @@ PostgreSQL con Prisma Migrate. El esquema ejecutable está en `prisma/schema.pri
 
 ## ADR-07 · Vigencia y archivo
 
-La visibilidad se **calcula en cada consulta** a partir del estado y las fechas, sin tarea programada que oculte contenido: así el archivo no depende de procesos que podrían no ejecutarse en hosting gratuito, y nunca se elimina información. No hay `DELETE` de contenido; hay estados (`PAUSED`, `ARCHIVED`, `DISCARDED`). Decisión del cliente (D-004): el borrado automático es "un riesgo grave".
+La visibilidad se **calcula en cada consulta** a partir del estado y las fechas, sin tarea programada que oculte contenido: así el archivo no depende de procesos que podrían no ejecutarse en hosting gratuito, y nunca se elimina información. Hay estados (`PAUSED`, `ARCHIVED`, `DISCARDED`) para sacar contenido de circulación sin perderlo. **Decisión del cliente (D-004):** el borrado *automático* es "un riesgo grave"; en la misma reunión aclaró que lo antiguo se puede borrar a mano. **Exigencia de la cátedra:** la aplicación debe implementar el CRUD completo (crear, leer, actualizar, eliminar) con confirmación antes de eliminar. Ambas se cumplen así: nunca hay borrado automático, y existe `DELETE` manual con diálogo de confirmación, auditoría y reglas de elegibilidad (solo borrador, pausado, descartado, vencido o archivado; 409 si está referenciado).
 
 ## ADR-08 · Almacenamiento de archivos
 
