@@ -9,6 +9,7 @@ Esta carpeta es el **paquete de especificaciones** del MVP del sitio institucion
 | Archivo | Para qué sirve |
 |---|---|
 | [historias-de-usuario.md](historias-de-usuario.md) | 12 historias de usuario en el formato de la cátedra, priorizadas, con criterios y trazabilidad |
+| [itil-4-aplicado.md](itil-4-aplicado.md) | Borrador de la actividad ITIL 4 del aula (PPIV): dimensiones, cadena de valor, prácticas, caso de incidentes |
 | [AGENTS.md](AGENTS.md) | Reglas no negociables, orden de lectura, convenciones y definición de terminado |
 | [especificaciones/00-vision-y-alcance.md](especificaciones/00-vision-y-alcance.md) | Problema, objetivo, alcance del MVP (Debe / Debería / Podría) y criterios de éxito |
 | [especificaciones/01-requerimientos.md](especificaciones/01-requerimientos.md) | RF y RNF con prioridad, origen, pantallas y criterios de aceptación |
