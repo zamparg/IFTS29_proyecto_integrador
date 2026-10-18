@@ -192,7 +192,7 @@ Archivo: `materias/ppiv-proyecto-integrador/material/Orientacion_de_Actividades_
 - **Historias de usuario:** formato "Como [tipo de usuario], quiero [acción] para [objetivo]"; mínimo 5, recomendado 8 a 12; priorizadas en alta, media y baja.
 - **Desarrollo iterativo (lo que el aula llama segunda entrega del proyecto):** al menos **dos módulos funcionales**; control de versiones con ramas por funcionalidad y commits significativos; pruebas funcionales iniciales con registro de errores; **portfolio grupal en el Campus Virtual** (capturas, explicaciones técnicas, enlaces al repo, decisiones, dificultades, tareas completadas y pendientes, **horas trabajadas por integrante** para el presupuesto final); **video de avance** con cámara encendida donde cada integrante explica su trabajo.
 - **ITIL 4:** actividades de análisis (cuatro dimensiones, cadena de valor, incidentes y problemas, mejora continua); productos: informes breves, casos, mapas conceptuales, presentaciones. Material en `materias/ppiv-proyecto-integrador/material/`.
-- **Decisión del equipo (18/10/2026):** la "segunda entrega" de avance que menciona el aula no aplica; se va directamente a la Etapa 3. ITIL 4 sin definir.
+- **Decisión del equipo (18/10/2026):** la "segunda entrega" de avance que menciona el aula no aplica; se va directamente a la Etapa 3. ITIL 4 pertenece a PPIV; borrador en `entrega-3/itil-4-aplicado.md`.
 
 ## 6. Estado de entregas y recursos
 - **Recursos del equipo** (de la Tabla 13 del PDF de Etapa 2): Drive `https://drive.google.com/drive/folders/1UNzvDp6loFH1cEmlk3ogOX_Ol3Lwo_UN`, repo `https://github.com/zamparg/IFTS29_proyecto_integrador`, Trello "ifts-n2-sprint-board-scrum", Lucidchart y Canva (links en el PDF), sitio `https://talento-tech-group.vercel.app`.

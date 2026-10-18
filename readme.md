@@ -64,7 +64,8 @@ La consigna de la Etapa 3 (`materias/ppiv-proyecto-integrador/consigna/Etapa 3 -
 - **Historias de usuario:** hechas en `materias/ppiv-proyecto-integrador/entrega-3/historias-de-usuario.md` (12, priorizadas). La Etapa 2 ya entregada no se modifica.
 - **Entrega de avance** (≥ 2 módulos, video, portfolio): **no aplica**, decisión del equipo; se va directo a la Etapa 3.
 - **Registro de horas reales por integrante:** alimenta el presupuesto final de Gestión de Proyectos (la Parte 2 estima 680 h).
-- **ITIL 4** y **coloquio final:** sin definir todavía.
+- **ITIL 4** (materia: PPIV): borrador en `materias/ppiv-proyecto-integrador/entrega-3/itil-4-aplicado.md`; faltan las secciones `[completar]`, los tiempos de servicio con el cliente y confirmar fecha y formato con los docentes.
+- **Coloquio final:** sin definir todavía.
 
 ## Hitos del proyecto con el cliente (fijados por la cátedra)
 
