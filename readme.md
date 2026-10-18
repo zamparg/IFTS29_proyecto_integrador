@@ -61,11 +61,10 @@ La consigna de la Etapa 3 (`materias/ppiv-proyecto-integrador/consigna/Etapa 3 -
 
 ## Pendientes que surgen de la orientación del aula (PPIV)
 
-- **Historias de usuario** en el formato de la cátedra (hay un set listo en `entrega-3/especificaciones/10-entregables-etapa-3.md`); la Etapa 2 entregada no las incluía.
-- **Entrega de avance** (≥ 2 módulos funcionales, ramas y commits, portfolio en el Campus, horas por integrante, video con cámara encendida): confirmar con los docentes si es una entrega aparte de la Etapa 3 y su fecha.
-- **Registro de horas reales por integrante**: alimenta el presupuesto final de Gestión de Proyectos (la Parte 2 estima 680 h).
-- **ITIL 4**: actividades y productos de la sección del aula; sin trabajar todavía.
-- **Coloquio final** de cierre del proyecto.
+- **Historias de usuario:** hechas en `materias/ppiv-proyecto-integrador/entrega-3/historias-de-usuario.md` (12, priorizadas). La Etapa 2 ya entregada no se modifica.
+- **Entrega de avance** (≥ 2 módulos, video, portfolio): **no aplica**, decisión del equipo; se va directo a la Etapa 3.
+- **Registro de horas reales por integrante:** alimenta el presupuesto final de Gestión de Proyectos (la Parte 2 estima 680 h).
+- **ITIL 4** y **coloquio final:** sin definir todavía.
 
 ## Hitos del proyecto con el cliente (fijados por la cátedra)
 
