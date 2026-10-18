@@ -59,6 +59,14 @@ Convención: `materias/<materia>/{consigna, entrega-N, material}`. Todo lo compa
 
 La consigna de la Etapa 3 (`materias/ppiv-proyecto-integrador/consigna/Etapa 3 - Desarrollo completo.pdf`) pide una aplicación funcional con base de datos y CRUD completo (incluido eliminar con confirmación), Manual Técnico, Manual de Usuario, 2-3 pruebas unitarias y 1-2 de integración documentadas, y un PDF con instrucciones de instalación. Entregables: repositorio, .zip, PDF, scripts de base y enlace desplegado. La aplicación no se desarrolla en este repositorio. `materias/ppiv-proyecto-integrador/entrega-3/` contiene el paquete de especificaciones, incluido el mapeo a la consigna en `10-entregables-etapa-3.md` (visión, requerimientos con criterios de aceptación, ADR técnicos, arquitectura, API, pantallas del Figma con nodos, pruebas, backlog por fases, datos reales y preguntas abiertas) para pasárselo a un agente en otro repositorio. Empezar por su `README.md` y `AGENTS.md`. Hosting, Instagram y roles están marcados como "a validar".
 
+## Pendientes que surgen de la orientación del aula (PPIV)
+
+- **Historias de usuario** en el formato de la cátedra (hay un set listo en `entrega-3/especificaciones/10-entregables-etapa-3.md`); la Etapa 2 entregada no las incluía.
+- **Entrega de avance** (≥ 2 módulos funcionales, ramas y commits, portfolio en el Campus, horas por integrante, video con cámara encendida): confirmar con los docentes si es una entrega aparte de la Etapa 3 y su fecha.
+- **Registro de horas reales por integrante**: alimenta el presupuesto final de Gestión de Proyectos (la Parte 2 estima 680 h).
+- **ITIL 4**: actividades y productos de la sección del aula; sin trabajar todavía.
+- **Coloquio final** de cierre del proyecto.
+
 ## Hitos del proyecto con el cliente (fijados por la cátedra)
 
 | Semana | Hito | Estado |

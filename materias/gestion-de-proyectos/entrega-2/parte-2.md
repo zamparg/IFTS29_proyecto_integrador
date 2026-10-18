@@ -21,6 +21,7 @@
 | Tareas completadas por sprint / planificadas | ≥ 80 % | < 60 % | Retrospectiva y recorte de alcance del sprint siguiente |
 | Trabajo en curso por persona (WIP) | ≤ 2 tarjetas | > 3 | Terminar antes de empezar |
 | Desvío del cronograma (semanas de atraso de la ruta crítica) | 0 | ≥ 1 | Aplicar el plan de contingencia de la sección 8 |
+| Horas reales por integrante frente a las planificadas (680 h en total) | Desvío ≤ 10 % | > 15 % | Reestimar el presupuesto y recortar alcance (el aula pide documentar las horas para el presupuesto final) |
 | Errores bloqueantes abiertos | 0 al hito | > 0 a dos semanas del hito | Congelar funciones nuevas |
 | Respuesta del cliente a una validación | ≤ 5 días | > 10 días | Escalar a Martín Juan (canal único) y avanzar con datos de prueba |
 

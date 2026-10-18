@@ -176,6 +176,13 @@ Duración total de la práctica: 16 clases de 9 hs semanales (2° cuatrimestre 2
 - Entrega: repositorio Git, .zip, PDF único, scripts de base, ejecutable o enlace desplegado. La defensa final se graba (consigna general).
 - Texto completo: `materias/ppiv-proyecto-integrador/consigna/Etapa 3 - Desarrollo completo.txt`. Plan de trabajo: `materias/ppiv-proyecto-integrador/entrega-3/`.
 
+## 5c. Orientación de actividades de PPIV (aula virtual, copiada el 18/10/2026)
+Archivo: `materias/ppiv-proyecto-integrador/material/Orientacion_de_Actividades_Proyecto_Integrador.pdf`. Etapas del aula: empresa → análisis y relevamiento → **modelado, casos de uso e historias de usuario** → metodología y stack → estructura base (repo inicial, conexión a base, primer módulo) → **desarrollo iterativo** → ITIL 4 → coloquio final.
+- **Historias de usuario:** formato "Como [tipo de usuario], quiero [acción] para [objetivo]"; mínimo 5, recomendado 8 a 12; priorizadas en alta, media y baja.
+- **Desarrollo iterativo (lo que el aula llama segunda entrega del proyecto):** al menos **dos módulos funcionales**; control de versiones con ramas por funcionalidad y commits significativos; pruebas funcionales iniciales con registro de errores; **portfolio grupal en el Campus Virtual** (capturas, explicaciones técnicas, enlaces al repo, decisiones, dificultades, tareas completadas y pendientes, **horas trabajadas por integrante** para el presupuesto final); **video de avance** con cámara encendida donde cada integrante explica su trabajo.
+- **ITIL 4:** actividades de análisis (cuatro dimensiones, cadena de valor, incidentes y problemas, mejora continua); productos: informes breves, casos, mapas conceptuales, presentaciones. Material en `materias/ppiv-proyecto-integrador/material/`.
+- **Discrepancia a confirmar con los docentes:** el aula habla de una "segunda entrega" de avance (≥ 2 módulos + video) y la consigna del PDF llama "Etapa 3" a la entrega de desarrollo completo con manuales y pruebas. Confirmar si son dos entregas distintas y sus fechas.
+
 ## 6. Estado de entregas y recursos
 - **Recursos del equipo** (de la Tabla 13 del PDF de Etapa 2): Drive `https://drive.google.com/drive/folders/1UNzvDp6loFH1cEmlk3ogOX_Ol3Lwo_UN`, repo `https://github.com/zamparg/IFTS29_proyecto_integrador`, Trello "ifts-n2-sprint-board-scrum", Lucidchart y Canva (links en el PDF), sitio `https://talento-tech-group.vercel.app`.
 - **Requerimientos vigentes:** RF01–RF10 y RNF01–RNF08 (RNF07 accesibilidad y RNF08 datos personales agregados en Etapa 2).

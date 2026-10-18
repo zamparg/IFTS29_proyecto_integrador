@@ -43,6 +43,29 @@ Cada eliminación abre el diálogo de confirmación único (ADR-11), registra en
 
 En `docs/evidencias/`: salida de Vitest (unitarias), salida de Supertest (integración), capturas de Cypress o de la aplicación para cada flujo del manual de usuario, captura de Lighthouse y de axe, y registro de la prueba de concepto de Instagram. Con nombre y fecha, porque no se pueden reconstruir al final.
 
+## Entrega de avance del aula virtual (confirmar si es aparte)
+
+La orientación de actividades del aula (archivo en `material/`) describe una etapa de desarrollo iterativo con productos propios: al menos **dos módulos funcionales** (con este plan, **Avisos académicos** y **Publicaciones de redes**, fases 1 y 2); control de versiones con **ramas por funcionalidad** y commits significativos; pruebas funcionales iniciales con registro de errores; **portfolio grupal** en el Campus Virtual (capturas, explicaciones, enlaces, decisiones, dificultades, tareas completadas y pendientes); **horas trabajadas por integrante**; y un **video de avance con cámara encendida**. El agente debe mantener en el repo nuevo `docs/avance.md` (tareas completadas y pendientes, dificultades y soluciones) para alimentar ese portfolio. Las horas por integrante las registra el equipo humano en su propia planilla.
+
+## Historias de usuario en el formato de la cátedra
+
+La cátedra pide el formato "Como [tipo de usuario], quiero [acción] para [objetivo]", entre 8 y 12 historias, con prioridad alta, media o baja. Las 35 historias técnicas de `07-backlog-y-plan.md` (US-01 a US-35) se resumen así para el documento:
+
+| N.° | Historia | Prioridad |
+|---|---|---|
+| H1 | Como editor, quiero ver las publicaciones de Instagram detectadas para decidir cuáles mostrar en el sitio | Alta |
+| H2 | Como editor, quiero aprobar una publicación con sección y vigencia para que aparezca en el sitio solo el tiempo que corresponde | Alta |
+| H3 | Como editor, quiero descartar una publicación para que contenido interno menor no llegue a la web | Alta |
+| H4 | Como personal de bedelía, quiero publicar avisos con adjunto y fecha de vencimiento para que los alumnos vean solo información vigente | Alta |
+| H5 | Como personal de bedelía, quiero cargar los horarios por comisión y los llamados a examen para que los alumnos consulten el ciclo en curso | Alta |
+| H6 | Como administrador, quiero definir el ciclo público para que el sitio muestre un solo período académico | Alta |
+| H7 | Como alumno, quiero ver horarios, mesas y avisos vigentes y acceder a SIU y al aula virtual para resolver mi cursada desde un solo lugar | Alta |
+| H8 | Como aspirante, quiero conocer la carrera, el plan de estudios y los pasos de ingreso para decidir si me inscribo | Alta |
+| H9 | Como administrador, quiero crear usuarios con roles para que cada persona acceda solo a lo que le corresponde | Media |
+| H10 | Como personal autorizado, quiero archivar, restaurar y eliminar documentos antiguos con confirmación para mantener ordenado el repositorio sin perder información por error | Media |
+| H11 | Como visitante, quiero enviar una consulta al instituto para resolver dudas sin depender de una sola persona | Media |
+| H12 | Como editor, quiero gestionar el plantel docente y una galería para mostrar la vida del instituto | Baja |
+
 ## Sobre la defensa
 
 La consigna general de la cátedra exige una defensa grabada con problema detectado, solución propuesta, arquitectura, tecnologías, demostración en vivo, resultados y reflexión crítica. El paquete deja material para cada punto: `00-vision-y-alcance.md` (problema y solución), `03-arquitectura-y-estructura.md` (arquitectura), `02-decisiones-tecnicas.md` (tecnologías y decisiones).
