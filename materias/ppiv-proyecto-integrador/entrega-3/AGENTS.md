@@ -49,7 +49,7 @@ Sos el agente de desarrollo de **Talento Tech** y vas a construir el MVP del sit
 
 La Etapa 3 de la materia (consigna en `consigna/Etapa 3 - Desarrollo completo.pdf` del repo del equipo) exige una aplicación funcional **más** Manual Técnico, Manual de Usuario, evidencia de pruebas unitarias y de integración, base de datos con CRUD completo e instrucciones de instalación que permitan a un docente ejecutarla. Todo eso está bajado a tareas en `especificaciones/10-entregables-etapa-3.md`. Guardá evidencias (capturas, salidas de pruebas) a medida que avanzás: no se pueden reconstruir al final.
 
-- Mantené `docs/avance.md` con tareas completadas y pendientes, dificultades y soluciones: alimenta el portfolio grupal que pide el aula virtual. Una rama por funcionalidad y commits con mensajes significativos (también se evalúan).
+- Mantené `docs/avance.md` con tareas completadas y pendientes, dificultades y soluciones: sirve de registro del avance. Una rama por funcionalidad y commits con mensajes significativos (también se evalúan).
 
 ## Qué entregar al terminar cada fase
 

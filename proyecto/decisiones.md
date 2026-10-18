@@ -86,6 +86,11 @@ Versión gráfica: [diagramas/decision-001-desarrollo-a-medida.png](diagramas/de
 - **Estado:** propuesta, detalle y estados en `materias/ppiv-proyecto-integrador/entrega-3/especificaciones/02-decisiones-tecnicas.md` · **Fecha:** 18/10/2026.
 - **Resumen:** monorepo pnpm; Next.js + Express + PostgreSQL/Prisma (Etapa 2); sesiones en base con argon2id; vigencia calculada al consultar y sin borrado físico; archivos y Instagram detrás de interfaces; tres roles (ADMIN, BEDELIA, EDITOR) a validar con el cliente; hosting gratuito a validar por DevOps.
 
+## D-012 · Sin entrega de avance intermedia
+
+- **Estado:** cerrada · **Fecha:** 18/10/2026 · **Decide:** equipo.
+- **Decisión:** la "segunda entrega" de avance del aula (2 módulos, video, portfolio) no aplica; se trabaja directamente hacia la Etapa 3. Las historias de usuario se documentan en `entrega-3/historias-de-usuario.md`.
+
 ## D-010 · No se reentrega la Etapa 2; foco en Etapa 3 (specs para un agente)
 
 - **Estado:** cerrada · **Fecha:** 18/10/2026 · **Decide:** equipo.
