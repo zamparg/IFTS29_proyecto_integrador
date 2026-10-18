@@ -111,6 +111,7 @@ model Notice {
   category     Category?      @relation(fields: [categoryId], references: [id])
   audience     NoticeAudience @default(ALL)
   urgent       Boolean        @default(false)
+  highlighted  Boolean        @default(false) // destacar evento próximo (reunión 06/10)
   status       NoticeStatus   @default(ACTIVE)
   visibleFrom  DateTime       @default(now())
   visibleUntil DateTime?
@@ -181,6 +182,7 @@ model ExamCall {
   startsOn       DateTime
   endsOn         DateTime
   enrollmentOpen Boolean      @default(false)
+  highlighted    Boolean      @default(false) // destacar evento próximo (reunión 06/10)
   documentId     String?
   document       Document?    @relation(fields: [documentId], references: [id])
   notes          String?

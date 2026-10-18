@@ -9,6 +9,7 @@
 | Extremo a extremo | Cypress (viewports 390 y 1440) | Escenarios E2E de abajo | Todos en verde antes del hito |
 | Accesibilidad | axe en Cypress + Lighthouse CI | WCAG 2.2 AA | 0 violaciones graves; Accesibilidad ≥ 90 |
 | Rendimiento | Lighthouse CI | Inicio y Novedades en móvil | Rendimiento ≥ 80; contenido principal < 2,5 s |
+| Carga | k6 | Sitio público con 400 usuarios virtuales (Inicio, Estudiantes, Novedades) | Sin errores 5xx y p95 < 1,5 s (RNF09) |
 | Seguridad | Pruebas de API + revisión | Acceso sin sesión, escalada de roles, subida de archivos no permitidos, límites de frecuencia | Sin hallazgos altos |
 
 Las integraciones externas se prueban con **dobles**: `FakeInstagramClient`, `InMemoryStorage`, `FakeMailer`. La prueba de concepto con la API real de Instagram es manual y se documenta.

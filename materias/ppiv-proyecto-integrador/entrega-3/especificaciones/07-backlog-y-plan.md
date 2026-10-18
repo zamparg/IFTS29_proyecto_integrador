@@ -41,6 +41,7 @@ Prioridad M / S / C como en `01-requerimientos.md`. Una historia = una rama = un
 | US-19 | Como visitante quiero ver el Inicio | M | RF02 | Pantalla 01 |
 | US-20 | Como visitante quiero ver Institucional | M | RF02 | Pantalla 02 |
 | US-21 | Como visitante quiero ver La carrera | M | RF02 | Pantalla 03 |
+| US-36 | Como bedelía quiero marcar "destacar" en un llamado o aviso para resaltar los eventos próximos | M | RF06 | Aparece resaltado en Inicio y Estudiantes hasta su fecha |
 | US-22 | Como visitante quiero ver Estudiantes con el ciclo público y enlaces | M | RF06, RF07 | Pantalla 04; regla 3 de negocio |
 | US-23 | Como visitante quiero ver Ingreso | M | RF02 | Pantalla 05 |
 | US-24 | Como visitante quiero ver Novedades con filtros y archivo del año | M | RF03 | Pantalla 06 |
@@ -59,6 +60,10 @@ Prioridad M / S / C como en `01-requerimientos.md`. Una historia = una rama = un
 ## Orden sugerido dentro de una fase
 
 1. Esquema y migración (`schema.prisma`) → 2. servicios y reglas con pruebas unitarias → 3. endpoints con pruebas de API → 4. pantalla y componentes → 5. escenario Cypress → 6. accesibilidad y responsive → 7. documentación.
+
+## Cambio de plazos tras la reunión del 06/10
+
+El cliente y el equipo acordaron una **nueva reunión en 2 o 3 semanas (≈ 20 al 27/10/2026)** para evaluar un MVP en código. Es **antes** del hito de la semana 13 que supone el cronograma de Gestión de Proyectos. Por eso las fases 0 a 3 (base, núcleo, avisos y moderación, horarios y calendario por archivos) deben quedar demostrables primero, con datos semilla; el resto sigue el orden del plan.
 
 ## Riesgos que el plan ya considera
 

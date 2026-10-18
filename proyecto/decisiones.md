@@ -76,15 +76,21 @@ Versión gráfica: [diagramas/decision-001-desarrollo-a-medida.png](diagramas/de
 
 ## D-007 · Identidad visual del prototipo: paleta tierra definida a partir del feedback del cliente
 
-- **Estado:** vigente · **Fecha:** reunión con el cliente reciente (`[completar]`); Figma actualizado 18/10/2026 · **Decide:** equipo, tras el rechazo del cliente a la paleta verde.
+- **Estado:** vigente · **Fecha:** segunda reunión con el cliente (06/10/2026); Figma actualizado 18/10/2026 · **Decide:** equipo, tras el rechazo del cliente a la paleta verde.
 - **Historia:** primero se usó azul `#24507F` (Talento Tech, descartado por no ser del cliente); luego verde `#123B30 / #087B48 / #E4BA6E` tomado del logo (es la que está en la Etapa 2 entregada); el cliente no la aprobó.
 - **Decisión vigente:** paleta tierra con tokens primary `#8D775F`, base `#F6F6F3`, accent `#6F5142`, accent-2 `#E0DFD5`, accent-3 `#291711`, font `#6E7271`, más semánticos de éxito, advertencia y peligro; Inter; fotografías reales. Detalle en `proyecto/context.md` §5.
-- **Pendiente:** el cliente dará correcciones adicionales.
+- **Estado de la paleta:** definida (marrones) tras el feedback del cliente posterior a la reunión del 06/10. Pueden llegar otras correcciones de diseño, pero la paleta no está en discusión.
 
 ## D-011 · Decisiones técnicas del MVP (Etapa 3)
 
 - **Estado:** propuesta, detalle y estados en `materias/ppiv-proyecto-integrador/entrega-3/especificaciones/02-decisiones-tecnicas.md` · **Fecha:** 18/10/2026.
 - **Resumen:** monorepo pnpm; Next.js + Express + PostgreSQL/Prisma (Etapa 2); sesiones en base con argon2id; vigencia calculada al consultar y sin borrado físico; archivos y Instagram detrás de interfaces; tres roles (ADMIN, BEDELIA, EDITOR) a validar con el cliente; hosting gratuito a validar por DevOps.
+
+## D-013 · Acuerdos de la segunda reunión con el cliente (06/10/2026)
+
+- **Estado:** cerrada · **Decide:** cliente y equipo.
+- **Decisiones:** roles diferenciados (bedelía y publicaciones); calendario académico y mesas por carga de archivos con casillas para destacar eventos próximos; MVP en código; nueva reunión en 2 o 3 semanas (≈ 20 al 27/10); infraestructura dimensionada para 300 a 400 concurrentes en picos; el cliente sugirió naranjas y amarillos pasteles con verdes y, tras su feedback posterior a la reunión, se decidió la **paleta de marrones** (la del Figma vigente). Detalle en `proyecto/context.md` §4b.
+- **Consecuencia:** el MVP se muestra al cliente antes del hito de la semana 13 que asumía el cronograma; ver `entrega-3/especificaciones/07-backlog-y-plan.md`.
 
 ## D-012 · Sin entrega de avance intermedia
 
