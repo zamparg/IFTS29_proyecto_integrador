@@ -1,0 +1,17 @@
+Muy buen trabajo! Muy bien presentado y el problema del cliente está perfectamente entendido. Están muy bien desarrollados cultura y adopción. Para subir claramente la nota, necesitan fortalecer el rigor conceptual de metodología y, sobre todo, completar la trazabilidad de los requerimientos..
+
+Puntos de mejora: Falta consignar el origen de los requerimientos, si son de Negocio o de Sistemas como mínimo. Revisar además la argumentación metodológica: afirman que Scrum está pensado para equipos más grandes y con dedicación full-time no es un criterio para descartarlo; Scrumban puede perfectamente justificarse por las necesidades de flujo, iteración y control del proyecto, no por esa supuesta restricción.
+
+1. Visión General (15%): 90
+
+2. Cultura Organizacional (10%): 90
+
+3. Proyecto y Fases (10%): 85
+
+4. Planificación (5%): 80
+
+5. Stakeholders y Requerimientos (10%): 70
+
+
+
+Calificación Parte 1: 84
