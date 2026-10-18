@@ -142,18 +142,44 @@ Duración total de la práctica: 16 clases de 9 hs semanales (2° cuatrimestre 2
 
 ---
 
-## 5. Prototipo en Figma (MVP para la DEMO de semana 6)
-- Archivo: ver `readme.md` (sección Enlaces). Identidad tomada del logo del IFTS N°2: verde bosque `#123B30`, verde `#087B48`, dorado `#E4BA6E`, fondo `#F5F7F5`, Inter.
-- Sitio público: Inicio, Institucional, La carrera, Estudiantes, Ingreso, Novedades (Institucional y Contacto marcados como "siguiente iteración"). Estudiantes: selector de año/cuatrimestre, horarios, mesas, accesos SIU Guaraní, Aula virtual y Tutoría.
-- Panel: Resumen, Publicaciones, Avisos académicos, Horarios, Archivo, Configuración. Flujo editorial en 3 decisiones: seleccionar → aprobar y publicar / descartar; estados Pendiente, Revisar, Aprobada, Descartada. Ejemplo usado: "Mateada Patria" (archivo 2025).
-- El prototipo declara que la integración automática con redes está sujeta a validación técnica y que la aprobación editorial es el requisito principal.
-- Aún sin diseñar: galería, plantel docente, formulario de contacto, gestión de usuarios.
+## 5. Prototipo en Figma (MVP) — versión vigente, 18/10/2026
+**Por qué cambió:** en una reunión reciente con el cliente (segunda reunión; fecha `[completar]`) no les gustó la paleta verde y quedaron en darnos correcciones adicionales. El equipo rediseñó todo el Figma. La Etapa 2 ya se entregó con la versión verde y **no se reentrega**: el trabajo avanza hacia la Etapa 3.
 
-## 6. Fuentes de este documento
+**Tokens (Color styles, leídos con `get_variable_defs`):** primary `#8D775F` · base `#F6F6F3` · accent `#6F5142` · accent-2 `#E0DFD5` · accent-3 `#291711` · font `#6E7271` · success-text `#556B3F` / back `#E8EDE4` · warning-text `#B77A3A` / back `#F7E9D6` · danger-text `#7A3A32` / back `#F3DCDC`. Tipografía Inter. Fotografías reales de cocina e instituto en hero y tarjetas. Pie oscuro (accent-3).
+
+**Sitio público (escritorio, 6):** 01 Inicio, 02 Institucional (sede, formación integral, instalaciones de práctica, cuerpo docente y bedelía, enlaces a plan de estudios e ingreso), 03 La carrera, 04 Estudiantes (horarios y exámenes con selector de ciclo, "Vida en la cocina", accesos SIU/Aula virtual/Tutoría), 05 Ingreso, 06 Novedades (filtros año y categoría). Barra superior institucional como componente.
+
+**Panel "Panel de Gestión Académica" (escritorio, 7):**
+- **13 Login:** correo institucional @bue.edu.ar, contraseña, "recordar sesión", "¿olvidaste tu clave?"; acceso restringido a personal directivo y administrativo.
+- **07 Resumen (Panel de control):** estado de "Instagram API: Sincronizada (clic para sincronizar)"; tarjetas Redes sociales (3 posts por moderar), Avisos activos / Cartelera (4; 1 próximo a vencer en 7 días), Período vigente (2.º cuatrimestre; turno extraordinario de mesas en diciembre), Ingreso (inscripción ciclo 2027); lista de publicaciones de redes por moderar (ej. "Jornada gastronómica en sede Lugano", "Feliz Día del Trabajador Gastronómico"); cartelera institucional activa con adjuntos (cronograma_mesas.pdf) y etiquetas En línea / Urgente.
+- **08 Publicaciones:** publicaciones de Instagram con filtros de origen y estado; modal para moderar (elegir si se muestra, sección y vigencia), confirmar publicación o descartar.
+- **09 Avisos académicos:** cartelera oficial con destinatario (toda la comunidad…), estado, categoría (Mesas de examen, Urgente / Documentación), vigencia ("Vigente hasta…"), adjunto PDF; acciones Pausar y Editar; modal "Publicar nuevo aviso"; los avisos activos se sincronizan de inmediato con la pantalla de estudiantes.
+- **10 Horarios:** cargar nueva grilla por comisión (A y B, Comisión Única, Prácticas Finales) subiendo archivo; configurar/editar llamado a examen; cambiar ciclo lectivo público; confirmaciones.
+- **11 Archivo:** repositorio documental histórico: tabla con documento, categoría, ciclo lectivo, fecha de archivo, peso y acciones Ver detalle / Restaurar; búsqueda por título, código de resolución o año; filtros de tipo y ciclo; "Archivar nuevo documento".
+- **12 Configuración:** período académico (año lectivo, cuatrimestre visible, inscripciones a mesas SIU habilitadas), datos institucionales (dirección, correo de bedelía, teléfono), administradores del sistema por rol (Rectoría/Dirección: acceso total; Bedelía Académica: horarios y cartelera) y modal "Administrar usuarios y roles".
+- ~25 modales de edición y confirmación asociados.
+
+**Móvil:** 7 pantallas (inicio, institucional, carrera, estudiantes, ingreso, novedades, login). El panel no tiene versión móvil en esta versión.
+
+**Cambios de alcance que implica el Figma (a reflejar en las specs de Etapa 3):**
+- Los horarios y las mesas se **cargan como archivos/grilla adjunta** por comisión y llamado, no solo como tablas estructuradas; las mesas de examen se gestionan como "llamados".
+- Aparece un **repositorio documental** (archivo) con restauración, y **avisos académicos** con destinatario, adjuntos, pausa y vencimiento.
+- La **configuración global** define el período visible en el sitio público.
+- Roles concretos: Rectoría/Dirección (superadmin) y Bedelía Académica. No se ven todavía: formulario de Contacto, Galería ni Plantel docente.
+- La integración con Instagram se muestra con estado de sincronización y botón de sincronizar; sigue "sujeta a validación técnica".
+- Datos de ejemplo del Figma a reemplazar: correo `ifts2@bue.edu.ar` y teléfono `(011) 4601-2345` no coinciden con los datos reales del cliente (dfts_ifts2_de20@bue.edu.ar, 4638-5656).
+
+## 6. Estado de entregas y recursos
+- **Recursos del equipo** (de la Tabla 13 del PDF de Etapa 2): Drive `https://drive.google.com/drive/folders/1UNzvDp6loFH1cEmlk3ogOX_Ol3Lwo_UN`, repo `https://github.com/zamparg/IFTS29_proyecto_integrador`, Trello "ifts-n2-sprint-board-scrum", Lucidchart y Canva (links en el PDF), sitio `https://talento-tech-group.vercel.app`.
+- **Requerimientos vigentes:** RF01–RF10 y RNF01–RNF08 (RNF07 accesibilidad y RNF08 datos personales agregados en Etapa 2).
+- **Datos económicos fijados:** esfuerzo 680 h (de 720 disponibles), USD 30/h → USD 20.400; infraestructura $0; dominio contingente ≈ $8.500 ARS/año; licencia MIT propuesta.
+- **Feedback de la cátedra a GdP Parte 1 (84/100):** falta el origen de los requerimientos (Negocio / Sistemas) y reformular la justificación de Scrumban (ver D-003).
+
+## 7. Fuentes de este documento
 - Transcripción de reunión de relevamiento — Meet 04/09/2026 (`proyecto/Meeting Transcription.pdf`).
 - Notas propias tomadas durante la reunión (`proyecto/notes.md`).
-- Minuta de reunión 30/06 (`proyecto/catedra/Minuta reunión 30_06.docx`).
-- Documento de cátedra "PROYECTO INTEGRADOR IFTS 2 2026" (`proyecto/catedra/PROYECTO INTEGRADOR IFTS 2 2026.docx`).
+- Minuta de reunión 30/06 (`cliente/ifts2/Minuta reunión 30_06.docx`).
+- Documento de cátedra "PROYECTO INTEGRADOR IFTS 2 2026" (`cliente/ifts2/PROYECTO INTEGRADOR IFTS 2 2026.docx`).
 - Documento "Páginas a vincular con la WEB del IFTS N°2" (carpeta de contexto del cliente).
 - Presentación institucional y ficha de la Tecnicatura (PDFs de la carpeta de contexto del cliente).
 - Scraping del sitio actual: https://sites.google.com/bue.edu.ar/ifts-2-de-20/

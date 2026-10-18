@@ -7,7 +7,7 @@ Repositorio de trabajo del equipo **Talento Tech** (IFTS N°29, Tecnicatura Supe
 
 ## Enlaces
 
-- **Figma (MVP visual y panel de administración):** https://www.figma.com/design/aRnoXCbNpkCFkHPH0En5B5/IFTS-N%25C2%25B0-2-%25E2%2580%2594-MVP-visual-y-panel-de-administraci%25C3%25B3n?node-id=0-1&p=f — 6 pantallas de escritorio (01 Inicio, 02 La carrera, 03 Estudiantes, 04 Ingreso, 05 Novedades, 06 Panel administrador) y 9 móviles (M01–M09). Exportadas en `materias/ppiv-proyecto-integrador/entrega-2/wireframes/`. Se lee con el conector de Figma (cuenta zamparg; plan Starter = 20 llamadas/mes, usar con cuidado).
+- **Figma (MVP visual y panel de administración):** https://www.figma.com/design/aRnoXCbNpkCFkHPH0En5B5/IFTS-N%25C2%25B0-2-%25E2%2580%2594-MVP-visual-y-panel-de-administraci%25C3%25B3n?node-id=0-1&p=f — 13 pantallas de escritorio, ~25 modales y 7 móviles (actualizado 18/10/2026; detalle en `proyecto/context.md` §5). Los PNG de `entrega-2/wireframes/` son de la versión anterior (verde). Se lee con el conector de Figma (cuenta zamparg; plan Starter = 20 llamadas/mes, usar con cuidado).
 
 ## Estructura
 
@@ -22,8 +22,7 @@ Repositorio de trabajo del equipo **Talento Tech** (IFTS N°29, Tecnicatura Supe
 │   ├── propuesta-para-cliente.md   Resumen ejecutivo orientado al cliente
 │   ├── notes.md               Notas crudas de la reunión de relevamiento
 │   ├── Meeting Transcription.pdf   Transcripción reunión 04/09/2026
-│   └── catedra/               Consigna general de la cátedra + minuta 30/06
-├── cliente/ifts2/             Material del cliente: logos, flyer, plan de carrera, links a vincular
+├── cliente/ifts2/             Material del cliente y consigna general: logos, plan de carrera, links a vincular, PROYECTO INTEGRADOR IFTS 2 2026.docx, minuta 30/06
 ├── referencias/               Normativa y estilo: Ley de Pasantías, Práctica Profesionalizante (Ministerio), Manual de Estilo GCABA
 └── materias/
     ├── ppiv-proyecto-integrador/     Práctica Profesionalizante IV
@@ -50,8 +49,8 @@ Convención: `materias/<materia>/{consigna, entrega-N, material}`. Todo lo compa
 
 | Materia | Entrega 1 | Entrega 2 |
 |---|---|---|
-| **PPIV – Proyecto integrador** | ✅ Hecha (Etapa 1: empresa Talento Tech, misión/visión, roles, relevamiento) | 🟡 Etapa 2 — *Análisis y Modelado del Diseño*: **borrador completo** (35 págs., APA) con los 8 tipos de diagramas, viabilidad, objetivos SMART, fases y roles. Wireframes del Figma ya incluidos (`wireframes/`). Pendiente: CV de cada integrante (Anexo A), links de Drive/Trello/repo, armar el Canva con `presentacion-guion.md`, y validar el stack con la cátedra/DevOps. Ver `build.py` para regenerar el PDF. |
-| **Gestión de Proyectos** | ✅ Hecha (Parte 1: visión, cultura organizacional, fases, metodología, stakeholders y requerimientos) | ⏳ Parte 2: (6) planificación y seguimiento, (7) estructura y cronograma con Gantt + CPM/PERT, (8) riesgos y mitigación, (9) sostenibilidad y licenciamiento, (10) presupuesto, costos y punto de equilibrio. Máx. 10 páginas, PDF `GDP_Comisión X_Equipo ZZZ_TPI - Parte y.pdf`. |
+| **PPIV – Proyecto integrador** | ✅ Hecha (Etapa 1: empresa Talento Tech, misión/visión, roles, relevamiento) | ✅ **Etapa 2 entregada**: `Etapa 2 - Proyecto Integrador.pdf` (52 págs., exportado de Google Docs; **es la versión oficial**). `etapa-2-documento.md` + `build.py` son el borrador previo y **quedaron desactualizados** respecto del PDF entregado (ver `proyecto/decisiones.md`). Links reales en la Tabla 13 del PDF (Drive, Lucidchart, Trello, GitHub, Canva). |
+| **Gestión de Proyectos** | ✅ Hecha y **corregida por la cátedra: 84/100** (ver `entrega-1/corrección.txt`). A mejorar en la Parte 2: origen de los requerimientos (Negocio / Sistemas) y justificar Scrumban por flujo, iteración y control, **no** por "Scrum es para equipos grandes full-time". | ⏳ Parte 2: (6) planificación y seguimiento, (7) estructura y cronograma con Gantt + CPM/PERT, (8) riesgos y mitigación, (9) sostenibilidad y licenciamiento, (10) presupuesto, costos y punto de equilibrio. Máx. 10 páginas, PDF `GDP_Comisión X_Equipo ZZZ_TPI - Parte y.pdf`. Ya definidos en PPIV: valor hora USD 30 × 680 h = USD 20.400, licencia MIT propuesta. |
 | **Emprendedurismo** | ✅ Hecha (1° TP: perfil emprendedor, desarrollo profesional, oportunidad, FODA) | ❓ Consigna de la 2ª entrega **no está en el repo** (el material cubre Unidades 1–3). Agregarla en `materias/emprendedurismo/consigna/`. |
 
 ## Hitos del proyecto con el cliente (fijados por la cátedra)
@@ -68,7 +67,7 @@ Convención: `materias/<materia>/{consigna, entrega-N, material}`. Todo lo compa
 - **Problema:** sitio en Google Sites abandonado, con contenido de 2021–2026 mezclado, sin panel, sin contacto, sin integración con redes.
 - **Solución propuesta:** sitio público + panel de administración propio; contenido *estanco* vs *dinámico* (archivar, nunca borrar); selección editorial de posts de Instagram/Facebook (hashtag + rango de fechas); accesos a SIU Guaraní, Aulas Virtuales y Mi Argentina; formulario de contacto.
 - **Restricciones:** presupuesto casi nulo (hosting/dominio gratuitos; .edu.ar a evaluar), administradores no técnicos (Matías Peláez, María del Carmen Canobi), 3 equipos compitiendo por el mismo cliente, desarrollo propio (sin CMS de terceros).
-- **Marca del cliente (IFTS N°2):** verde bosque `#123B30`, verde de marca `#087B48`, dorado `#E4BA6E`, fondo `#F5F7F5`, tipografía Inter (tomado del logo y del Figma). El azul `#24507F` + Fraunces es la identidad de **Talento Tech** (HTML de la Entrega 1), no del cliente.
+- **Marca del cliente (IFTS N°2):** el cliente rechazó la paleta verde; el **Figma vigente (18/10/2026)** usa tokens tierra: primary `#8D775F`, base `#F6F6F3`, accent `#6F5142`, accent-2 `#E0DFD5`, accent-3 `#291711`, font `#6E7271` + semánticos (ver `proyecto/context.md` §5), Inter y fotos reales. El PDF de Etapa 2 entregado describe la paleta verde anterior. El azul `#24507F` + Fraunces es de **Talento Tech**, no del cliente.
 
 ## Para agentes de IA
 
@@ -82,5 +81,7 @@ Convención: `materias/<materia>/{consigna, entrega-N, material}`. Todo lo compa
 
 ## Pendientes de orden
 
-- Borrar las carpetas vacías heredadas: `context/` y `docs/` (quedaron sin archivos tras la reorganización).
 - Confirmar cuál de los dos PDF de GdP Parte 1 es el entregado (`GDP_Comisión E_Equipo 08_TPI - Parte 1.pdf` vs `GDP_ComisionX_TalentoTech_TPI-Parte1.pdf`) y descartar el otro.
+
+- El PDF de Etapa 2 entregado conserva restos de edición para corregir si se reentrega: una nota editorial en 6.1 ("la oración siguiente es muy larga…"), la nota de la Tabla 2 que aún dice "alternativa WordPress quedó como plan B" (contradice D-001), fechas de minuta incoherentes (24/09 en 4.4, 26/09 en Referencias; la minuta del repo es del 30/06) y la frase del Anexo A sobre campos entre corchetes.
+- La Etapa 2 **no se reentrega**; los restos de edición de arriba solo importan si se reutiliza ese texto en la Etapa 3.
