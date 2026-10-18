@@ -57,7 +57,7 @@ Convención: `materias/<materia>/{consigna, entrega-N, material}`. Todo lo compa
 
 ## Etapa 3 (MVP): especificaciones, no código
 
-La Etapa 3 no se desarrolla en este repositorio. `materias/ppiv-proyecto-integrador/entrega-3/` contiene el paquete de especificaciones (visión, requerimientos con criterios de aceptación, ADR técnicos, arquitectura, API, pantallas del Figma con nodos, pruebas, backlog por fases, datos reales y preguntas abiertas) para pasárselo a un agente en otro repositorio. Empezar por su `README.md` y `AGENTS.md`. Hosting, Instagram y roles están marcados como "a validar".
+La consigna de la Etapa 3 (`materias/ppiv-proyecto-integrador/consigna/Etapa 3 - Desarrollo completo.pdf`) pide una aplicación funcional con base de datos y CRUD completo (incluido eliminar con confirmación), Manual Técnico, Manual de Usuario, 2-3 pruebas unitarias y 1-2 de integración documentadas, y un PDF con instrucciones de instalación. Entregables: repositorio, .zip, PDF, scripts de base y enlace desplegado. La aplicación no se desarrolla en este repositorio. `materias/ppiv-proyecto-integrador/entrega-3/` contiene el paquete de especificaciones, incluido el mapeo a la consigna en `10-entregables-etapa-3.md` (visión, requerimientos con criterios de aceptación, ADR técnicos, arquitectura, API, pantallas del Figma con nodos, pruebas, backlog por fases, datos reales y preguntas abiertas) para pasárselo a un agente en otro repositorio. Empezar por su `README.md` y `AGENTS.md`. Hosting, Instagram y roles están marcados como "a validar".
 
 ## Hitos del proyecto con el cliente (fijados por la cátedra)
 

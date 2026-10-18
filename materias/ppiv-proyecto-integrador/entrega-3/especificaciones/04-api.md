@@ -2,7 +2,7 @@
 
 Base: `/api/v1`. JSON UTF-8. Fechas ISO 8601 en UTC. Autenticación por cookie de sesión en `/panel/*` y en toda ruta fuera de `/public/*`. Errores en formato Problem Details: `{ type, title, status, detail, errors? }`. Listados con `?page=1&pageSize=20` y respuesta `{ items, page, pageSize, total }`.
 
-**No existen endpoints `DELETE` de contenido.** Para "quitar" algo se usan `pause`, `archive`, `discard`.
+**Eliminación:** existen endpoints `DELETE`, pero son **manuales**, exigen confirmación en la interfaz, quedan en `AuditLog` y solo aplican a contenido no vigente (borrador, pausado, descartado, vencido o archivado); si el elemento está referenciado devuelven 409. Para sacar algo de circulación sin perderlo se usan `pause`, `archive`, `discard`.
 
 ## Permisos por rol
 
@@ -18,6 +18,7 @@ Base: `/api/v1`. JSON UTF-8. Fechas ISO 8601 en UTC. Autenticación por cookie d
 | Usuarios y roles | ✔ | | | |
 | Mensajes de contacto | ✔ | ✔ | | |
 | Auditoría | ✔ | | | |
+| Eliminar (DELETE) contenido no vigente | ✔ | Avisos, horarios, llamados y documentos propios de su área | Publicaciones propias y publicaciones sociales descartadas | |
 
 ## Autenticación
 
@@ -75,5 +76,7 @@ Base: `/api/v1`. JSON UTF-8. Fechas ISO 8601 en UTC. Autenticación por cookie d
 - `GET/POST/PATCH /links`
 - `GET/POST/PATCH /users`, `POST /users/:id/deactivate`, `POST /users/:id/reset-password`
 - `GET /audit?entity=&page=`
+
+**Eliminación (CRUD completo):** `DELETE /publications/:id`, `/social/posts/:id` (solo descartadas), `/notices/:id`, `/schedules/:id`, `/exam-calls/:id`, `/documents/:id` (solo archivados), `/links/:id`, `/content/:page/:slug` (solo secciones no estáticas), `/contact-messages/:id`. Los usuarios no se eliminan: se desactivan (`POST /users/:id/deactivate`), para conservar la auditoría. Respuesta 204; 409 si está vigente o referenciado.
 
 **Códigos de estado:** 200/201/204; 400 validación; 401 sin sesión; 403 sin permiso; 404; 409 conflicto de estado; 413 archivo grande; 415 tipo no permitido; 422 regla de negocio; 429 límite de frecuencia; 502 falla de integración externa (con el sitio funcionando).

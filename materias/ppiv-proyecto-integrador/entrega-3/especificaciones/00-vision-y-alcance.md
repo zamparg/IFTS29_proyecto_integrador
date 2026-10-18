@@ -8,7 +8,7 @@ El IFTS N.° 2 DE 20 (gestión pública, Ministerio de Educación del GCABA; Tec
 
 ## Objetivo del MVP
 
-Reemplazar el sitio actual por una plataforma propia que el personal del instituto pueda mantener sin conocimientos técnicos, con información siempre vigente (lo vencido se archiva, nunca se borra) y con incorporación **selectiva y aprobada por una persona** de las publicaciones de Instagram.
+Reemplazar el sitio actual por una plataforma propia que el personal del instituto pueda mantener sin conocimientos técnicos, con información siempre vigente (lo vencido se archiva; nunca se borra de forma automática) y con incorporación **selectiva y aprobada por una persona** de las publicaciones de Instagram.
 
 ## Usuarios
 

@@ -19,8 +19,13 @@ Esta carpeta es el **paquete de especificaciones** del MVP del sitio institucion
 | [especificaciones/07-backlog-y-plan.md](especificaciones/07-backlog-y-plan.md) | Historias de usuario, fases y orden de implementación |
 | [especificaciones/08-contenido-y-datos-semilla.md](especificaciones/08-contenido-y-datos-semilla.md) | Datos reales del cliente y datos semilla |
 | [especificaciones/09-preguntas-abiertas.md](especificaciones/09-preguntas-abiertas.md) | Supuestos y dudas que el equipo debe validar con el cliente |
+| [especificaciones/10-entregables-etapa-3.md](especificaciones/10-entregables-etapa-3.md) | Qué exige la consigna de la cátedra (manuales, CRUD, pruebas, instalación) y cómo se cumple |
 | [especificaciones/prisma/schema.prisma](especificaciones/prisma/schema.prisma) | Modelo de datos ejecutable (Prisma + PostgreSQL) |
 | [especificaciones/design-tokens.json](especificaciones/design-tokens.json) | Colores y tipografía del Figma vigente |
+
+## Relación con la consigna de la cátedra
+
+La consigna "Etapa 3 - Desarrollo completo" pide una aplicación funcional integrada con las etapas anteriores, Manual Técnico, Manual de Usuario, base de datos con CRUD, 2 o 3 pruebas unitarias y 1 o 2 de integración documentadas (qué se probó, esperado, obtenido, evidencias) y un PDF con instrucciones de instalación y puesta en marcha. **Este paquete es la entrada para construir eso en otro repositorio; no lo reemplaza.** El mapeo punto por punto está en `especificaciones/10-entregables-etapa-3.md`.
 
 ## Origen de la información
 

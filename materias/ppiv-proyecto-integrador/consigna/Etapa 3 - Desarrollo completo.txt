@@ -1,0 +1,233 @@
+   1.​ Introducción
+
+En esta tercera etapa, el objetivo es integrar todos los componentes del proyecto en
+una aplicación completamente funcional.
+
+La aplicación desarrollada debe guardar coherencia con los requerimientos,
+diagramas, prototipos y documentación elaborados en las etapas anteriores. El
+sistema debe ejecutarse correctamente, contar con su base de datos operativa y
+permitir realizar las operaciones principales de manera estable.
+
+Además del desarrollo técnico, esta instancia requiere acompañar la entrega con
+documentación completa, incluyendo un Manual Técnico, un Manual de Usuario y la
+evidencia de pruebas unitarias e integración que demuestren el correcto
+funcionamiento del sistema.
+
+La presentación debe reflejar tanto el trabajo de diseño y desarrollo como la
+capacidad de comunicar el funcionamiento y la estructura del proyecto a nivel
+profesional.
+
+   2.​ Manual Técnico
+
+El Manual Técnico es un documento dirigido a desarrolladores o personas con
+conocimientos técnicos que necesiten instalar, mantener o continuar el desarrollo de
+la aplicación.
+
+Su propósito es describir cómo está construido el sistema, qué componentes lo
+integran y cómo se puede reproducir o desplegar el entorno de trabajo.
+
+Debe incluir, como mínimo, los siguientes apartados:
+
+    ●​ Introducción general: breve descripción del sistema, objetivo y alcance.
+    ●​ Arquitectura del sistema: descripción del modelo general utilizado (por capas,
+
+         MVC, modular, entre otros) y tecnologías empleadas.
+    ●​ Estructura del proyecto: descripción de las carpetas principales, clases,
+
+         Activities, vistas o componentes relevantes.
+    ●​ Base de datos:
+
+             ○​ Diagrama Entidad–Relación (DER).
+             ○​ Descripción de tablas y campos.
+             ○​ Relaciones entre tablas.
+    ●​ Configuración e instalación:
+             ○​ Tecnologías utilizadas.
+             ○​ Versiones requeridas.
+             ○​ Dependencias necesarias.
+             ○​ Configuración inicial.
+             ○​ Pasos para importar o abrir el proyecto.
+             ○​ Pasos para ejecutar la aplicación.
+             ○​ Pasos para crear o restaurar la base de datos, si corresponde.
+             ○​ Credenciales de prueba, si existen.
+    ●​ Componentes principales: descripción técnica de los módulos clave, métodos
+         y responsabilidades.
+    ●​ Gestión de errores y validaciones: explicación de cómo se manejan errores
+         de conexión, validaciones de datos y situaciones excepcionales.
+    ●​ Pruebas implementadas: resumen de las pruebas unitarias e integración
+         realizadas.
+
+El objetivo es que cualquier persona con conocimientos en desarrollo pueda
+comprender el funcionamiento interno del sistema, ejecutarlo y continuar su
+evolución sin depender de los desarrolladores originales.
+
+   3.​ Manual de Usuario
+
+El Manual de Usuario está orientado al público final.
+
+Debe explicar de forma clara, sencilla y visual cómo se utiliza la aplicación, qué
+funciones ofrece y cómo navegar por ella.
+
+Estructura sugerida:
+
+    ●​ Introducción: propósito de la aplicación y público objetivo.
+    ●​ Requisitos mínimos: versión del sistema operativo, conexión a Internet u
+
+         otros requisitos necesarios.
+    ●​ Pantalla principal: descripción de los menús, opciones o botones principales.
+    ●​ Flujos de uso: explicación paso a paso de las acciones más importantes del
+
+         sistema.
+    ●​ Capturas de pantalla: acompañadas por una breve descripción de cada
+
+         funcionalidad.
+    ●​ Mensajes o alertas frecuentes: significado y posibles soluciones.
+
+El manual puede mantener la misma identidad visual utilizada en los prototipos
+realizados durante las etapas anteriores para conservar la coherencia del proyecto.
+
+   4.​ Base de Datos y CRUD
+
+La aplicación final debe incluir una base de datos funcional, utilizando la tecnología
+que resulte adecuada para el proyecto (SQLite, Firebase, MySQL u otra alternativa).
+El sistema debe implementar correctamente las cuatro operaciones básicas de
+persistencia de datos:
+
+    ●​ Create (Crear): incorporación de nuevos registros.
+    ●​ Read (Leer): consulta y visualización de registros existentes.
+    ●​ Update (Actualizar): modificación de registros almacenados.
+    ●​ Delete (Eliminar): eliminación de registros.
+
+Estas operaciones deben poder realizarse desde la aplicación y demostrarse
+mediante evidencias de funcionamiento.
+
+También es importante contemplar mecanismos básicos de validación y control de
+errores, tales como:
+
+    ●​ Evitar registros duplicados cuando corresponda.
+    ●​ Verificar que los campos obligatorios no se encuentren vacíos.
+    ●​ Solicitar confirmación antes de realizar eliminaciones.
+    ●​ Mostrar mensajes claros e informativos al usuario.
+
+   5.​ Pruebas Unitarias
+
+Las pruebas unitarias son aquellas que se aplican sobre una unidad mínima del
+código, como una función, método o clase.
+
+Su objetivo es comprobar que cada componente individual funcione correctamente
+de manera aislada.
+
+Ejemplos:
+
+    ●​ Verificar que un método de validación retorne el resultado esperado según los
+         datos ingresados.
+
+    ●​ Comprobar que una función de cálculo genere correctamente el resultado
+         previsto.
+
+    ●​ Validar que determinados métodos respondan adecuadamente ante
+         diferentes escenarios.
+
+Características principales:
+
+    ●​ Son automáticas y pueden ejecutarse repetidamente.
+    ●​ Permiten detectar errores en etapas tempranas del desarrollo.
+    ●​ Facilitan el mantenimiento y la evolución del sistema.
+
+Cada grupo deberá incluir al menos dos o tres pruebas unitarias representativas,
+documentando:
+    ●​ Qué se probó.
+    ●​ Cuál era el resultado esperado.
+    ●​ Cuál fue el resultado obtenido.
+
+Si se utiliza un framework de testing, deberán incluirse capturas o evidencias de
+ejecución junto con el código correspondiente.
+
+   6.​ Pruebas de Integración
+
+Las pruebas de integración tienen como objetivo verificar que los distintos módulos
+del sistema funcionen correctamente en conjunto.
+
+A diferencia de las pruebas unitarias, aquí se evalúa la interacción entre
+componentes.
+
+Ejemplos:
+
+    ●​ Verificar que la creación de un registro desde la interfaz impacte
+         correctamente en la base de datos.
+
+    ●​ Comprobar que los datos almacenados puedan recuperarse y visualizarse
+         correctamente.
+
+    ●​ Validar que la interacción entre interfaz, lógica de negocio y persistencia
+         funcione de forma coherente.
+
+Cada grupo deberá incluir al menos una o dos pruebas de integración,
+documentando:
+
+    ●​ Los pasos realizados.
+    ●​ El resultado esperado.
+    ●​ El resultado obtenido.
+    ●​ Evidencias mediante capturas de pantalla o registros de ejecución
+
+   7.​ Alcance lógico de las pruebas
+
+No es necesario probar la totalidad del sistema.
+
+Lo importante es que las pruebas seleccionadas sean representativas y permitan
+demostrar el correcto funcionamiento de las funcionalidades principales del
+proyecto.
+
+Se espera que:
+
+    ●​ Las pruebas unitarias cubran partes específicas del código.
+    ●​ Las pruebas de integración validen la interacción entre módulos.
+    ●​ Las pruebas estén correctamente justificadas y documentadas.
+
+Se valorará más la calidad, relevancia y claridad de las pruebas que la cantidad de
+casos presentados.
+
+   8.​ Entregables
+
+La entrega final deberá incluir todos los archivos necesarios para evaluar, ejecutar y
+comprender el proyecto.
+
+Cada grupo deberá entregar:
+
+    ●​ Repositorio Git actualizado con la versión final del proyecto.
+    ●​ Proyecto completo comprimido (.zip o .rar).
+    ●​ Documento PDF con toda la documentación solicitada.
+    ●​ Manual Técnico.
+    ●​ Manual de Usuario.
+    ●​ Evidencia de pruebas unitarias.
+    ●​ Evidencia de pruebas de integración.
+    ●​ Base de datos o scripts de creación, si corresponde.
+    ●​ Archivo ejecutable, APK o enlace a la aplicación desplegada, cuando la
+
+         tecnología utilizada lo permita.
+
+Importante:
+
+Debido a que los grupos pueden utilizar diferentes tecnologías, frameworks y
+entornos de desarrollo, el PDF deberá incluir claramente una sección de instalación
+y puesta en marcha.
+
+Las instrucciones deben permitir que cualquier docente pueda descargar el
+proyecto, configurarlo y ejecutarlo siguiendo únicamente la documentación
+proporcionada.
+
+La ausencia de instrucciones claras para la ejecución del proyecto podrá dificultar su
+evaluación.
+   9.​ Conclusión
+
+Esta etapa final busca consolidar todos los conocimientos adquiridos durante el
+cuatrimestre, integrando diseño, desarrollo, documentación y testing en una entrega
+completa.
+
+El producto resultante debe ser una aplicación funcional, correctamente
+documentada y acompañada por evidencias de prueba que permitan demostrar su
+calidad, estabilidad y grado de cumplimiento respecto de los objetivos planteados.
+
+Asimismo, la entrega deberá reflejar la capacidad del equipo para desarrollar una
+solución tecnológica completa, comunicar sus decisiones de diseño y documentar
+adecuadamente el trabajo realizado.
+

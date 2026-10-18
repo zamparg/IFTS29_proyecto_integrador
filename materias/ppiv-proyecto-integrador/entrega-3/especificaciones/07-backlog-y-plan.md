@@ -8,12 +8,13 @@ Prioridad M / S / C como en `01-requerimientos.md`. Una historia = una rama = un
 |---|---|---|---|
 | 0. Base | Repositorio, CI, entorno, esqueleto | Pipeline en verde, "hola mundo" desplegado en vista previa, semilla ejecutable | US-01, US-02, US-03 |
 | 1. Núcleo | Autenticación, roles, auditoría, prueba de concepto de Instagram | Login y permisos; informe de la prueba de concepto | US-04, US-05, US-06 |
-| 2. Contenido dinámico | Publicaciones, moderación, avisos | Flujo de moderación de punta a punta (con doble) | US-07 a US-12 |
+| 2. Contenido dinámico | Publicaciones, moderación, avisos (con eliminación manual confirmada, US-33) | Flujo de moderación de punta a punta (con doble) | US-07 a US-12 |
 | 3. Académico y archivo | Horarios, llamados, ciclo público, documentos, archivo | Estudiantes muestra solo el ciclo público | US-13 a US-18 |
 | 4. Sitio público | Las seis páginas, responsive y accesibles | Lighthouse en umbral | US-19 a US-24 |
 | 5. Configuración | Datos institucionales, usuarios y roles | Administración completa | US-25, US-26 |
 | 6. Should y Could | Contacto, plantel, plan con correlatividades, galería | Según tiempo disponible | US-27 a US-30 |
 | 7. Endurecimiento | Seguridad, degradación, rendimiento, respaldos, documentación | Hito de la semana 13 cumplido | US-31, US-32 |
+| 8. Entrega a la cátedra | Eliminación con confirmación, evidencias, manuales, instalación y empaquetado | PDF, repositorio, .zip, scripts de base y enlace desplegado | US-33, US-34, US-35 |
 
 ## Historias de usuario
 
@@ -51,6 +52,9 @@ Prioridad M / S / C como en `01-requerimientos.md`. Una historia = una rama = un
 | US-30 | Como editor quiero gestionar la galería | C | RF09 | Imagen con descripción y categoría |
 | US-31 | Como equipo quiero degradación controlada, límites de frecuencia y respaldos | M | RNF03, RNF06 | Pruebas de falla de servicios; restauración probada |
 | US-32 | Como equipo quiero documentación técnica y manual de usuario | M | RNF01 | Manual con tareas típicas de los editores |
+| US-33 | Como usuario autorizado quiero eliminar contenido no vigente con confirmación | M | Consigna | E2E-16; auditoría; 409 si está vigente o referenciado |
+| US-34 | Como equipo quiero evidencias de pruebas unitarias e integración documentadas | M | Consigna | Sección 6 de `10-entregables-etapa-3.md` |
+| US-35 | Como docente quiero instalar y ejecutar el proyecto solo con la documentación | M | Consigna | Manual Técnico con pasos verificados en una máquina limpia |
 
 ## Orden sugerido dentro de una fase
 

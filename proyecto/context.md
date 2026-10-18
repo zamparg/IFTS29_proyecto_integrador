@@ -169,6 +169,13 @@ Duración total de la práctica: 16 clases de 9 hs semanales (2° cuatrimestre 2
 - La integración con Instagram se muestra con estado de sincronización y botón de sincronizar; sigue "sujeta a validación técnica".
 - Datos de ejemplo del Figma a reemplazar: correo `ifts2@bue.edu.ar` y teléfono `(011) 4601-2345` no coinciden con los datos reales del cliente (dfts_ifts2_de20@bue.edu.ar, 4638-5656).
 
+## 5b. Consigna de la Etapa 3 de PPIV (Desarrollo completo)
+- Aplicación funcional coherente con requerimientos, diagramas y prototipos; base de datos operativa; **CRUD completo con confirmación antes de eliminar**, sin duplicados y con campos obligatorios validados.
+- Documentación: **Manual Técnico** (arquitectura, estructura, DER, instalación, componentes, errores, pruebas) y **Manual de Usuario** (flujos, capturas, mensajes), más sección de instalación que permita a un docente ejecutar el proyecto.
+- Pruebas: 2 o 3 unitarias y 1 o 2 de integración, documentadas (qué se probó, esperado, obtenido, evidencias).
+- Entrega: repositorio Git, .zip, PDF único, scripts de base, ejecutable o enlace desplegado. La defensa final se graba (consigna general).
+- Texto completo: `materias/ppiv-proyecto-integrador/consigna/Etapa 3 - Desarrollo completo.txt`. Plan de trabajo: `materias/ppiv-proyecto-integrador/entrega-3/`.
+
 ## 6. Estado de entregas y recursos
 - **Recursos del equipo** (de la Tabla 13 del PDF de Etapa 2): Drive `https://drive.google.com/drive/folders/1UNzvDp6loFH1cEmlk3ogOX_Ol3Lwo_UN`, repo `https://github.com/zamparg/IFTS29_proyecto_integrador`, Trello "ifts-n2-sprint-board-scrum", Lucidchart y Canva (links en el PDF), sitio `https://talento-tech-group.vercel.app`.
 - **Requerimientos vigentes:** RF01–RF10 y RNF01–RNF08 (RNF07 accesibilidad y RNF08 datos personales agregados en Etapa 2).
