@@ -1,0 +1,44 @@
+flowchart LR
+    A["<b>A</b> · Relevamiento<br/>2 sem · ES 0 / EF 2<br/>holgura 0"]
+    B["<b>B</b> · Análisis, documento de requerimientos y backlog<br/>2 sem · ES 2 / EF 4<br/>holgura 1"]
+    C["<b>C</b> · Prototipo en Figma y preparación de la DEMO<br/>3 sem · ES 2 / EF 5<br/>holgura 1"]
+    D["<b>D</b> · Modelado<br/>3 sem · ES 2 / EF 5<br/>holgura 0"]
+    E["<b>E</b> · DEMO con el cliente<br/>1 sem · ES 5 / EF 6<br/>holgura 1"]
+    F["<b>F</b> · Arquitectura, repositorio, CI/CD y hosting<br/>1 sem · ES 5 / EF 6<br/>holgura 0"]
+    G["<b>G</b> · Backend<br/>5 sem · ES 6 / EF 11<br/>holgura 0"]
+    H["<b>H</b> · Frontend del sitio público<br/>5 sem · ES 6 / EF 11<br/>holgura 2"]
+    I["<b>I</b> · Panel de administración<br/>6 sem · ES 6 / EF 12<br/>holgura 1"]
+    J["<b>J</b> · Integración con Instagram<br/>2 sem · ES 11 / EF 13<br/>holgura 0"]
+    K["<b>K</b> · QA<br/>2 sem · ES 11 / EF 13<br/>holgura 0"]
+    M["<b>M</b> · HITO<br/>0 sem · ES 13 / EF 13<br/>holgura 0"]
+    L["<b>L</b> · Capacitación a los editores<br/>2 sem · ES 13 / EF 15<br/>holgura 0"]
+    N["<b>N</b> · Manual de usuario y documentación técnica<br/>3 sem · ES 13 / EF 16<br/>holgura 0"]
+    O["<b>O</b> · Correcciones posteriores a la reunión 3<br/>1 sem · ES 13 / EF 14<br/>holgura 1"]
+    P["<b>P</b> · Cierre, traspaso y mantenimiento inicial<br/>1 sem · ES 15 / EF 16<br/>holgura 0"]
+    A --> B
+    A --> C
+    A --> D
+    C --> E
+    D --> E
+    B --> F
+    D --> F
+    F --> G
+    E --> H
+    F --> H
+    E --> I
+    F --> I
+    G --> J
+    G --> K
+    H --> M
+    I --> M
+    J --> M
+    K --> M
+    M --> L
+    M --> N
+    M --> O
+    L --> P
+    O --> P
+    classDef crit fill:#f3dcdc,stroke:#7a3a32,stroke-width:2px,color:#1a1f2b
+    classDef norm fill:#e2ebf5,stroke:#24507f,color:#1a1f2b
+    class A,D,F,G,J,K,M,L,N,P crit
+    class B,C,E,H,I,O norm
