@@ -31,11 +31,13 @@ Repositorio de trabajo del equipo **Talento Tech** (IFTS N°29, Tecnicatura Supe
     │   ├── entrega-2/         Etapa 2 armada: etapa-2-documento.md (fuente) → "Etapa 2 - Proyecto Integrador.pdf",
     │   │                      diagramas/ (.mmd editables + .svg/.png), presentacion-guion.md, wireframes/ (PNG de Figma),
     │   │                      build.py (regenera HTML y PDF), prompt-lovable-maqueta.md
+    │   ├── entrega-3/         ETAPA 3: paquete de especificaciones para que un agente en otro repo genere el MVP
+    │   │                      (README.md, AGENTS.md, especificaciones/00..09, prisma/schema.prisma, design-tokens.json)
     │   └── material/          ITIL 4, Modelado de Sistemas, Vicente y Ayala cap. 7
     ├── gestion-de-proyectos/
     │   ├── consigna/          Propuesta de TP integrador + rúbrica
     │   ├── entrega-1/         Parte 1 (docx + pdf de trabajo, y PDF "Comisión E Equipo 08")
-    │   └── entrega-2/         (vacía) Parte 2
+    │   └── entrega-2/         Parte 2: parte-2.md + build_gdp.py + cpm.py (CPM/PERT) → PDF, diagramas/ (Gantt, red CPM)
     └── emprendedurismo/
         ├── consigna/          1° TP integrador (Unidades 1 a 3)
         ├── entrega-1/         trabajo-practico-integrador.md
@@ -50,8 +52,12 @@ Convención: `materias/<materia>/{consigna, entrega-N, material}`. Todo lo compa
 | Materia | Entrega 1 | Entrega 2 |
 |---|---|---|
 | **PPIV – Proyecto integrador** | ✅ Hecha (Etapa 1: empresa Talento Tech, misión/visión, roles, relevamiento) | ✅ **Etapa 2 entregada**: `Etapa 2 - Proyecto Integrador.pdf` (52 págs., exportado de Google Docs; **es la versión oficial**). `etapa-2-documento.md` + `build.py` son el borrador previo y **quedaron desactualizados** respecto del PDF entregado (ver `proyecto/decisiones.md`). Links reales en la Tabla 13 del PDF (Drive, Lucidchart, Trello, GitHub, Canva). |
-| **Gestión de Proyectos** | ✅ Hecha y **corregida por la cátedra: 84/100** (ver `entrega-1/corrección.txt`). A mejorar en la Parte 2: origen de los requerimientos (Negocio / Sistemas) y justificar Scrumban por flujo, iteración y control, **no** por "Scrum es para equipos grandes full-time". | ⏳ Parte 2: (6) planificación y seguimiento, (7) estructura y cronograma con Gantt + CPM/PERT, (8) riesgos y mitigación, (9) sostenibilidad y licenciamiento, (10) presupuesto, costos y punto de equilibrio. Máx. 10 páginas, PDF `GDP_Comisión X_Equipo ZZZ_TPI - Parte y.pdf`. Ya definidos en PPIV: valor hora USD 30 × 680 h = USD 20.400, licencia MIT propuesta. |
+| **Gestión de Proyectos** | ✅ Hecha y **corregida por la cátedra: 84/100** (ver `entrega-1/corrección.txt`). A mejorar en la Parte 2: origen de los requerimientos (Negocio / Sistemas) y justificar Scrumban por flujo, iteración y control, **no** por "Scrum es para equipos grandes full-time". | 🟡 **Parte 2 armada (borrador, 8 págs.)**: `materias/gestion-de-proyectos/entrega-2/GDP_Comisión E_Equipo 08_TPI - Parte 2.pdf`. Incluye los 5 ítems (6 a 10), Gantt, CPM (fin en 16 semanas, ruta crítica A-D-F-G-J/K), PERT (13,25 sem esperadas; 36 % de cumplir la semana 13, 86 % la 14), 12 riesgos, licencia MIT, presupuesto USD 22.440 y punto de equilibrio, y el Anexo con el origen Negocio/Sistema de los requerimientos (corrección de la Parte 1). **Pendiente de revisión del equipo:** supuestos económicos (costos fijos USD 4.200/año, precios de los escenarios), fecha de la reunión de devolución y enlace a actas. |
 | **Emprendedurismo** | ✅ Hecha (1° TP: perfil emprendedor, desarrollo profesional, oportunidad, FODA) | ❓ Consigna de la 2ª entrega **no está en el repo** (el material cubre Unidades 1–3). Agregarla en `materias/emprendedurismo/consigna/`. |
+
+## Etapa 3 (MVP): especificaciones, no código
+
+La Etapa 3 no se desarrolla en este repositorio. `materias/ppiv-proyecto-integrador/entrega-3/` contiene el paquete de especificaciones (visión, requerimientos con criterios de aceptación, ADR técnicos, arquitectura, API, pantallas del Figma con nodos, pruebas, backlog por fases, datos reales y preguntas abiertas) para pasárselo a un agente en otro repositorio. Empezar por su `README.md` y `AGENTS.md`. Hosting, Instagram y roles están marcados como "a validar".
 
 ## Hitos del proyecto con el cliente (fijados por la cátedra)
 
