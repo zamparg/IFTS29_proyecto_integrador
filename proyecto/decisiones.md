@@ -80,6 +80,11 @@ Versión gráfica: [diagramas/decision-001-desarrollo-a-medida.png](diagramas/de
 - **Decisión vigente:** paleta tierra con tokens primary `#8D775F`, base `#F6F6F3`, accent `#6F5142`, accent-2 `#E0DFD5`, accent-3 `#291711`, font `#6E7271`, más semánticos de éxito, advertencia y peligro; Inter; fotografías reales. Detalle en `proyecto/context.md` §5.
 - **Pendiente:** el cliente dará correcciones adicionales.
 
+## D-011 · Decisiones técnicas del MVP (Etapa 3)
+
+- **Estado:** propuesta, detalle y estados en `materias/ppiv-proyecto-integrador/entrega-3/especificaciones/02-decisiones-tecnicas.md` · **Fecha:** 18/10/2026.
+- **Resumen:** monorepo pnpm; Next.js + Express + PostgreSQL/Prisma (Etapa 2); sesiones en base con argon2id; vigencia calculada al consultar y sin borrado físico; archivos y Instagram detrás de interfaces; tres roles (ADMIN, BEDELIA, EDITOR) a validar con el cliente; hosting gratuito a validar por DevOps.
+
 ## D-010 · No se reentrega la Etapa 2; foco en Etapa 3 (specs para un agente)
 
 - **Estado:** cerrada · **Fecha:** 18/10/2026 · **Decide:** equipo.
