@@ -86,6 +86,11 @@ Versión gráfica: [diagramas/decision-001-desarrollo-a-medida.png](diagramas/de
 - **Estado:** propuesta, detalle y estados en `materias/ppiv-proyecto-integrador/entrega-3/especificaciones/02-decisiones-tecnicas.md` · **Fecha:** 18/10/2026.
 - **Resumen:** monorepo pnpm; Next.js + Express + PostgreSQL/Prisma (Etapa 2); sesiones en base con argon2id; vigencia calculada al consultar y sin borrado físico; archivos y Instagram detrás de interfaces; tres roles (ADMIN, BEDELIA, EDITOR) a validar con el cliente; hosting gratuito a validar por DevOps.
 
+## D-014 · Etapa 3 construida en repositorio aparte, con agentes en paralelo
+
+- **Estado:** cerrada · **Fecha:** 30/10/2026 · **Decide:** equipo.
+- **Decisión:** la aplicación vive en `ifts2-plataforma` (repo propio). Se construyó con agentes especializados en ramas y bases de datos separadas, integradas en `main` y verificadas. Instagram y correo los configura el cliente desde el panel (secretos cifrados); el almacenamiento por entorno. El producto es genérico (sin textos institucionales en el código). Eliminación solo manual con confirmación, nunca automática.
+
 ## D-013 · Acuerdos de la segunda reunión con el cliente (06/10/2026)
 
 - **Estado:** cerrada · **Decide:** cliente y equipo.

@@ -59,6 +59,14 @@ Convención: `materias/<materia>/{consigna, entrega-N, material}`. Todo lo compa
 
 La consigna de la Etapa 3 (`materias/ppiv-proyecto-integrador/consigna/Etapa 3 - Desarrollo completo.pdf`) pide una aplicación funcional con base de datos y CRUD completo (incluido eliminar con confirmación), Manual Técnico, Manual de Usuario, 2-3 pruebas unitarias y 1-2 de integración documentadas, y un PDF con instrucciones de instalación. Entregables: repositorio, .zip, PDF, scripts de base y enlace desplegado. La aplicación no se desarrolla en este repositorio. `materias/ppiv-proyecto-integrador/entrega-3/` contiene el paquete de especificaciones, incluido el mapeo a la consigna en `10-entregables-etapa-3.md` (visión, requerimientos con criterios de aceptación, ADR técnicos, arquitectura, API, pantallas del Figma con nodos, pruebas, backlog por fases, datos reales y preguntas abiertas) para pasárselo a un agente en otro repositorio. Empezar por su `README.md` y `AGENTS.md`. Hosting, Instagram y roles están marcados como "a validar".
 
+## Etapa 3: aplicación construida (repositorio aparte)
+
+La aplicación se desarrolló en un repositorio separado, **local y sin remoto todavía**: `../ifts2-plataforma` (junto a este repositorio) (rama `main`). Estado al 30/10/2026:
+- **Hecho y verificado:** sitio público (Inicio, Institucional con contacto, La carrera, Estudiantes, Ingreso, Inscripciones, Novedades) y panel (login, Resumen, Publicaciones y moderación de Instagram, Avisos, Mensajes, Horarios y llamados, Archivo, Configuración con usuarios, contenido, enlaces e integraciones). Instagram y correo se configuran desde el panel; colores y fuentes por variables CSS; comentarios y README pensados para otro grupo de estudiantes.
+- **Pruebas:** 43 compartidas + 352 de API (Vitest/Supertest), 190 de Cypress, 33 verificaciones de flujos, carga con 400 usuarios virtuales (cumple en uso real; un proceso de Node satura a ~300-360 pedidos/s) y Lighthouse móvil ≥ 97 de rendimiento y ≥ 98 de accesibilidad.
+- **Entregables de la cátedra:** `docs/entrega/IFTS2-Etapa-3-Documentacion.pdf` (85 págs.: Manual Técnico, Manual de Usuario, evidencias y CRUD) y `dist-entrega/ifts2-plataforma-<fecha>.zip` (`pnpm docs:pdf`, `pnpm package`). Instalación verificada en un directorio limpio.
+- **Pendiente:** enlace a repositorio remoto y a la aplicación desplegada (hosting gratuito a definir por DevOps y validar para 300-400 concurrentes); prueba real con Instagram/Meta, SMTP y S3 (nunca probados con credenciales reales); datos del cliente (ubicación de materias por año, nombres distintos entre documentos, fechas y requisitos de ingreso); correcciones de diseño que pueda dar el cliente.
+
 ## Pendientes que surgen de la orientación del aula (PPIV)
 
 - **Historias de usuario:** hechas en `materias/ppiv-proyecto-integrador/entrega-3/historias-de-usuario.md` (12, priorizadas). La Etapa 2 ya entregada no se modifica.

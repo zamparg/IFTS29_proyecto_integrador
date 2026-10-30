@@ -194,6 +194,9 @@ Archivo: `materias/ppiv-proyecto-integrador/material/Orientacion_de_Actividades_
 - **ITIL 4:** actividades de análisis (cuatro dimensiones, cadena de valor, incidentes y problemas, mejora continua); productos: informes breves, casos, mapas conceptuales, presentaciones. Material en `materias/ppiv-proyecto-integrador/material/`.
 - **Decisión del equipo (18/10/2026):** la "segunda entrega" de avance que menciona el aula no aplica; se va directamente a la Etapa 3. ITIL 4 pertenece a PPIV; borrador en `entrega-3/itil-4-aplicado.md`.
 
+## 5d. Estado de la aplicación (30/10/2026)
+Ver `readme.md` (sección "Etapa 3: aplicación construida"). Repositorio: `ifts2-plataforma` (local). Pendientes: despliegue y enlace, pruebas reales de integraciones, datos del cliente.
+
 ## 6. Estado de entregas y recursos
 - **Recursos del equipo** (de la Tabla 13 del PDF de Etapa 2): Drive `https://drive.google.com/drive/folders/1UNzvDp6loFH1cEmlk3ogOX_Ol3Lwo_UN`, repo `https://github.com/zamparg/IFTS29_proyecto_integrador`, Trello "ifts-n2-sprint-board-scrum", Lucidchart y Canva (links en el PDF), sitio `https://talento-tech-group.vercel.app`.
 - **Requerimientos vigentes:** RF01–RF10 y RNF01–RNF08 (RNF07 accesibilidad y RNF08 datos personales agregados en Etapa 2).
